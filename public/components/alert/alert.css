@@ -7,13 +7,13 @@
     border-radius: 0.3rem;
 }
 
-.shop-alert__success {
+.shop-alert--success {
     color: rgb(var(--shop-app-color));
     background-color: rgba(var(--shop-app-success-color), 0.2);
     border-color: rgba(var(--shop-app-success-color), 0.3);
 }
 
-.shop-alert__danger {
+.shop-alert--danger {
     color: rgb(var(--shop-app-color));
     background-color: rgba(var(--shop-app-danger-color), 0.2);
     border-color: rgba(var(--shop-app-danger-color), 0.3);

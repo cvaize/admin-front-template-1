@@ -248,6 +248,7 @@
 
         <div class="shop-tabs">
             <input id="shop-tabs__14" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden" checked>
+            <input id="shop-tabs__8" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
             <input id="shop-tabs__0" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
             <input id="shop-tabs__1" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
             <input id="shop-tabs__2" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
@@ -258,6 +259,7 @@
             <input id="shop-tabs__6" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
             <nav class="shop-tabs__nav">
                 <label for="shop-tabs__14" class="shop-tabs__link">Типография</label>
+                <label for="shop-tabs__8" class="shop-tabs__link">Accordion</label>
                 <label for="shop-tabs__0" class="shop-tabs__link">Alerts</label>
                 <label for="shop-tabs__1" class="shop-tabs__link">Buttons</label>
                 <label for="shop-tabs__2" class="shop-tabs__link">Collapse</label>
@@ -298,10 +300,29 @@
                     </p>
                 </div>
                 <div class="shop-tabs__pane">
-                    <div class="shop-alert shop-alert__success" role="alert" style="margin-bottom: 1rem;">
+                    <div class="shop-accordion">
+                        <input id="shop-accordion-checkbox"
+                               class="shop-accordion__checkbox"
+                               type="checkbox"
+                               name="shop-accordion__checkbox"
+                               hidden>
+                        <label class="shop-accordion__header"
+                               for="shop-accordion-checkbox">
+                            Accordion
+                        </label>
+                        <div class="shop-accordion__body" style="--shop-accordion-max-height: 10rem;">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam, dolores doloribus earum est, explicabo facere illo laborum libero mollitia nam nihil obcaecati perferendis perspiciatis, quibusdam suscipit totam voluptas voluptates?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam, dolores doloribus earum est, explicabo facere illo laborum libero mollitia nam nihil obcaecati perferendis perspiciatis, quibusdam suscipit totam voluptas voluptates?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam, dolores doloribus earum est, explicabo facere illo laborum libero mollitia nam nihil obcaecati perferendis perspiciatis, quibusdam suscipit totam voluptas voluptates?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam, dolores doloribus earum est, explicabo facere illo laborum libero mollitia nam nihil obcaecati perferendis perspiciatis, quibusdam suscipit totam voluptas voluptates?
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-tabs__pane">
+                    <div class="shop-alert shop-alert--success" role="alert" style="margin-bottom: 1rem;">
                         A simple success alert—check it out!
                     </div>
-                    <div class="shop-alert shop-alert__danger" role="alert">
+                    <div class="shop-alert shop-alert--danger" role="alert">
                         A simple danger alert—check it out!
                     </div>
                 </div>
