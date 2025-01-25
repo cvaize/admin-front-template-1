@@ -7,38 +7,38 @@
     border-collapse: collapse;
 }
 
-.shop-table thead {
+.shop-table__thead {
     vertical-align: bottom;
 }
 
-.shop-table th {
+.shop-table__th {
     text-align: inherit;
 }
 
-.shop-table tbody, .shop-table td, .shop-table tfoot,
-.shop-table th, .shop-table thead, .shop-table tr {
+.shop-table__tbody, .shop-table__td, .shop-table__tfoot,
+.shop-table__th, .shop-table__thead, .shop-table__tr {
     border-color: inherit;
     border-style: solid;
     border-width: 0;
 }
 
-.shop-table th, .shop-table td {
+.shop-table__th, .shop-table__td {
     padding: .5rem .5rem;
     color: inherit;
     background-color: transparent;
     border-bottom-width: 0.0625rem;
 }
 
-.shop-table__responsive {
+.shop-table-responsive {
     overflow-x: auto;
 }
 
-.shop-table__hover > tbody > tr:hover > * {
+.shop-table--hover > .shop-table__tbody > .shop-table__tr:hover > * {
     background-color: rgba(var(--shop-app-color), 0.1);
 }
 
-.shop-table > tbody > tr > td.shop-table--active,
-.shop-table > tbody > tr > th.shop-table--active,
-.shop-table > tbody > tr.shop-table--active > * {
+.shop-table__td.shop-table--active,
+.shop-table__th.shop-table--active,
+.shop-table__tr.shop-table--active > * {
     background-color: rgba(var(--shop-app-color), 0.2);
 }

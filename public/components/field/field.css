@@ -1,0 +1,52 @@
+.shop-field {
+    font-size: 0.8rem;
+}
+
+.shop-field__input {
+    display: block;
+    width: 100%;
+    padding: .3rem .7rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(var(--shop-app-color));
+    appearance: none;
+    background-color: rgb(var(--shop-app-background-color));
+    background-clip: padding-box;
+    border: 0.0625rem solid rgba(var(--shop-app-color), 0.2);
+    border-radius: 0.3rem;
+    outline: none;
+}
+
+.shop-field__input[type="range"] {
+    height: 0.2rem;
+    padding: 0;
+}
+
+.shop-field__input:read-only, .shop-field__input:disabled {
+    background-color: rgba(var(--shop-app-color), 0.1);
+}
+
+.shop-field__input:read-only:focus, .shop-field__input:disabled:focus {
+    box-shadow: none;
+}
+
+.shop-field__text {
+
+}
+
+.shop-success .shop-field__input {
+    border-color: rgb(var(--shop-app-success-color));
+}
+
+.shop-success .shop-field__input[type="range"] {
+    background-color: rgb(var(--shop-app-success-color));
+}
+
+.shop-danger .shop-field__input {
+    border-color: rgb(var(--shop-app-danger-color));
+}
+
+.shop-danger .shop-field__input[type="range"] {
+    background-color: rgb(var(--shop-app-danger-color));
+}
