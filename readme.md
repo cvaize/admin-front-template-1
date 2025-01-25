@@ -1,4 +1,4 @@
-# Shop admin v1 template
+# Front admin v1 template
 
 Only HTML+CSS
 
