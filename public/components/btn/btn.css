@@ -27,26 +27,26 @@
     background-color: rgba(var(--shop-app-color), 0.8);
 }
 
-.shop-btn__success {
+.shop-btn--success {
     background-color: rgb(var(--shop-app-success-color));
 }
 
-.shop-btn__success:hover {
+.shop-btn--success:hover {
     background-color: rgba(var(--shop-app-success-color), 0.9);
 }
 
-.shop-btn__success:active {
+.shop-btn--success:active {
     background-color: rgba(var(--shop-app-success-color), 0.8);
 }
 
-.shop-btn__danger {
+.shop-btn--danger {
     background-color: rgb(var(--shop-app-danger-color));
 }
 
-.shop-btn__danger:hover {
+.shop-btn--danger:hover {
     background-color: rgba(var(--shop-app-danger-color), 0.9);
 }
 
-.shop-btn__danger:active {
+.shop-btn--danger:active {
     background-color: rgba(var(--shop-app-danger-color), 0.8);
 }

@@ -9,13 +9,13 @@
     font-size: 0.8rem;
 }
 
-.shop-dark-mode__checkbox:checked ~ .shop-app .shop-dark-mode__icon-dark,
-.shop-dark-mode__checkbox:not(:checked) ~ .shop-app .shop-dark-mode__icon-light {
+.shop-dark-mode__checkbox:checked ~ .shop-app > .shop-dark-mode__btn .shop-dark-mode__icon-dark,
+.shop-dark-mode__checkbox:not(:checked) ~ .shop-app > .shop-dark-mode__btn .shop-dark-mode__icon-light {
     display: block;
 }
 
-.shop-dark-mode__checkbox:not(:checked) ~ .shop-app .shop-dark-mode__icon-dark,
-.shop-dark-mode__checkbox:checked ~ .shop-app .shop-dark-mode__icon-light {
+.shop-dark-mode__checkbox:not(:checked) ~ .shop-app > .shop-dark-mode__btn .shop-dark-mode__icon-dark,
+.shop-dark-mode__checkbox:checked ~ .shop-app > .shop-dark-mode__btn .shop-dark-mode__icon-light {
     display: none;
 }
 
