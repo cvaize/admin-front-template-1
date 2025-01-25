@@ -29,16 +29,16 @@
     border-bottom-width: 0.0625rem;
 }
 
-.shop-table-responsive {
+.shop-table__responsive {
     overflow-x: auto;
 }
 
-.shop-table-hover > tbody > tr:hover > * {
+.shop-table__hover > tbody > tr:hover > * {
     background-color: rgba(var(--shop-app-color), 0.1);
 }
 
-.shop-table > tbody > tr > td.shop-table-active,
-.shop-table > tbody > tr > th.shop-table-active,
-.shop-table > tbody > tr.shop-table-active > * {
+.shop-table > tbody > tr > td.shop-table--active,
+.shop-table > tbody > tr > th.shop-table--active,
+.shop-table > tbody > tr.shop-table--active > * {
     background-color: rgba(var(--shop-app-color), 0.2);
 }

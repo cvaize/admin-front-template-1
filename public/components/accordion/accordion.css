@@ -1,11 +1,11 @@
 .shop-accordion {
 }
 
-.shop-accordion-header {
+.shop-accordion__header {
     display: block;
 }
 
-.shop-accordion-header:after {
+.shop-accordion__header:after {
     content: "";
     display: inline-block;
     width: 0.6em;
@@ -16,21 +16,21 @@
     transform: rotateZ(45deg) translate(0.1em, -0.4em);
 }
 
-.shop-accordion-checkbox {
+.shop-accordion__checkbox {
     display: none;
 }
 
-.shop-accordion-body {
+.shop-accordion__body {
     margin-bottom: .4rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height .25s;
 }
 
-.shop-accordion-checkbox:checked ~ .shop-accordion-body {
-    max-height: var(--shop-accordion-max-height, 50rem);
+.shop-accordion__checkbox:checked ~ .shop-accordion__body {
+    max-height: var(--shop-accordion__max-height, 50rem);
 }
 
-.shop-accordion-checkbox:checked ~ .shop-accordion-header::after {
+.shop-accordion__checkbox:checked ~ .shop-accordion__header::after {
     transform: rotateZ(-135deg) translate(-0.4em, 0.2em);
 }

@@ -2,12 +2,12 @@
 
 }
 
-.shop-tabs-nav {
+.shop-tabs__nav {
     display: flex;
     flex-wrap: wrap;
 }
 
-.shop-tabs-nav:after {
+.shop-tabs__nav:after {
     content: '';
     display: block;
     flex-grow: 1;
@@ -16,7 +16,7 @@
     margin-left: -0.0625rem;
 }
 
-.shop-tabs-link {
+.shop-tabs__link {
     display: block;
     margin-bottom: 0.8rem;
     padding: 0.5rem;
@@ -28,51 +28,51 @@
     font-weight: 400;
 }
 
-.shop-tabs-content {
+.shop-tabs__content {
 }
 
-.shop-tabs-pane {
+.shop-tabs__pane {
     display: none;
 }
 
-.shop-tabs-nav > .shop-tabs-link:nth-child(1) ~ .shop-tabs-link {
+.shop-tabs__nav > .shop-tabs__link:nth-child(1) ~ .shop-tabs__link {
     margin-left: -0.0625rem;
 }
 
-.shop-tabs > .shop-tabs-checkbox:nth-child(1):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(1),
-.shop-tabs > .shop-tabs-checkbox:nth-child(2):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(2),
-.shop-tabs > .shop-tabs-checkbox:nth-child(3):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(3),
-.shop-tabs > .shop-tabs-checkbox:nth-child(4):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(4),
-.shop-tabs > .shop-tabs-checkbox:nth-child(5):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(5),
-.shop-tabs > .shop-tabs-checkbox:nth-child(6):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(6),
-.shop-tabs > .shop-tabs-checkbox:nth-child(7):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(7),
-.shop-tabs > .shop-tabs-checkbox:nth-child(8):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(8),
-.shop-tabs > .shop-tabs-checkbox:nth-child(9):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(9),
-.shop-tabs > .shop-tabs-checkbox:nth-child(10):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(10),
-.shop-tabs > .shop-tabs-checkbox:nth-child(11):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(11),
-.shop-tabs > .shop-tabs-checkbox:nth-child(12):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(12),
-.shop-tabs > .shop-tabs-checkbox:nth-child(13):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(13),
-.shop-tabs > .shop-tabs-checkbox:nth-child(14):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(14),
-.shop-tabs > .shop-tabs-checkbox:nth-child(15):checked ~ .shop-tabs-nav > .shop-tabs-link:nth-child(15) {
+.shop-tabs > .shop-tabs__checkbox:nth-child(1):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(1),
+.shop-tabs > .shop-tabs__checkbox:nth-child(2):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(2),
+.shop-tabs > .shop-tabs__checkbox:nth-child(3):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(3),
+.shop-tabs > .shop-tabs__checkbox:nth-child(4):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(4),
+.shop-tabs > .shop-tabs__checkbox:nth-child(5):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(5),
+.shop-tabs > .shop-tabs__checkbox:nth-child(6):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(6),
+.shop-tabs > .shop-tabs__checkbox:nth-child(7):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(7),
+.shop-tabs > .shop-tabs__checkbox:nth-child(8):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(8),
+.shop-tabs > .shop-tabs__checkbox:nth-child(9):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(9),
+.shop-tabs > .shop-tabs__checkbox:nth-child(10):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(10),
+.shop-tabs > .shop-tabs__checkbox:nth-child(11):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(11),
+.shop-tabs > .shop-tabs__checkbox:nth-child(12):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(12),
+.shop-tabs > .shop-tabs__checkbox:nth-child(13):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(13),
+.shop-tabs > .shop-tabs__checkbox:nth-child(14):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(14),
+.shop-tabs > .shop-tabs__checkbox:nth-child(15):checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(15) {
     border-color: rgba(var(--shop-app-color), 0.3);
     border-bottom-color: transparent;
     font-weight: 700;
 }
 
-.shop-tabs > .shop-tabs-checkbox:nth-child(1):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(1),
-.shop-tabs > .shop-tabs-checkbox:nth-child(2):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(2),
-.shop-tabs > .shop-tabs-checkbox:nth-child(3):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(3),
-.shop-tabs > .shop-tabs-checkbox:nth-child(4):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(4),
-.shop-tabs > .shop-tabs-checkbox:nth-child(5):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(5),
-.shop-tabs > .shop-tabs-checkbox:nth-child(6):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(6),
-.shop-tabs > .shop-tabs-checkbox:nth-child(7):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(7),
-.shop-tabs > .shop-tabs-checkbox:nth-child(8):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(8),
-.shop-tabs > .shop-tabs-checkbox:nth-child(9):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(9),
-.shop-tabs > .shop-tabs-checkbox:nth-child(10):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(10),
-.shop-tabs > .shop-tabs-checkbox:nth-child(11):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(11),
-.shop-tabs > .shop-tabs-checkbox:nth-child(12):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(12),
-.shop-tabs > .shop-tabs-checkbox:nth-child(13):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(13),
-.shop-tabs > .shop-tabs-checkbox:nth-child(14):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(14),
-.shop-tabs > .shop-tabs-checkbox:nth-child(15):checked ~ .shop-tabs-content > .shop-tabs-pane:nth-child(15) {
+.shop-tabs > .shop-tabs__checkbox:nth-child(1):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(1),
+.shop-tabs > .shop-tabs__checkbox:nth-child(2):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(2),
+.shop-tabs > .shop-tabs__checkbox:nth-child(3):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(3),
+.shop-tabs > .shop-tabs__checkbox:nth-child(4):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(4),
+.shop-tabs > .shop-tabs__checkbox:nth-child(5):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(5),
+.shop-tabs > .shop-tabs__checkbox:nth-child(6):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(6),
+.shop-tabs > .shop-tabs__checkbox:nth-child(7):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(7),
+.shop-tabs > .shop-tabs__checkbox:nth-child(8):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(8),
+.shop-tabs > .shop-tabs__checkbox:nth-child(9):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(9),
+.shop-tabs > .shop-tabs__checkbox:nth-child(10):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(10),
+.shop-tabs > .shop-tabs__checkbox:nth-child(11):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(11),
+.shop-tabs > .shop-tabs__checkbox:nth-child(12):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(12),
+.shop-tabs > .shop-tabs__checkbox:nth-child(13):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(13),
+.shop-tabs > .shop-tabs__checkbox:nth-child(14):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(14),
+.shop-tabs > .shop-tabs__checkbox:nth-child(15):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(15) {
     display: block;
 }

@@ -24,53 +24,53 @@
     <link rel="stylesheet" href="./components/dark-mode/dark-mode.css">
 </head>
 <body class="shop-body">
-<input id="shop-dark-mode-checkbox"
-       class="shop-dark-mode-checkbox"
+<input id="shop-dark-mode__checkbox"
+       class="shop-dark-mode__checkbox"
        type="checkbox"
        hidden>
-<input id="shop-sidebar-nav-checkbox"
-       class="shop-sidebar-nav-checkbox"
+<input id="shop-sidebar__nav__checkbox"
+       class="shop-sidebar__nav__checkbox"
        type="checkbox"
        hidden>
 <main class="shop-app">
-    <label class="shop-dark-mode-btn" for="shop-dark-mode-checkbox">
-        <svg class="shop-svg-icon shop-dark-mode-icon-dark" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+    <label class="shop-dark-mode__btn" for="shop-dark-mode__checkbox">
+        <svg class="shop-svg-icon shop-dark-mode__icon-dark" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
              viewBox="0 0 24 24">
             <path d="M11.01 3.05C6.51 3.54 3 7.36 3 12a9 9 0 0 0 9 9c4.63 0 8.45-3.5 8.95-8 .09-.79-.78-1.42-1.54-.95A5.403 5.403 0 0 1 11.1 7.5c0-1.06.31-2.06.84-2.89.45-.67-.04-1.63-.93-1.56z"/>
         </svg>
-        <svg class="shop-svg-icon shop-dark-mode-icon-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        <svg class="shop-svg-icon shop-dark-mode__icon-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
              viewBox="0 0 24 24">
             <path d="m6.05 4.14-.39-.39a.993.993 0 0 0-1.4 0l-.01.01a.984.984 0 0 0 0 1.4l.39.39c.39.39 1.01.39 1.4 0l.01-.01a.984.984 0 0 0 0-1.4zM3.01 10.5H1.99c-.55 0-.99.44-.99.99v.01c0 .55.44.99.99.99H3c.56.01 1-.43 1-.98v-.01c0-.56-.44-1-.99-1zm9-9.95H12c-.56 0-1 .44-1 .99v.96c0 .55.44.99.99.99H12c.56.01 1-.43 1-.98v-.97c0-.55-.44-.99-.99-.99zm7.74 3.21c-.39-.39-1.02-.39-1.41-.01l-.39.39a.984.984 0 0 0 0 1.4l.01.01c.39.39 1.02.39 1.4 0l.39-.39a.984.984 0 0 0 0-1.4zm-1.81 15.1.39.39a.996.996 0 1 0 1.41-1.41l-.39-.39a.993.993 0 0 0-1.4 0c-.4.4-.4 1.02-.01 1.41zM20 11.49v.01c0 .55.44.99.99.99H22c.55 0 .99-.44.99-.99v-.01c0-.55-.44-.99-.99-.99h-1.01c-.55 0-.99.44-.99.99zM12 5.5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-.01 16.95H12c.55 0 .99-.44.99-.99v-.96c0-.55-.44-.99-.99-.99h-.01c-.55 0-.99.44-.99.99v.96c0 .55.44.99.99.99zm-7.74-3.21c.39.39 1.02.39 1.41 0l.39-.39a.993.993 0 0 0 0-1.4l-.01-.01a.996.996 0 0 0-1.41 0l-.39.39c-.38.4-.38 1.02.01 1.41z"/>
         </svg>
     </label>
-    <label for="shop-sidebar-nav-checkbox" class="shop-sidebar-burger" aria-label="Open menu"></label>
-    <label for="shop-sidebar-nav-checkbox" class="shop-sidebar-backdrop" aria-label="Close menu"></label>
+    <label for="shop-sidebar__nav__checkbox" class="shop-sidebar__burger" aria-label="Open menu"></label>
+    <label for="shop-sidebar__nav__checkbox" class="shop-sidebar__backdrop" aria-label="Close menu"></label>
 
     <div class="shop-sidebar">
-        <div class="shop-sidebar-brand">
+        <div class="shop-sidebar__brand">
             Shop Admin
-            <img style="display: none" class="shop-sidebar-brand-logo" src="https://placehold.co/600x400"
+            <img style="display: none" class="shop-sidebar__brand__logo" src="https://placehold.co/600x400"
                  alt="Shop Admin">
         </div>
-        <nav class="shop-sidebar-nav">
-            <div class="shop-accordion shop-sidebar-menu">
-                <input id="shop-sidebar-accordion-account"
-                       class="shop-accordion-checkbox"
+        <nav class="shop-sidebar__nav">
+            <div class="shop-accordion shop-sidebar__menu">
+                <input id="shop-sidebar__accordion-account"
+                       class="shop-accordion__checkbox"
                        type="checkbox"
-                       name="shop-accordion-checkbox"
+                       name="shop-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion-header shop-sidebar-menu-header"
-                       for="shop-sidebar-accordion-account">
+                <label class="shop-accordion__header shop-sidebar__menu__header"
+                       for="shop-sidebar__accordion-account">
                     <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                          viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"/>
                     </svg>
                     Орлов Д. А.
                 </label>
-                <div class="shop-accordion-body" style="--shop-accordion-max-height: 4rem;">
-                    <ul class="shop-sidebar-menu-items">
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">
+                <div class="shop-accordion__body" style="--shop-accordion__max-height: 4rem;">
+                    <ul class="shop-sidebar__menu__items">
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">
                                 <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"/>
@@ -78,8 +78,8 @@
                                 Профиль
                             </a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">
                                 <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M5 5h6c.55 0 1-.45 1-1s-.45-1-1-1H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h6c.55 0 1-.45 1-1s-.45-1-1-1H5V5z"/>
@@ -91,8 +91,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="shop-sidebar-menu">
-                <a class="shop-sidebar-menu-header" href="#">
+            <div class="shop-sidebar__menu">
+                <a class="shop-sidebar__menu__header" href="#">
                     <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                          viewBox="0 0 24 24">
                         <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
@@ -100,24 +100,24 @@
                     Панель
                 </a>
             </div>
-            <div class="shop-accordion shop-sidebar-menu">
-                <input id="shop-sidebar-accordion-sales"
-                       class="shop-accordion-checkbox"
+            <div class="shop-accordion shop-sidebar__menu">
+                <input id="shop-sidebar__accordion-sales"
+                       class="shop-accordion__checkbox"
                        type="checkbox"
-                       name="shop-accordion-checkbox"
+                       name="shop-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion-header shop-sidebar-menu-header"
-                       for="shop-sidebar-accordion-sales">
+                <label class="shop-accordion__header shop-sidebar__menu__header"
+                       for="shop-sidebar__accordion-sales">
                     <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                          viewBox="0 0 24 24">
                         <path d="M17 2H7c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-.5 4h-9c-.28 0-.5-.22-.5-.5v-1c0-.28.22-.5.5-.5h9c.28 0 .5.22.5.5v1c0 .28-.22.5-.5.5zM20 22H4c-1.1 0-2-.9-2-2v-1h20v1c0 1.1-.9 2-2 2zm-1.47-11.81A2.008 2.008 0 0 0 16.7 9H7.3c-.79 0-1.51.47-1.83 1.19L2 18h20l-3.47-7.81zM9.5 16h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm3 4h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm3 4h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5z"/>
                     </svg>
                     Продажи
                 </label>
-                <div class="shop-accordion-body">
-                    <ul class="shop-sidebar-menu-items" style="--shop-accordion-max-height: 8rem;">
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">
+                <div class="shop-accordion__body">
+                    <ul class="shop-sidebar__menu__items" style="--shop-accordion__max-height: 8rem;">
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">
                                 <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
@@ -125,8 +125,8 @@
                                 Заказы
                             </a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">
                                 <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
@@ -134,8 +134,8 @@
                                 Возвраты
                             </a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">
                                 <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
@@ -143,8 +143,8 @@
                                 Подписки
                             </a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">
                                 <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
@@ -155,80 +155,80 @@
                     </ul>
                 </div>
             </div>
-            <div class="shop-accordion shop-sidebar-menu">
-                <input id="shop-sidebar-accordion-catalog"
-                       class="shop-accordion-checkbox"
+            <div class="shop-accordion shop-sidebar__menu">
+                <input id="shop-sidebar__accordion-catalog"
+                       class="shop-accordion__checkbox"
                        type="checkbox"
-                       name="shop-accordion-checkbox"
+                       name="shop-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion-header shop-sidebar-menu-header"
-                       for="shop-sidebar-accordion-catalog">
+                <label class="shop-accordion__header shop-sidebar__menu__header"
+                       for="shop-sidebar__accordion-catalog">
                     Каталог товаров
                 </label>
-                <div class="shop-accordion-body" style="--shop-accordion-max-height: 8rem;">
-                    <ul class="shop-sidebar-menu-items">
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">Товары</a>
+                <div class="shop-accordion__body" style="--shop-accordion__max-height: 8rem;">
+                    <ul class="shop-sidebar__menu__items">
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">Товары</a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">Категории</a>
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">Категории</a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">Атрибуты</a>
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">Атрибуты</a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">Поставщики</a>
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">Поставщики</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="shop-accordion shop-sidebar-menu">
-                <input id="shop-sidebar-accordion-users"
-                       class="shop-accordion-checkbox"
+            <div class="shop-accordion shop-sidebar__menu">
+                <input id="shop-sidebar__accordion-users"
+                       class="shop-accordion__checkbox"
                        type="checkbox"
-                       name="shop-accordion-checkbox"
+                       name="shop-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion-header shop-sidebar-menu-header"
-                       for="shop-sidebar-accordion-users">
+                <label class="shop-accordion__header shop-sidebar__menu__header"
+                       for="shop-sidebar__accordion-users">
                     Пользователи
                 </label>
-                <div class="shop-accordion-body" style="--shop-accordion-max-height: 4rem;">
-                    <ul class="shop-sidebar-menu-items">
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">Пользователи</a>
+                <div class="shop-accordion__body" style="--shop-accordion__max-height: 4rem;">
+                    <ul class="shop-sidebar__menu__items">
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">Пользователи</a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">Роли</a>
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">Роли</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="shop-accordion shop-sidebar-menu">
-                <input id="shop-sidebar-accordion-marketing"
-                       class="shop-accordion-checkbox"
+            <div class="shop-accordion shop-sidebar__menu">
+                <input id="shop-sidebar__accordion-marketing"
+                       class="shop-accordion__checkbox"
                        type="checkbox"
-                       name="shop-accordion-checkbox"
+                       name="shop-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion-header shop-sidebar-menu-header"
-                       for="shop-sidebar-accordion-marketing">
+                <label class="shop-accordion__header shop-sidebar__menu__header"
+                       for="shop-sidebar__accordion-marketing">
                     Маркетинг
                 </label>
-                <div class="shop-accordion-body" style="--shop-accordion-max-height: 6rem;">
-                    <ul class="shop-sidebar-menu-items">
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">Промокоды</a>
+                <div class="shop-accordion__body" style="--shop-accordion__max-height: 6rem;">
+                    <ul class="shop-sidebar__menu__items">
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">Промокоды</a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">Правило</a>
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">Правило</a>
                         </li>
-                        <li class="shop-sidebar-menu-item">
-                            <a class="shop-sidebar-menu-item-link" href="#">Отзывы</a>
+                        <li class="shop-sidebar__menu__item">
+                            <a class="shop-sidebar__menu__item__link" href="#">Отзывы</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="shop-sidebar-menu">
-                <a class="shop-sidebar-menu-header" href="#">Настройки</a>
+            <div class="shop-sidebar__menu">
+                <a class="shop-sidebar__menu__header" href="#">Настройки</a>
             </div>
         </nav>
     </div>
@@ -236,9 +236,9 @@
 
         <nav aria-label="breadcrumb">
             <ol class="shop-breadcrumb">
-                <li class="shop-breadcrumb-item"><a href="#" class="shop-breadcrumb-link">Панель</a></li>
-                <li class="shop-breadcrumb-item"><a href="#" class="shop-breadcrumb-link">Пользователи</a></li>
-                <li class="shop-breadcrumb-item shop-breadcrumb-item--active" aria-current="page">Редактирование
+                <li class="shop-breadcrumb__item"><a href="#" class="shop-breadcrumb__link">Панель</a></li>
+                <li class="shop-breadcrumb__item"><a href="#" class="shop-breadcrumb__link">Пользователи</a></li>
+                <li class="shop-breadcrumb__item shop-breadcrumb__item--active" aria-current="page">Редактирование
                     пользователя №1
                 </li>
             </ol>
@@ -247,28 +247,28 @@
         <h1>Редактирование пользователя №1</h1>
 
         <div class="shop-tabs">
-            <input id="shop-tabs-14" class="shop-tabs-checkbox" type="radio" name="shop-tabs-1" hidden="hidden" checked>
-            <input id="shop-tabs-0" class="shop-tabs-checkbox" type="radio" name="shop-tabs-1" hidden="hidden">
-            <input id="shop-tabs-1" class="shop-tabs-checkbox" type="radio" name="shop-tabs-1" hidden="hidden">
-            <input id="shop-tabs-2" class="shop-tabs-checkbox" type="radio" name="shop-tabs-1" hidden="hidden">
-            <input id="shop-tabs-3" class="shop-tabs-checkbox" type="radio" name="shop-tabs-1" hidden="hidden">
-            <input id="shop-tabs-4" class="shop-tabs-checkbox" type="radio" name="shop-tabs-1" hidden="hidden">
-            <input id="shop-tabs-5" class="shop-tabs-checkbox" type="radio" name="shop-tabs-1" hidden="hidden">
-            <input id="shop-tabs-6" class="shop-tabs-checkbox" type="radio" name="shop-tabs-1" hidden="hidden">
-            <input id="shop-tabs-7" class="shop-tabs-checkbox" type="radio" name="shop-tabs-1" hidden="hidden">
-            <nav class="shop-tabs-nav">
-                <label for="shop-tabs-14" class="shop-tabs-link">Типография</label>
-                <label for="shop-tabs-0" class="shop-tabs-link">Alerts</label>
-                <label for="shop-tabs-1" class="shop-tabs-link">Buttons</label>
-                <label for="shop-tabs-2" class="shop-tabs-link">Collapse</label>
-                <label for="shop-tabs-3" class="shop-tabs-link">Dropdowns</label>
-                <label for="shop-tabs-4" class="shop-tabs-link">Modal</label>
-                <label for="shop-tabs-5" class="shop-tabs-link">Pagination</label>
-                <label for="shop-tabs-6" class="shop-tabs-link">Form control</label>
-                <label for="shop-tabs-7" class="shop-tabs-link">Table</label>
+            <input id="shop-tabs__14" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden" checked>
+            <input id="shop-tabs__0" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
+            <input id="shop-tabs__1" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
+            <input id="shop-tabs__2" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
+            <input id="shop-tabs__3" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
+            <input id="shop-tabs__4" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
+            <input id="shop-tabs__5" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
+            <input id="shop-tabs__6" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
+            <input id="shop-tabs__7" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
+            <nav class="shop-tabs__nav">
+                <label for="shop-tabs__14" class="shop-tabs__link">Типография</label>
+                <label for="shop-tabs__0" class="shop-tabs__link">Alerts</label>
+                <label for="shop-tabs__1" class="shop-tabs__link">Buttons</label>
+                <label for="shop-tabs__2" class="shop-tabs__link">Collapse</label>
+                <label for="shop-tabs__3" class="shop-tabs__link">Dropdowns</label>
+                <label for="shop-tabs__4" class="shop-tabs__link">Modal</label>
+                <label for="shop-tabs__5" class="shop-tabs__link">Pagination</label>
+                <label for="shop-tabs__6" class="shop-tabs__link">Form control</label>
+                <label for="shop-tabs__7" class="shop-tabs__link">Table</label>
             </nav>
-            <div class="shop-tabs-content">
-                <div class="shop-tabs-pane">
+            <div class="shop-tabs__content">
+                <div class="shop-tabs__pane">
                     <h1>h1. Bootstrap heading</h1>
                     <h2>h2. Bootstrap heading</h2>
                     <h3>h3. Bootstrap heading</h3>
@@ -290,62 +290,62 @@
                     <p><small>This line of text is meant to be treated as fine print.</small></p>
                     <p><strong>This line rendered as bold text.</strong></p>
                     <p><em>This line rendered as italicized text.</em></p>
-                    <p class="text-success">
+                    <p class="text--success">
                         Success text
                     </p>
-                    <p class="text-danger">
+                    <p class="text--danger">
                         Success text
                     </p>
                 </div>
-                <div class="shop-tabs-pane">
-                    <div class="shop-alert shop-alert-success" role="alert" style="margin-bottom: 1rem;">
+                <div class="shop-tabs__pane">
+                    <div class="shop-alert shop-alert__success" role="alert" style="margin-bottom: 1rem;">
                         A simple success alert—check it out!
                     </div>
-                    <div class="shop-alert shop-alert-danger" role="alert">
+                    <div class="shop-alert shop-alert__danger" role="alert">
                         A simple danger alert—check it out!
                     </div>
                 </div>
-                <div class="shop-tabs-pane">
+                <div class="shop-tabs__pane">
                     <button type="button" class="shop-btn">Primary</button>
-                    <button type="button" class="shop-btn shop-btn-success">Success</button>
-                    <button type="button" class="shop-btn shop-btn-danger">Danger</button>
+                    <button type="button" class="shop-btn shop-btn__success">Success</button>
+                    <button type="button" class="shop-btn shop-btn__danger">Danger</button>
                 </div>
-                <div class="shop-tabs-pane">
-                    <label for="shop-collapse-1" class="shop-btn">Show data</label>
-                    <input id="shop-collapse-1" class="shop-collapse-checkbox" type="checkbox" name="shop-collapse-1"
+                <div class="shop-tabs__pane">
+                    <label for="shop-collapse__1" class="shop-btn">Show data</label>
+                    <input id="shop-collapse__1" class="shop-collapse__checkbox" type="checkbox" name="shop-collapse__1"
                            hidden="hidden">
                     <div class="shop-collapse">
                         Some placeholder content for the collapse component. This panel is hidden by default but
                         revealed when the user activates the relevant trigger.
                     </div>
                 </div>
-                <div class="shop-tabs-pane">
+                <div class="shop-tabs__pane">
                     <div class="shop-dropdown" tabindex="-1">
-                        <button class="shop-btn shop-dropdown-btn" type="button">
+                        <button class="shop-btn shop-dropdown__btn" type="button">
                             Dropdown button
                         </button>
-                        <ul class="shop-dropdown-menu">
-                            <li><a class="shop-dropdown-item" href="#">Action</a></li>
-                            <li><a class="shop-dropdown-item" href="#">Another action</a></li>
-                            <li><a class="shop-dropdown-item" href="#">Something else here</a></li>
+                        <ul class="shop-dropdown__menu">
+                            <li><a class="shop-dropdown__item" href="#">Action</a></li>
+                            <li><a class="shop-dropdown__item" href="#">Another action</a></li>
+                            <li><a class="shop-dropdown__item" href="#">Something else here</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="shop-tabs-pane">
-                    <label for="shop-modal-1" class="shop-btn shop-btn">
+                <div class="shop-tabs__pane">
+                    <label for="shop-modal__1" class="shop-btn shop-btn">
                         Open Modal
                     </label>
-                    <input id="shop-modal-1" class="shop-modal-checkbox" type="checkbox" name="shop-modal-1"
+                    <input id="shop-modal__1" class="shop-modal__checkbox" type="checkbox" name="shop-modal__1"
                            hidden="hidden">
                     <div class="shop-modal" tabindex="-1">
-                        <label for="shop-modal-1" class="shop-modal-backdrop"></label>
-                        <div class="shop-modal-dialog">
-                            <div class="shop-modal-content">
-                                <div class="shop-modal-header">
-                                    <h5 class="shop-modal-title">Modal title</h5>
-                                    <label for="shop-modal-1" class="shop-modal-btn-close" aria-label="Close"></label>
+                        <label for="shop-modal__1" class="shop-modal__backdrop"></label>
+                        <div class="shop-modal__dialog">
+                            <div class="shop-modal__content">
+                                <div class="shop-modal__header">
+                                    <h5 class="shop-modal__title">Modal title</h5>
+                                    <label for="shop-modal__1" class="shop-modal__close-btn" aria-label="Close"></label>
                                 </div>
-                                <div class="shop-modal-body">
+                                <div class="shop-modal__body">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda
                                     dicta dignissimos dolore ex minima natus vitae. Consequuntur, dolorem iste?
                                     Exercitationem hic itaque natus quisquam quo recusandae saepe totam!
@@ -618,91 +618,91 @@
                                     Exercitationem hic itaque natus quisquam quo recusandae saepe totam!
 
                                 </div>
-                                <div class="shop-modal-footer" style="display: flex; flex-wrap: wrap;">
-                                    <button type="button" class="shop-btn shop-btn-success" style="margin-right: 1rem;">
+                                <div class="shop-modal__footer" style="display: flex; flex-wrap: wrap;">
+                                    <button type="button" class="shop-btn shop-btn__success" style="margin-right: 1rem;">
                                         Save changes
                                     </button>
-                                    <label for="shop-modal-1" class="shop-btn shop-btn-danger"
+                                    <label for="shop-modal__1" class="shop-btn shop-btn__danger"
                                            style="margin-left: auto;">Close</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="shop-tabs-pane">
+                <div class="shop-tabs__pane">
                     <nav aria-label="Page navigation example">
                         <ul class="shop-pagination">
-                            <li class="shop-pagination-item"><a class="shop-pagination-link" href="#">1</a></li>
-                            <li class="shop-pagination-item"><span class="shop-pagination-link">...</span></li>
-                            <li class="shop-pagination-item"><a class="shop-pagination-link" href="#">7</a></li>
-                            <li class="shop-pagination-item"><a class="shop-pagination-link" href="#">8</a></li>
-                            <li class="shop-pagination-item"><a class="shop-pagination-link" href="#">9</a></li>
-                            <li class="shop-pagination-item"><span class="shop-pagination-link">...</span></li>
-                            <li class="shop-pagination-item"><a class="shop-pagination-link" href="#">10</a></li>
+                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">1</a></li>
+                            <li class="shop-pagination__item"><span class="shop-pagination__link">...</span></li>
+                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">7</a></li>
+                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">8</a></li>
+                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">9</a></li>
+                            <li class="shop-pagination__item"><span class="shop-pagination__link">...</span></li>
+                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">10</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="shop-tabs-pane">
+                <div class="shop-tabs__pane">
                     <div style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput1" class="shop-form-label">Email address</label>
-                        <input type="email" class="shop-form-control" id="exampleFormControlInput1"
+                        <label for="exampleFormControlInput1" class="shop-form__label">Email address</label>
+                        <input type="email" class="shop-form__control" id="exampleFormControlInput1"
                                placeholder="name@example.com">
                     </div>
-                    <div class="shop-form-success" style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput12" class="shop-form-label">Email address</label>
-                        <input type="email" class="shop-form-control" id="exampleFormControlInput12"
+                    <div class="shop-form__success" style="margin-bottom: 1rem;">
+                        <label for="exampleFormControlInput12" class="shop-form__label">Email address</label>
+                        <input type="email" class="shop-form__control" id="exampleFormControlInput12"
                                placeholder="name@example.com">
-                        <div class="shop-form-text">
+                        <div class="shop-form__text">
                             Your password must be 8-20 characters long, contain letters and numbers, and must not
                             contain spaces, special characters, or emoji.
                         </div>
                     </div>
-                    <div class="shop-form-danger" style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput13" class="shop-form-label">Email address</label>
-                        <input type="email" class="shop-form-control" id="exampleFormControlInput13"
+                    <div class="shop-form__danger" style="margin-bottom: 1rem;">
+                        <label for="exampleFormControlInput13" class="shop-form__label">Email address</label>
+                        <input type="email" class="shop-form__control" id="exampleFormControlInput13"
                                placeholder="name@example.com">
-                        <div class="shop-form-text">
+                        <div class="shop-form__text">
                             Your password must be 8-20 characters long, contain letters and numbers, and must not
                             contain spaces, special characters, or emoji.
                         </div>
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput2" class="shop-form-label">Date</label>
-                        <input type="date" class="shop-form-control" id="exampleFormControlInput2">
+                        <label for="exampleFormControlInput2" class="shop-form__label">Date</label>
+                        <input type="date" class="shop-form__control" id="exampleFormControlInput2">
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput7" class="shop-form-label">Time</label>
-                        <input type="time" class="shop-form-control" id="exampleFormControlInput7">
+                        <label for="exampleFormControlInput7" class="shop-form__label">Time</label>
+                        <input type="time" class="shop-form__control" id="exampleFormControlInput7">
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput3" class="shop-form-label">Datetime local</label>
-                        <input type="datetime-local" class="shop-form-control" id="exampleFormControlInput3">
+                        <label for="exampleFormControlInput3" class="shop-form__label">Datetime local</label>
+                        <input type="datetime-local" class="shop-form__control" id="exampleFormControlInput3">
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput4" class="shop-form-label">Number</label>
-                        <input type="number" class="shop-form-control" id="exampleFormControlInput4">
+                        <label for="exampleFormControlInput4" class="shop-form__label">Number</label>
+                        <input type="number" class="shop-form__control" id="exampleFormControlInput4">
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput5" class="shop-form-label">Range</label>
-                        <input type="range" class="shop-form-control" id="exampleFormControlInput5">
+                        <label for="exampleFormControlInput5" class="shop-form__label">Range</label>
+                        <input type="range" class="shop-form__control" id="exampleFormControlInput5">
                     </div>
-                    <div class="shop-form-success" style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput52" class="shop-form-label">Range</label>
-                        <input type="range" class="shop-form-control" id="exampleFormControlInput52">
+                    <div class="shop-form__success" style="margin-bottom: 1rem;">
+                        <label for="exampleFormControlInput52" class="shop-form__label">Range</label>
+                        <input type="range" class="shop-form__control" id="exampleFormControlInput52">
                     </div>
-                    <div class="shop-form-danger" style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput53" class="shop-form-label">Range</label>
-                        <input type="range" class="shop-form-control" id="exampleFormControlInput53">
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlInput6" class="shop-form-label">Tel</label>
-                        <input type="tel" class="shop-form-control" id="exampleFormControlInput6">
+                    <div class="shop-form__danger" style="margin-bottom: 1rem;">
+                        <label for="exampleFormControlInput53" class="shop-form__label">Range</label>
+                        <input type="range" class="shop-form__control" id="exampleFormControlInput53">
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="inputPassword5" class="shop-form-label">Password</label>
-                        <input type="password" id="inputPassword5" class="shop-form-control"
+                        <label for="exampleFormControlInput6" class="shop-form__label">Tel</label>
+                        <input type="tel" class="shop-form__control" id="exampleFormControlInput6">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="inputPassword5" class="shop-form__label">Password</label>
+                        <input type="password" id="inputPassword5" class="shop-form__control"
                                aria-describedby="passwordHelpBlock">
-                        <div class="shop-form-text">
+                        <div class="shop-form__text">
                             Your password must be 8-20 characters long, contain letters and numbers, and must not
                             contain spaces, special characters, or emoji.
                         </div>
@@ -710,27 +710,27 @@
                     <div style="margin-bottom: 1rem;">
                         <div class="shop-row" style="align-items: center;">
                             <div class="shop-col-auto">
-                                <label for="inputPassword6" class="shop-form-label">Password</label>
+                                <label for="inputPassword6" class="shop-form__label">Password</label>
                             </div>
                             <div class="shop-col-auto">
-                                <input type="password" id="inputPassword6" class="shop-form-control"
+                                <input type="password" id="inputPassword6" class="shop-form__control"
                                        aria-describedby="passwordHelpInline">
                             </div>
                             <div class="shop-col-auto">
-                                <span id="passwordHelpInline" class="shop-form-text">
+                                <span id="passwordHelpInline" class="shop-form__text">
                                   Must be 8-20 characters long.
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="exampleFormControlTextarea1" class="shop-form-label">Example textarea</label>
-                        <textarea class="shop-form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea1" class="shop-form__label">Example textarea</label>
+                        <textarea class="shop-form__control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div>
-                        <input class="shop-form-checkbox" type="checkbox" value="" id="flexCheckDefault" hidden>
-                        <label class="shop-form-checkbox-label" for="flexCheckDefault">
-                            <svg class="shop-form-checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <input class="shop-form__checkbox" type="checkbox" value="" id="flexCheckDefault" hidden>
+                        <label class="shop-form__checkbox-label" for="flexCheckDefault">
+                            <svg class="shop-form__checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
@@ -738,9 +738,9 @@
                         </label>
                     </div>
                     <div>
-                        <input class="shop-form-checkbox" type="checkbox" value="" id="flexCheckChecked" checked hidden>
-                        <label class="shop-form-checkbox-label" for="flexCheckChecked">
-                            <svg class="shop-form-checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <input class="shop-form__checkbox" type="checkbox" value="" id="flexCheckChecked" checked hidden>
+                        <label class="shop-form__checkbox-label" for="flexCheckChecked">
+                            <svg class="shop-form__checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
@@ -748,30 +748,30 @@
                         </label>
                     </div>
                     <div>
-                        <input class="shop-form-checkbox" type="checkbox" value="" id="flexCheckChecked1" disabled
+                        <input class="shop-form__checkbox" type="checkbox" value="" id="flexCheckChecked1" disabled
                                hidden>
-                        <label class="shop-form-checkbox-label" for="flexCheckChecked1">
-                            <svg class="shop-form-checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="shop-form__checkbox-label" for="flexCheckChecked1">
+                            <svg class="shop-form__checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
                             Checked checkbox
                         </label>
                     </div>
-                    <div class="shop-form-success">
-                        <input class="shop-form-checkbox" type="checkbox" value="" id="flexCheckDefault5" hidden>
-                        <label class="shop-form-checkbox-label" for="flexCheckDefault5">
-                            <svg class="shop-form-checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                    <div class="shop-form__success">
+                        <input class="shop-form__checkbox" type="checkbox" value="" id="flexCheckDefault5" hidden>
+                        <label class="shop-form__checkbox-label" for="flexCheckDefault5">
+                            <svg class="shop-form__checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
                             Success checkbox
                         </label>
                     </div>
-                    <div class="shop-form-danger">
-                        <input class="shop-form-checkbox" type="checkbox" value="" id="flexCheckDefault6" hidden>
-                        <label class="shop-form-checkbox-label" for="flexCheckDefault6">
-                            <svg class="shop-form-checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                    <div class="shop-form__danger">
+                        <input class="shop-form__checkbox" type="checkbox" value="" id="flexCheckDefault6" hidden>
+                        <label class="shop-form__checkbox-label" for="flexCheckDefault6">
+                            <svg class="shop-form__checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
@@ -779,10 +779,10 @@
                         </label>
                     </div>
                     <div>
-                        <input class="shop-form-radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                        <input class="shop-form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
                                hidden>
-                        <label class="shop-form-radio-label" for="flexRadioDefault1">
-                            <svg class="shop-form-radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="shop-form__radio-label" for="flexRadioDefault1">
+                            <svg class="shop-form__radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
@@ -790,10 +790,10 @@
                         </label>
                     </div>
                     <div>
-                        <input class="shop-form-radio" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        <input class="shop-form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
                                checked hidden>
-                        <label class="shop-form-radio-label" for="flexRadioDefault2">
-                            <svg class="shop-form-radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="shop-form__radio-label" for="flexRadioDefault2">
+                            <svg class="shop-form__radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
@@ -801,32 +801,32 @@
                         </label>
                     </div>
                     <div>
-                        <input class="shop-form-radio" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+                        <input class="shop-form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
                                disabled hidden>
-                        <label class="shop-form-radio-label" for="flexRadioDefault3">
-                            <svg class="shop-form-radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="shop-form__radio-label" for="flexRadioDefault3">
+                            <svg class="shop-form__radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
                             Default checked radio
                         </label>
                     </div>
-                    <div class="shop-form-success">
-                        <input class="shop-form-radio" type="radio" name="flexRadioDefault" id="flexRadioDefault7"
+                    <div class="shop-form__success">
+                        <input class="shop-form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault7"
                                hidden>
-                        <label class="shop-form-radio-label" for="flexRadioDefault7">
-                            <svg class="shop-form-radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="shop-form__radio-label" for="flexRadioDefault7">
+                            <svg class="shop-form__radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
                             Success radio
                         </label>
                     </div>
-                    <div class="shop-form-danger">
-                        <input class="shop-form-radio" type="radio" name="flexRadioDefault" id="flexRadioDefault8"
+                    <div class="shop-form__danger">
+                        <input class="shop-form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault8"
                                hidden>
-                        <label class="shop-form-radio-label" for="flexRadioDefault8">
-                            <svg class="shop-form-radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="shop-form__radio-label" for="flexRadioDefault8">
+                            <svg class="shop-form__radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
@@ -834,9 +834,9 @@
                         </label>
                     </div>
                     <div style="font-size: 2rem;">
-                        <input class="shop-form-checkbox" type="checkbox" value="" id="flexCheckDefault22" hidden checked>
-                        <label class="shop-form-checkbox-label" for="flexCheckDefault22">
-                            <svg class="shop-form-checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <input class="shop-form__checkbox" type="checkbox" value="" id="flexCheckDefault22" hidden checked>
+                        <label class="shop-form__checkbox-label" for="flexCheckDefault22">
+                            <svg class="shop-form__checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
@@ -844,10 +844,10 @@
                         </label>
                     </div>
                     <div style="font-size: 2rem;">
-                        <input class="shop-form-radio" type="radio" name="flexRadioDefault233" id="flexRadioDefault233"
+                        <input class="shop-form__radio" type="radio" name="flexRadioDefault233" id="flexRadioDefault233"
                                checked hidden>
-                        <label class="shop-form-radio-label" for="flexRadioDefault233">
-                            <svg class="shop-form-radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="shop-form__radio-label" for="flexRadioDefault233">
+                            <svg class="shop-form__radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
@@ -855,10 +855,10 @@
                         </label>
                     </div>
                     <div style="font-size: 2rem;">
-                        <input class="shop-form-radio" type="radio" name="flexRadioDefault233" id="flexRadioDefault2333"
+                        <input class="shop-form__radio" type="radio" name="flexRadioDefault233" id="flexRadioDefault2333"
                                hidden>
-                        <label class="shop-form-radio-label" for="flexRadioDefault2333">
-                            <svg class="shop-form-radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="shop-form__radio-label" for="flexRadioDefault2333">
+                            <svg class="shop-form__radio-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
@@ -866,9 +866,9 @@
                         </label>
                     </div>
                 </div>
-                <div class="shop-tabs-pane">
-                    <div class="shop-table-responsive">
-                        <table class="shop-table shop-table-hover">
+                <div class="shop-tabs__pane">
+                    <div class="shop-table__responsive">
+                        <table class="shop-table shop-table__hover">
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -884,7 +884,7 @@
                                 <td>Otto</td>
                                 <td>@mdo</td>
                             </tr>
-                            <tr class="shop-table-active">
+                            <tr class="shop-table--active">
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
@@ -893,7 +893,7 @@
                             <tr>
                                 <th scope="row">3</th>
                                 <td colspan="2">Larry the Bird</td>
-                                <td class="shop-table-active">@twitter</td>
+                                <td class="shop-table--active">@twitter</td>
                             </tr>
                             </tbody>
                         </table>

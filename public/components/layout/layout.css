@@ -8,7 +8,7 @@
     --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-color), 0.5);
 }
 
-.shop-dark-mode-checkbox:checked ~ * {
+.shop-dark-mode__checkbox:checked ~ * {
     --shop-app-color: 196, 187, 173;
     --shop-app-background-color: 0, 0, 0;
     --shop-app-backdrop-color: 255, 255, 255;

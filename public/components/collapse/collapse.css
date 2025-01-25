@@ -2,6 +2,6 @@
     display: none;
 }
 
-.shop-collapse-checkbox:checked + .shop-collapse {
+.shop-collapse__checkbox:checked + .shop-collapse {
     display: block;
 }

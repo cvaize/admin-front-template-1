@@ -10,7 +10,7 @@
     outline: 0;
 }
 
-.shop-modal-backdrop {
+.shop-modal__backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@
     background-color: rgba(var(--shop-app-backdrop-color), 0.5);
 }
 
-.shop-modal-dialog {
+.shop-modal__dialog {
     position: relative;
     z-index: 10002;
     max-width: 31.25rem;
@@ -29,7 +29,7 @@
     display: flex;
 }
 
-.shop-modal-content {
+.shop-modal__content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
     outline: 0;
 }
 
-.shop-modal-header {
+.shop-modal__header {
     position: relative;
     display: flex;
     flex-shrink: 0;
@@ -53,13 +53,13 @@
     border-top-right-radius: 0.5rem;
 }
 
-.shop-modal-title {
+.shop-modal__title {
     margin: 0;
     font-weight: 400;
     font-size: 1.25rem;
 }
 
-.shop-modal-btn-close {
+.shop-modal__close-btn {
     display: block;
     position: absolute;
     top: 0.5rem;
@@ -74,7 +74,7 @@
     cursor: pointer;
 }
 
-.shop-modal-btn-close:before, .shop-modal-btn-close:after {
+.shop-modal__close-btn:before, .shop-modal__close-btn:after {
     position: absolute;
     left: 0;
     top: 0;
@@ -85,28 +85,28 @@
     opacity: 0.9;
 }
 
-.shop-modal-btn-close:before {
+.shop-modal__close-btn:before {
     transform: rotate(45deg) translate(0.375rem, -0.375rem);
 }
 
-.shop-modal-btn-close:after {
+.shop-modal__close-btn:after {
     transform: rotate(-45deg) translate(0.375rem, 0.375rem);
 }
 
-.shop-modal-btn-close:hover {
+.shop-modal__close-btn:hover {
     opacity: 0.5;
 }
 
-.shop-modal-body {
+.shop-modal__body {
     padding: 0.8rem;
     overflow-y: auto;
 }
 
-.shop-modal-footer {
+.shop-modal__footer {
     padding: 0.8rem;
     border-top: 0.0625rem solid rgba(var(--shop-app-color), 0.1);
 }
 
-.shop-modal-checkbox:checked ~ .shop-modal {
+.shop-modal__checkbox:checked ~ .shop-modal {
     display: block;
 }

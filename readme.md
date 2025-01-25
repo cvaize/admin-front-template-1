@@ -24,7 +24,7 @@ Css variables:
     --shop-app-danger-color: 220, 53, 69;
 }
 
-.shop-dark-mode-checkbox:checked ~ * {
+.shop-dark-mode__checkbox:checked ~ * {
     --shop-app-color: 196, 187, 173;
     --shop-app-background-color: 0, 0, 0;
     --shop-app-backdrop-color: 255, 255, 255;
