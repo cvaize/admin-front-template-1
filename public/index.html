@@ -55,7 +55,7 @@
         <nav class="shop-sidebar__nav">
             <div class="shop-accordion shop-sidebar__menu">
                 <input id="shop-sidebar__accordion-account"
-                       class="shop-accordion__checkbox"
+                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
                        type="checkbox"
                        name="shop-accordion__checkbox"
                        hidden>
@@ -67,7 +67,7 @@
                     </svg>
                     Орлов Д. А.
                 </label>
-                <div class="shop-accordion__body" style="--shop-accordion__max-height: 4rem;">
+                <div class="shop-accordion__body" style="--shop-accordion-max-height: 4rem;">
                     <ul class="shop-sidebar__menu__items">
                         <li class="shop-sidebar__menu__item">
                             <a class="shop-sidebar__menu__item__link" href="#">
@@ -102,7 +102,7 @@
             </div>
             <div class="shop-accordion shop-sidebar__menu">
                 <input id="shop-sidebar__accordion-sales"
-                       class="shop-accordion__checkbox"
+                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
                        type="checkbox"
                        name="shop-accordion__checkbox"
                        hidden>
@@ -115,7 +115,7 @@
                     Продажи
                 </label>
                 <div class="shop-accordion__body">
-                    <ul class="shop-sidebar__menu__items" style="--shop-accordion__max-height: 8rem;">
+                    <ul class="shop-sidebar__menu__items" style="--shop-accordion-max-height: 8rem;">
                         <li class="shop-sidebar__menu__item">
                             <a class="shop-sidebar__menu__item__link" href="#">
                                 <svg class="shop-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -157,7 +157,7 @@
             </div>
             <div class="shop-accordion shop-sidebar__menu">
                 <input id="shop-sidebar__accordion-catalog"
-                       class="shop-accordion__checkbox"
+                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
                        type="checkbox"
                        name="shop-accordion__checkbox"
                        hidden>
@@ -165,7 +165,7 @@
                        for="shop-sidebar__accordion-catalog">
                     Каталог товаров
                 </label>
-                <div class="shop-accordion__body" style="--shop-accordion__max-height: 8rem;">
+                <div class="shop-accordion__body" style="--shop-accordion-max-height: 8rem;">
                     <ul class="shop-sidebar__menu__items">
                         <li class="shop-sidebar__menu__item">
                             <a class="shop-sidebar__menu__item__link" href="#">Товары</a>
@@ -184,7 +184,7 @@
             </div>
             <div class="shop-accordion shop-sidebar__menu">
                 <input id="shop-sidebar__accordion-users"
-                       class="shop-accordion__checkbox"
+                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
                        type="checkbox"
                        name="shop-accordion__checkbox"
                        hidden>
@@ -192,7 +192,7 @@
                        for="shop-sidebar__accordion-users">
                     Пользователи
                 </label>
-                <div class="shop-accordion__body" style="--shop-accordion__max-height: 4rem;">
+                <div class="shop-accordion__body" style="--shop-accordion-max-height: 4rem;">
                     <ul class="shop-sidebar__menu__items">
                         <li class="shop-sidebar__menu__item">
                             <a class="shop-sidebar__menu__item__link" href="#">Пользователи</a>
@@ -205,7 +205,7 @@
             </div>
             <div class="shop-accordion shop-sidebar__menu">
                 <input id="shop-sidebar__accordion-marketing"
-                       class="shop-accordion__checkbox"
+                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
                        type="checkbox"
                        name="shop-accordion__checkbox"
                        hidden>
@@ -213,7 +213,7 @@
                        for="shop-sidebar__accordion-marketing">
                     Маркетинг
                 </label>
-                <div class="shop-accordion__body" style="--shop-accordion__max-height: 6rem;">
+                <div class="shop-accordion__body" style="--shop-accordion-max-height: 6rem;">
                     <ul class="shop-sidebar__menu__items">
                         <li class="shop-sidebar__menu__item">
                             <a class="shop-sidebar__menu__item__link" href="#">Промокоды</a>
@@ -244,7 +244,7 @@
             </ol>
         </nav>
 
-        <h1>Редактирование пользователя №1</h1>
+        <h1>Компоненты</h1>
 
         <div class="shop-tabs">
             <input id="shop-tabs__14" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden" checked>
@@ -254,8 +254,8 @@
             <input id="shop-tabs__3" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
             <input id="shop-tabs__4" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
             <input id="shop-tabs__5" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
-            <input id="shop-tabs__6" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
             <input id="shop-tabs__7" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
+            <input id="shop-tabs__6" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden="hidden">
             <nav class="shop-tabs__nav">
                 <label for="shop-tabs__14" class="shop-tabs__link">Типография</label>
                 <label for="shop-tabs__0" class="shop-tabs__link">Alerts</label>
@@ -264,8 +264,8 @@
                 <label for="shop-tabs__3" class="shop-tabs__link">Dropdowns</label>
                 <label for="shop-tabs__4" class="shop-tabs__link">Modal</label>
                 <label for="shop-tabs__5" class="shop-tabs__link">Pagination</label>
-                <label for="shop-tabs__6" class="shop-tabs__link">Form control</label>
                 <label for="shop-tabs__7" class="shop-tabs__link">Table</label>
+                <label for="shop-tabs__6" class="shop-tabs__link">Form control</label>
             </nav>
             <div class="shop-tabs__content">
                 <div class="shop-tabs__pane">
@@ -643,6 +643,39 @@
                     </nav>
                 </div>
                 <div class="shop-tabs__pane">
+                    <div class="shop-table__responsive">
+                        <table class="shop-table shop-table--hover">
+                            <thead class="shop-table__thead">
+                            <tr class="shop-table__tr">
+                                <th class="shop-table__th" scope="col">#</th>
+                                <th class="shop-table__th" scope="col">First</th>
+                                <th class="shop-table__th" scope="col">Last</th>
+                                <th class="shop-table__th" scope="col">Handle</th>
+                            </tr>
+                            </thead>
+                            <tbody class="shop-table__tbody">
+                            <tr class="shop-table__tr">
+                                <th class="shop-table__th" scope="row">1</th>
+                                <td class="shop-table__td">Mark</td>
+                                <td class="shop-table__td">Otto</td>
+                                <td class="shop-table__td">@mdo</td>
+                            </tr>
+                            <tr class="shop-table__tr shop-table--active">
+                                <th class="shop-table__th" scope="row">2</th>
+                                <td class="shop-table__td">Mark</td>
+                                <td class="shop-table__td">Otto</td>
+                                <td class="shop-table__td">@mdo</td>
+                            </tr>
+                            <tr class="shop-table__tr">
+                                <th class="shop-table__th" scope="row">3</th>
+                                <td class="shop-table__td" colspan="2">Larry the Bird</td>
+                                <td class="shop-table__td shop-table--active">@mdo</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="shop-tabs__pane">
                     <div style="margin-bottom: 1rem;">
                         <label for="exampleFormControlInput1" class="shop-form__label">Email address</label>
                         <input type="email" class="shop-form__control" id="exampleFormControlInput1"
@@ -864,39 +897,6 @@
                             </svg>
                             2rem checked radio
                         </label>
-                    </div>
-                </div>
-                <div class="shop-tabs__pane">
-                    <div class="shop-table__responsive">
-                        <table class="shop-table shop-table--hover">
-                            <thead class="shop-table__thead">
-                            <tr class="shop-table__tr">
-                                <th class="shop-table__th" scope="col">#</th>
-                                <th class="shop-table__th" scope="col">First</th>
-                                <th class="shop-table__th" scope="col">Last</th>
-                                <th class="shop-table__th" scope="col">Handle</th>
-                            </tr>
-                            </thead>
-                            <tbody class="shop-table__tbody">
-                            <tr class="shop-table__tr">
-                                <th class="shop-table__th" scope="row">1</th>
-                                <td class="shop-table__td">Mark</td>
-                                <td class="shop-table__td">Otto</td>
-                                <td class="shop-table__td">@mdo</td>
-                            </tr>
-                            <tr class="shop-table__tr shop-table--active">
-                                <th class="shop-table__th" scope="row">2</th>
-                                <td class="shop-table__td">Mark</td>
-                                <td class="shop-table__td">Otto</td>
-                                <td class="shop-table__td">@mdo</td>
-                            </tr>
-                            <tr class="shop-table__tr">
-                                <th class="shop-table__th" scope="row">3</th>
-                                <td class="shop-table__td" colspan="2">Larry the Bird</td>
-                                <td class="shop-table__td shop-table--active">@mdo</td>
-                            </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>

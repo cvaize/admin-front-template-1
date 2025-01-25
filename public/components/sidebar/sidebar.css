@@ -53,8 +53,8 @@
     text-decoration: none;
 }
 
-.shop-accordion__checkbox ~ .shop-sidebar__menu__header:hover,
-.shop-accordion__checkbox ~ .shop-sidebar__menu__header:focus,
+.shop-sidebar__menu__checkbox ~ .shop-sidebar__menu__header:hover,
+.shop-sidebar__menu__checkbox ~ .shop-sidebar__menu__header:focus,
 .shop-sidebar__menu__header:hover,
 .shop-sidebar__menu__header:focus {
     opacity: 0.5;

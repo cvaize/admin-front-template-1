@@ -28,7 +28,7 @@
 }
 
 .shop-accordion__checkbox:checked ~ .shop-accordion__body {
-    max-height: var(--shop-accordion__max-height, 50rem);
+    max-height: var(--shop-accordion-max-height, 50rem);
 }
 
 .shop-accordion__checkbox:checked ~ .shop-accordion__header::after {
