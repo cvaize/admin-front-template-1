@@ -1,4 +1,4 @@
-# Front admin v1 template
+# Admin front v1 template
 
 Only HTML+CSS
 
