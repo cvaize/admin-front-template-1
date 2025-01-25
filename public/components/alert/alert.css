@@ -1,0 +1,20 @@
+.shop-alert {
+    position: relative;
+    padding: 0.8rem;
+    color: currentColor;
+    background-color: transparent;
+    border: 0.0625rem solid;
+    border-radius: 0.3rem;
+}
+
+.shop-alert-success {
+    color: rgb(var(--shop-app-color));
+    background-color: rgba(var(--shop-app-success-color), 0.2);
+    border-color: rgba(var(--shop-app-success-color), 0.3);
+}
+
+.shop-alert-danger {
+    color: rgb(var(--shop-app-color));
+    background-color: rgba(var(--shop-app-danger-color), 0.2);
+    border-color: rgba(var(--shop-app-danger-color), 0.3);
+}

@@ -1,0 +1,44 @@
+.shop-table {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    vertical-align: top;
+    border-color: rgba(var(--shop-app-color), 0.2);
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+.shop-table thead {
+    vertical-align: bottom;
+}
+
+.shop-table th {
+    text-align: inherit;
+}
+
+.shop-table tbody, .shop-table td, .shop-table tfoot,
+.shop-table th, .shop-table thead, .shop-table tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.shop-table th, .shop-table td {
+    padding: .5rem .5rem;
+    color: inherit;
+    background-color: transparent;
+    border-bottom-width: 0.0625rem;
+}
+
+.shop-table-responsive {
+    overflow-x: auto;
+}
+
+.shop-table-hover > tbody > tr:hover > * {
+    background-color: rgba(var(--shop-app-color), 0.1);
+}
+
+.shop-table > tbody > tr > td.shop-table-active,
+.shop-table > tbody > tr > th.shop-table-active,
+.shop-table > tbody > tr.shop-table-active > * {
+    background-color: rgba(var(--shop-app-color), 0.2);
+}

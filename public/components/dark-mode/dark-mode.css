@@ -1,0 +1,29 @@
+.shop-dark-mode-btn {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0.2rem;
+    display: block;
+    z-index: 250;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.shop-dark-mode-checkbox:checked ~ .shop-app .shop-dark-mode-icon-dark,
+.shop-dark-mode-checkbox:not(:checked) ~ .shop-app .shop-dark-mode-icon-light {
+    display: block;
+}
+
+.shop-dark-mode-checkbox:not(:checked) ~ .shop-app .shop-dark-mode-icon-dark,
+.shop-dark-mode-checkbox:checked ~ .shop-app .shop-dark-mode-icon-light {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .shop-dark-mode-btn {
+        left: auto;
+        right: 4rem;
+        top: 0.3rem;
+        font-size: 1.5rem;
+    }
+}

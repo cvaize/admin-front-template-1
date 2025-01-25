@@ -1,0 +1,121 @@
+.shop-form-checkbox-svg-icon, .shop-form-radio-svg-icon, .shop-svg-icon {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+}
+
+.shop-form-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.shop-form-control {
+    display: block;
+    width: 100%;
+    padding: .3rem .7rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(var(--shop-app-color));
+    appearance: none;
+    background-color: rgb(var(--shop-app-background-color));
+    background-clip: padding-box;
+    border: 0.0625rem solid rgba(var(--shop-app-color), 0.2);
+    border-radius: 0.3rem;
+}
+
+.shop-form-control[type="range"] {
+    height: 0.2rem;
+    padding: 0;
+}
+
+.shop-form-text {
+    margin-top: .25rem;
+    font-size: .875em;
+    opacity: 0.8;
+}
+
+.shop-form-checkbox-label, .shop-form-radio-label {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.shop-form-checkbox-label > .shop-form-checkbox-svg-icon {
+    fill: currentColor;
+    width: 1.32em;
+    height: 1.32em;
+    transform: scale(1.1);
+    box-shadow: inset 0 0 0 0.2em currentColor;
+    border-radius: 0.3em;
+    stroke: currentColor;
+    stroke-width: 15%;
+}
+
+.shop-form-checkbox-label > .shop-form-checkbox-svg-icon path {
+    transform: scale(0.7);
+    transform-origin: center;
+    opacity: 0;
+}
+
+.shop-form-checkbox:checked + .shop-form-checkbox-label > .shop-form-checkbox-svg-icon path {
+    opacity: 1;
+}
+
+.shop-form-radio-label > .shop-form-radio-svg-icon {
+    fill: currentColor;
+    width: 1.32em;
+    height: 1.32em;
+    transform: scale(1.1);
+    box-shadow: inset 0 0 0 0.2em currentColor;
+    border-radius: 1em;
+}
+
+.shop-form-radio-svg-icon circle {
+    opacity: 0;
+}
+
+.shop-form-radio:checked + .shop-form-radio-label > .shop-form-radio-svg-icon circle {
+    opacity: 1;
+}
+
+.shop-form-checkbox:checked + .shop-form-checkbox-label::after,
+.shop-form-radio:checked + .shop-form-radio-label::after {
+    opacity: 1;
+}
+
+.shop-form-checkbox:disabled + .shop-form-checkbox-label,
+.shop-form-radio:disabled + .shop-form-radio-label {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.shop-form-success .shop-form-checkbox-label, .shop-form-success .shop-form-radio-label,
+.shop-form-success .shop-form-label, .shop-form-success .shop-form-text {
+    color: rgb(var(--shop-app-success-color));
+}
+
+.shop-form-success .shop-form-control {
+    border-color: rgb(var(--shop-app-success-color));
+}
+
+.shop-form-success .shop-form-control[type="range"] {
+    background-color: rgb(var(--shop-app-success-color));
+}
+
+.shop-form-danger .shop-form-checkbox-label, .shop-form-danger .shop-form-radio-label,
+.shop-form-danger .shop-form-label, .shop-form-danger .shop-form-text {
+    color: rgb(var(--shop-app-danger-color));
+}
+
+.shop-form-danger .shop-form-control {
+    border-color: rgb(var(--shop-app-danger-color));
+}
+
+.shop-form-danger .shop-form-control[type="range"] {
+    background-color: rgb(var(--shop-app-danger-color));
+}

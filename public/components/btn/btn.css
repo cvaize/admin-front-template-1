@@ -1,0 +1,52 @@
+.shop-btn {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    color: rgb(var(--shop-app-background-color));
+    background-color: rgb(var(--shop-app-color));
+    border: 0.0625rem solid;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+
+.shop-btn:hover {
+    background-color: rgba(var(--shop-app-color), 0.9);
+}
+
+.shop-btn:active {
+    background-color: rgba(var(--shop-app-color), 0.8);
+}
+
+.shop-btn-success {
+    background-color: rgb(var(--shop-app-success-color));
+}
+
+.shop-btn-success:hover {
+    background-color: rgba(var(--shop-app-success-color), 0.9);
+}
+
+.shop-btn-success:active {
+    background-color: rgba(var(--shop-app-success-color), 0.8);
+}
+
+.shop-btn-danger {
+    background-color: rgb(var(--shop-app-danger-color));
+}
+
+.shop-btn-danger:hover {
+    background-color: rgba(var(--shop-app-danger-color), 0.9);
+}
+
+.shop-btn-danger:active {
+    background-color: rgba(var(--shop-app-danger-color), 0.8);
+}
