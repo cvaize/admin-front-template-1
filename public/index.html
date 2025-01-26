@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="./components/menu/menu.css">
     <link rel="stylesheet" href="./components/radio/radio.css">
     <link rel="stylesheet" href="./components/s-collapse/s-collapse.css">
+    <link rel="stylesheet" href="./components/c-radio/c-radio.css">
     <link rel="stylesheet" href="./components/dark-mode/dark-mode.css">
 
     <script src="./components/number-validate/number-validate.js" defer></script>
@@ -290,6 +291,7 @@
             <input id="shop-tabs--026" class="shop-tabs__checkbox" type="radio" name="shop-tabs" hidden="hidden">
             <input id="shop-tabs--027" class="shop-tabs__checkbox" type="radio" name="shop-tabs" hidden="hidden">
             <input id="shop-tabs--028" class="shop-tabs__checkbox" type="radio" name="shop-tabs" hidden="hidden">
+            <input id="shop-tabs--029" class="shop-tabs__checkbox" type="radio" name="shop-tabs" hidden="hidden">
             <nav class="shop-tabs__nav">
                 <label for="shop-tabs--001" class="shop-tabs__link">Типография</label>
                 <label for="shop-tabs--002" class="shop-tabs__link">Accordion</label>
@@ -300,25 +302,26 @@
                 <label for="shop-tabs--007" class="shop-tabs__link">Breadcrumb</label>
                 <label for="shop-tabs--008" class="shop-tabs__link">Btn</label>
                 <label for="shop-tabs--009" class="shop-tabs__link">C-Checkbox</label>
-                <label for="shop-tabs--010" class="shop-tabs__link">Checkbox</label>
-                <label for="shop-tabs--011" class="shop-tabs__link">Collapse</label>
-                <label for="shop-tabs--012" class="shop-tabs__link">Color-Checkbox</label>
-                <label for="shop-tabs--013" class="shop-tabs__link">Dark-mode</label>
-                <label for="shop-tabs--014" class="shop-tabs__link">Dropdowns</label>
-                <label for="shop-tabs--015" class="shop-tabs__link">Field</label>
-                <label for="shop-tabs--016" class="shop-tabs__link">Form</label>
-                <label for="shop-tabs--017" class="shop-tabs__link">Input</label>
-                <label for="shop-tabs--018" class="shop-tabs__link">Layout</label>
-                <label for="shop-tabs--019" class="shop-tabs__link">Menu</label>
-                <label for="shop-tabs--020" class="shop-tabs__link">Modal</label>
-                <label for="shop-tabs--021" class="shop-tabs__link">Number-validate</label>
-                <label for="shop-tabs--022" class="shop-tabs__link">Pagination</label>
-                <label for="shop-tabs--023" class="shop-tabs__link">Radio</label>
-                <label for="shop-tabs--024" class="shop-tabs__link">S-Collapse</label>
-                <label for="shop-tabs--025" class="shop-tabs__link">Sidebar</label>
-                <label for="shop-tabs--026" class="shop-tabs__link">Table</label>
-                <label for="shop-tabs--027" class="shop-tabs__link">Tabs</label>
-                <label for="shop-tabs--028" class="shop-tabs__link">Text</label>
+                <label for="shop-tabs--010" class="shop-tabs__link">C-Radio</label>
+                <label for="shop-tabs--011" class="shop-tabs__link">Checkbox</label>
+                <label for="shop-tabs--012" class="shop-tabs__link">Collapse</label>
+                <label for="shop-tabs--013" class="shop-tabs__link">Color-Checkbox</label>
+                <label for="shop-tabs--014" class="shop-tabs__link">Dark-mode</label>
+                <label for="shop-tabs--015" class="shop-tabs__link">Dropdowns</label>
+                <label for="shop-tabs--016" class="shop-tabs__link">Field</label>
+                <label for="shop-tabs--017" class="shop-tabs__link">Form</label>
+                <label for="shop-tabs--018" class="shop-tabs__link">Input</label>
+                <label for="shop-tabs--019" class="shop-tabs__link">Layout</label>
+                <label for="shop-tabs--020" class="shop-tabs__link">Menu</label>
+                <label for="shop-tabs--021" class="shop-tabs__link">Modal</label>
+                <label for="shop-tabs--022" class="shop-tabs__link">Number-validate</label>
+                <label for="shop-tabs--023" class="shop-tabs__link">Pagination</label>
+                <label for="shop-tabs--024" class="shop-tabs__link">Radio</label>
+                <label for="shop-tabs--025" class="shop-tabs__link">S-Collapse</label>
+                <label for="shop-tabs--026" class="shop-tabs__link">Sidebar</label>
+                <label for="shop-tabs--027" class="shop-tabs__link">Table</label>
+                <label for="shop-tabs--028" class="shop-tabs__link">Tabs</label>
+                <label for="shop-tabs--029" class="shop-tabs__link">Text</label>
             </nav>
             <div class="shop-tabs__content">
                 <div data-for="shop-tabs--001" class="shop-tabs__pane">
@@ -488,61 +491,160 @@
                     <button type="button" class="shop-btn shop-danger">Danger</button>
                 </div>
                 <div data-for="shop-tabs--009" class="shop-tabs__pane">
-                    <div>
+                    <div style="margin-bottom: 0.25rem;">
                         <label class="shop-c-checkbox" tabindex="0">
                             <input class="shop-c-checkbox__input" type="checkbox" hidden>
                             <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
-                            Lorem ipsum
+                            <span class="shop-c-checkbox__text">Lorem ipsum</span>
                         </label>
                     </div>
-                    <div>
+                    <div style="margin-bottom: 0.25rem;">
+                        <label class="shop-c-checkbox" tabindex="0">
+                            <input class="shop-c-checkbox__input" type="checkbox" hidden disabled>
+                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                            <span class="shop-c-checkbox__text">Lorem ipsum</span>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 0.25rem;">
                         <label class="shop-c-checkbox shop-success" tabindex="0">
                             <input class="shop-c-checkbox__input" type="checkbox" hidden>
                             <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
-                            Lorem ipsum
+                            <span class="shop-c-checkbox__text">Lorem ipsum</span>
                         </label>
                     </div>
-                    <div>
+                    <div style="margin-bottom: 0.25rem;">
                         <label class="shop-c-checkbox shop-danger" tabindex="0">
                             <input class="shop-c-checkbox__input" type="checkbox" hidden>
                             <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
-                            Lorem ipsum
+                            <span class="shop-c-checkbox__text">Lorem ipsum</span>
                         </label>
                     </div>
-                    <div>
-                        <label class="shop-c-checkbox shop-c-checkbox--without-text" tabindex="0">
+                    <div style="margin-bottom: 0.25rem;">
+                        <label class="shop-c-checkbox shop-c-checkbox--without-text" tabindex="0" style="margin-right: 0.25rem;">
                             <input class="shop-c-checkbox__input" type="checkbox" hidden>
                             <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
                         </label>
-                        <label class="shop-c-checkbox shop-success shop-c-checkbox--without-text" tabindex="0">
+                        <label class="shop-c-checkbox shop-success shop-c-checkbox--without-text" tabindex="0" style="margin-right: 0.25rem;">
                             <input class="shop-c-checkbox__input" type="checkbox" hidden>
                             <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
                         </label>
-                        <label class="shop-c-checkbox shop-danger shop-c-checkbox--without-text" tabindex="0">
+                        <label class="shop-c-checkbox shop-danger shop-c-checkbox--without-text" tabindex="0" style="margin-right: 0.25rem;">
                             <input class="shop-c-checkbox__input" type="checkbox" hidden>
                             <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
+                        </label>
+                    </div>
+                    <div style="max-width: 200px">
+                        <label class="shop-c-checkbox" tabindex="0">
+                            <input class="shop-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                            <span class="shop-c-checkbox__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate exercitationem nesciunt officia, reiciendis velit! Distinctio dolore eaque est excepturi iusto maxime, nulla odio omnis porro provident similique, unde velit?
+                            </span>
                         </label>
                     </div>
                 </div>
                 <div data-for="shop-tabs--010" class="shop-tabs__pane">
+                    <div style="margin-bottom: 0.25rem;">
+                        <label class="shop-c-radio" tabindex="0">
+                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden checked>
+                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                            <span class="shop-c-radio__text">Lorem ipsum</span>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 0.25rem;">
+                        <label class="shop-c-radio" tabindex="0">
+                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden disabled>
+                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                            <span class="shop-c-radio__text">Lorem ipsum</span>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 0.25rem;">
+                        <label class="shop-c-radio shop-success" tabindex="0">
+                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
+                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                            <span class="shop-c-radio__text">Lorem ipsum</span>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 0.25rem;">
+                        <label class="shop-c-radio shop-danger" tabindex="0">
+                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
+                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                            <span class="shop-c-radio__text">Lorem ipsum</span>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 0.25rem;">
+                        <label class="shop-c-radio shop-c-radio--without-text" tabindex="0" style="margin-right: 0.25rem;">
+                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
+                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                        </label>
+                        <label class="shop-c-radio shop-success shop-c-radio--without-text" tabindex="0" style="margin-right: 0.25rem;">
+                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
+                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                        </label>
+                        <label class="shop-c-radio shop-danger shop-c-radio--without-text" tabindex="0" style="margin-right: 0.25rem;">
+                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
+                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div style="max-width: 200px">
+                        <label class="shop-c-radio" tabindex="0">
+                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden checked>
+                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                            <span class="shop-c-radio__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus accusantium aliquid amet doloremque dolorum est illo ipsam itaque nostrum obcaecati officia quas reiciendis rem sapiente soluta, tempora ut voluptate.
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div data-for="shop-tabs--011" class="shop-tabs__pane">
                     <div>
                         <label class="shop-checkbox" tabindex="0">
                             <input class="shop-checkbox__input" type="checkbox" name="shop-checkbox-1" hidden>
@@ -565,7 +667,7 @@
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--011" class="shop-tabs__pane">
+                <div data-for="shop-tabs--012" class="shop-tabs__pane">
                     <label for="shop-collapse__1" class="shop-btn">Show data</label>
                     <input id="shop-collapse__1" class="shop-collapse__checkbox" type="checkbox" name="shop-collapse__1"
                            hidden="hidden">
@@ -574,7 +676,7 @@
                         revealed when the user activates the relevant trigger.
                     </div>
                 </div>
-                <div data-for="shop-tabs--012" class="shop-tabs__pane">
+                <div data-for="shop-tabs--013" class="shop-tabs__pane">
                     <label style="--checkbox-circle-color: black; --checkbox-chevron-color: white;"
                            class="shop-color-checkbox" tabindex="0">
                         <input class="shop-color-checkbox__input" type="checkbox" hidden checked>
@@ -606,7 +708,7 @@
                         <span class="shop-color-checkbox__text">Black</span>
                     </label>
                 </div>
-                <div data-for="shop-tabs--013" class="shop-tabs__pane">
+                <div data-for="shop-tabs--014" class="shop-tabs__pane">
                     <input id="shop-dark-mode__checkbox-1"
                            class="shop-dark-mode__checkbox"
                            type="checkbox"
@@ -636,7 +738,7 @@
                         </div>
                     </main>
                 </div>
-                <div data-for="shop-tabs--014" class="shop-tabs__pane">
+                <div data-for="shop-tabs--015" class="shop-tabs__pane">
                     <div class="shop-dropdown" tabindex="-1">
                         <button class="shop-btn shop-dropdown__btn" type="button">
                             Dropdown button
@@ -648,7 +750,7 @@
                         </ul>
                     </div>
                 </div>
-                <div data-for="shop-tabs--015" class="shop-tabs__pane">
+                <div data-for="shop-tabs--016" class="shop-tabs__pane">
                     <label class="shop-field" style="margin-bottom: 0.5rem;">
                         <span class="shop-field__text">Text</span>
                         <input class="shop-field__input" type="text">
@@ -678,7 +780,7 @@
                         </select>
                     </label>
                 </div>
-                <div data-for="shop-tabs--016" class="shop-tabs__pane">
+                <div data-for="shop-tabs--017" class="shop-tabs__pane">
                     <div style="margin-bottom: 1rem;">
                         <label for="exampleFormControlInput1" class="shop-form__label">Email address</label>
                         <input type="email" class="shop-form__control" id="exampleFormControlInput1"
@@ -905,7 +1007,7 @@
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--017" class="shop-tabs__pane">
+                <div data-for="shop-tabs--018" class="shop-tabs__pane">
                     <div style="margin-bottom: 0.5rem;">
                         <label for="shop-input-id-1">Text</label>
                         <input id="shop-input-id-1" class="shop-input" type="text">
@@ -931,7 +1033,7 @@
                         </select>
                     </div>
                 </div>
-                <div data-for="shop-tabs--018" class="shop-tabs__pane">
+                <div data-for="shop-tabs--019" class="shop-tabs__pane">
                     <pre>
 &lt;!doctype html&gt;
 &lt;html lang="en" class="shop-html"&gt;
@@ -950,7 +1052,7 @@
 &lt;/html&gt;
                     </pre>
                 </div>
-                <div data-for="shop-tabs--019" class="shop-tabs__pane">
+                <div data-for="shop-tabs--020" class="shop-tabs__pane">
                     <div class="shop-menu">
                         <ul class="shop-menu__list">
                             <li class="shop-menu__list__item">
@@ -1000,7 +1102,7 @@
                         </ul>
                     </div>
                 </div>
-                <div data-for="shop-tabs--020" class="shop-tabs__pane">
+                <div data-for="shop-tabs--021" class="shop-tabs__pane">
                     <label for="shop-modal__1" class="shop-btn shop-btn">
                         Open Modal
                     </label>
@@ -1299,13 +1401,13 @@
                         </div>
                     </div>
                 </div>
-                <div data-for="shop-tabs--021" class="shop-tabs__pane">
+                <div data-for="shop-tabs--022" class="shop-tabs__pane">
                     <div>
                         <label for="number-validate-id">Number validate min=45 max=1000</label>
                         <input id="number-validate-id" class="shop-input js-number-validate" type="text" value="45" min="45" max="1000">
                     </div>
                 </div>
-                <div data-for="shop-tabs--022" class="shop-tabs__pane">
+                <div data-for="shop-tabs--023" class="shop-tabs__pane">
                     <nav aria-label="Page navigation example">
                         <ul class="shop-pagination">
                             <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">1</a></li>
@@ -1318,7 +1420,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div data-for="shop-tabs--023" class="shop-tabs__pane">
+                <div data-for="shop-tabs--024" class="shop-tabs__pane">
                     <label class="shop-radio">
                         <input class="shop-radio__input" type="radio" name="shop-radio" hidden checked>
                         <span class="shop-radio__box"></span>
@@ -1330,7 +1432,7 @@
                         <span class="shop-radio__text">Radio 2</span>
                     </label>
                 </div>
-                <div data-for="shop-tabs--024" class="shop-tabs__pane">
+                <div data-for="shop-tabs--025" class="shop-tabs__pane">
                     <div>
                         <input id="shop-s-collapse" class="shop-s-collapse__checkbox" type="checkbox" hidden>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -1342,10 +1444,10 @@
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--025" class="shop-tabs__pane">
+                <div data-for="shop-tabs--026" class="shop-tabs__pane">
                     Пример по ссылке <a href="./components/sidebar/sidebar.html">./components/sidebar/sidebar.html</a>
                 </div>
-                <div data-for="shop-tabs--026" class="shop-tabs__pane">
+                <div data-for="shop-tabs--027" class="shop-tabs__pane">
                     <div class="shop-table__responsive">
                         <table class="shop-table shop-table--hover">
                             <thead class="shop-table__thead">
@@ -1378,7 +1480,7 @@
                         </table>
                     </div>
                 </div>
-                <div data-for="shop-tabs--027" class="shop-tabs__pane">
+                <div data-for="shop-tabs--028" class="shop-tabs__pane">
                     <div class="shop-tabs">
                         <input id="shop-tabs__0" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden checked>
                         <input id="shop-tabs__1" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden>
@@ -1396,7 +1498,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-for="shop-tabs--028" class="shop-tabs__pane">
+                <div data-for="shop-tabs--029" class="shop-tabs__pane">
                     <p class="shop-text--mini">Mini textLorem ipsum dolor sit amet</p>
                     <p class="shop-text--success">
                         Success text
