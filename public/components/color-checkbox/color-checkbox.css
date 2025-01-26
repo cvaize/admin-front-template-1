@@ -3,7 +3,7 @@
     --checkbox-chevron-color: rgb(var(--shop-app-background-color));
     position: relative;
     user-select: none;
-    display: block;
+    display: inline-block;
     padding: 2px;
     border-radius: 0.3em;
 }

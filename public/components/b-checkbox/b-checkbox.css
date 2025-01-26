@@ -38,7 +38,7 @@
     opacity: 1;
 }
 
-.shop-b-checkbox:disabled ~ .shop-b-checkbox__label:after {
+.shop-b-checkbox:disabled ~ .shop-b-checkbox__label {
     opacity: 0.5;
     cursor: auto;
 }

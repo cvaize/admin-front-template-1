@@ -36,7 +36,7 @@
     opacity: 1;
 }
 
-.shop-b-radio:disabled ~ .shop-b-radio__label:after {
+.shop-b-radio:disabled ~ .shop-b-radio__label {
     opacity: 0.5;
     cursor: auto;
 }
