@@ -89,6 +89,19 @@ button, select {
     top: -0.1em;
 }
 
+.shop-text--mini {
+    font-size: .875em;
+    opacity: 0.8;
+}
+
+.shop-text--success {
+    color: rgb(var(--shop-app-success-color));
+}
+
+.shop-text--danger {
+    color: rgb(var(--shop-app-danger-color));
+}
+
 .shop-backdrop {
     position: fixed;
     left: 0;
