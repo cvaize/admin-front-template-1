@@ -3,6 +3,7 @@
     user-select: none;
     display: block;
     padding: 2px;
+    border-radius: 0.3em;
 }
 
 .shop-radio__box {
@@ -50,4 +51,14 @@
 .shop-radio__input:disabled ~ .shop-radio__text {
     opacity: 0.5;
     cursor: auto;
+}
+
+.shop-success.shop-radio {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
+    color: rgb(var(--shop-app-success-color));
+}
+
+.shop-danger.shop-radio {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
+    color: rgb(var(--shop-app-danger-color));
 }

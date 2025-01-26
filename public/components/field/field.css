@@ -24,7 +24,8 @@
     padding: 0;
 }
 
-input.shop-field__input:read-only, input.shop-field__input:disabled {
+input.shop-field__input:read-only, input.shop-field__input:disabled,
+select.shop-field__input:disabled {
     background-color: rgba(var(--shop-app-color), 0.1);
 }
 

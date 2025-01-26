@@ -290,7 +290,6 @@
             <input id="shop-tabs--025" class="shop-tabs__checkbox" type="radio" name="shop-tabs" hidden="hidden">
             <input id="shop-tabs--026" class="shop-tabs__checkbox" type="radio" name="shop-tabs" hidden="hidden">
             <input id="shop-tabs--027" class="shop-tabs__checkbox" type="radio" name="shop-tabs" hidden="hidden">
-            <input id="shop-tabs--028" class="shop-tabs__checkbox" type="radio" name="shop-tabs" hidden="hidden">
             <nav class="shop-tabs__nav">
                 <label for="shop-tabs--001" class="shop-tabs__link">Типография</label>
                 <label for="shop-tabs--002" class="shop-tabs__link">Accordion</label>
@@ -319,7 +318,6 @@
                 <label for="shop-tabs--025" class="shop-tabs__link">Sidebar</label>
                 <label for="shop-tabs--026" class="shop-tabs__link">Table</label>
                 <label for="shop-tabs--027" class="shop-tabs__link">Tabs</label>
-                <label for="shop-tabs--028" class="shop-tabs__link">Text</label>
             </nav>
             <div class="shop-tabs__content">
                 <div data-for="shop-tabs--001" class="shop-tabs__pane">
@@ -344,6 +342,7 @@
                     <p><small>This line of text is meant to be treated as fine print.</small></p>
                     <p><strong>This line rendered as bold text.</strong></p>
                     <p><em>This line rendered as italicized text.</em></p>
+                    <p class="shop-text--mini">Mini text</p>
                     <p class="shop-text--success">
                         Success text
                     </p>
@@ -800,6 +799,14 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </div>
                     </div>
+                    <label class="shop-field" style="margin-bottom: 0.5rem;">
+                        <span class="shop-field__text">Select</span>
+                        <select class="shop-field__input" disabled>
+                            <option>Lorem 1</option>
+                            <option>Lorem 2</option>
+                            <option>Lorem 3</option>
+                        </select>
+                    </label>
                     <div class="shop-row" style="margin-bottom: 0.5rem;">
                         <div class="shop-col-auto">
                             <label for="shop-field__input-90" class="shop-field" style="padding-top: 0.3rem;">
@@ -864,24 +871,72 @@
                 </div>
                 <div data-for="shop-tabs--017" class="shop-tabs__pane">
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-1">Text</label>
+                        <label for="shop-input-id-1" class="shop-input__label">Text</label>
                         <input id="shop-input-id-1" class="shop-input" type="text">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-2">Number</label>
-                        <input id="shop-input-id-2" class="shop-input" type="number">
+                        <label for="shop-input-id-2" class="shop-input__label">Text</label>
+                        <input id="shop-input-id-2" class="shop-input" type="text" disabled>
+                    </div>
+                    <div class="shop-success" style="margin-bottom: 0.5rem;">
+                        <label for="shop-input-id-3" class="shop-input__label">Text</label>
+                        <input id="shop-input-id-3" class="shop-input" type="text">
+                    </div>
+                    <div class="shop-danger" style="margin-bottom: 0.5rem;">
+                        <label for="shop-input-id-4" class="shop-input__label">Text</label>
+                        <input id="shop-input-id-4" class="shop-input" type="text">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-3">Range</label>
-                        <input id="shop-input-id-3" class="shop-input" type="range">
+                        <label for="shop-input-id-5" class="shop-input__label">Number</label>
+                        <input id="shop-input-id-5" class="shop-input" type="number">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-4">Textarea</label>
-                        <textarea id="shop-input-id-4" class="shop-input"></textarea>
+                        <label for="shop-input-id-6" class="shop-input__label">Range</label>
+                        <input id="shop-input-id-6" class="shop-input" type="range">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-5">Lorem ipsum 5</label>
-                        <select id="shop-input-id-5" class="shop-input">
+                        <label for="shop-input-id-7" class="shop-input__label">Range</label>
+                        <input id="shop-input-id-7" class="shop-input" type="range" disabled>
+                    </div>
+                    <div class="shop-success" style="margin-bottom: 0.5rem;">
+                        <label for="shop-input-id-8" class="shop-input__label">Range</label>
+                        <input id="shop-input-id-8" class="shop-input" type="range">
+                    </div>
+                    <div class="shop-danger" style="margin-bottom: 0.5rem;">
+                        <label for="shop-input-id-9" class="shop-input__label">Range</label>
+                        <input id="shop-input-id-9" class="shop-input" type="range">
+                    </div>
+                    <div style="margin-bottom: 0.5rem;">
+                        <label for="shop-input-id-10" class="shop-input__label">Textarea</label>
+                        <textarea id="shop-input-id-10" class="shop-input"></textarea>
+                    </div>
+                    <div style="margin-bottom: 0.5rem;">
+                        <label for="shop-input-id-11" class="shop-input__label">Select</label>
+                        <select id="shop-input-id-11" class="shop-input">
+                            <option>Lorem 1</option>
+                            <option>Lorem 2</option>
+                            <option>Lorem 3</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 0.5rem;">
+                        <label for="shop-input-id-12" class="shop-input__label">Select</label>
+                        <select id="shop-input-id-12" class="shop-input" disabled>
+                            <option>Lorem 1</option>
+                            <option>Lorem 2</option>
+                            <option>Lorem 3</option>
+                        </select>
+                    </div>
+                    <div class="shop-success" style="margin-bottom: 0.5rem;">
+                        <label for="shop-input-id-13" class="shop-input__label">Select</label>
+                        <select id="shop-input-id-13" class="shop-input">
+                            <option>Lorem 1</option>
+                            <option>Lorem 2</option>
+                            <option>Lorem 3</option>
+                        </select>
+                    </div>
+                    <div class="shop-danger" style="margin-bottom: 0.5rem;">
+                        <label for="shop-input-id-14" class="shop-input__label">Select</label>
+                        <select id="shop-input-id-14" class="shop-input">
                             <option>Lorem 1</option>
                             <option>Lorem 2</option>
                             <option>Lorem 3</option>
@@ -1276,16 +1331,34 @@
                     </nav>
                 </div>
                 <div data-for="shop-tabs--023" class="shop-tabs__pane">
-                    <label class="shop-radio">
-                        <input class="shop-radio__input" type="radio" name="shop-radio" hidden checked>
-                        <span class="shop-radio__box"></span>
-                        <span class="shop-radio__text">Radio 1</span>
-                    </label>
-                    <label class="shop-radio">
-                        <input class="shop-radio__input" type="radio" name="shop-radio" hidden>
-                        <span class="shop-radio__box"></span>
-                        <span class="shop-radio__text">Radio 2</span>
-                    </label>
+                    <div>
+                        <label class="shop-radio" tabindex="0">
+                            <input class="shop-radio__input" type="radio" name="shop-radio" hidden checked>
+                            <span class="shop-radio__box"></span>
+                            <span class="shop-radio__text">Radio 1</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="shop-radio" tabindex="0">
+                            <input class="shop-radio__input" type="radio" name="shop-radio" hidden disabled>
+                            <span class="shop-radio__box"></span>
+                            <span class="shop-radio__text">Radio 2</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="shop-radio shop-success" tabindex="0">
+                            <input class="shop-radio__input" type="radio" name="shop-radio" hidden>
+                            <span class="shop-radio__box"></span>
+                            <span class="shop-radio__text">Radio 3</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="shop-radio shop-danger" tabindex="0">
+                            <input class="shop-radio__input" type="radio" name="shop-radio" hidden>
+                            <span class="shop-radio__box"></span>
+                            <span class="shop-radio__text">Radio 4</span>
+                        </label>
+                    </div>
                 </div>
                 <div data-for="shop-tabs--024" class="shop-tabs__pane">
                     <div>
@@ -1352,15 +1425,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div data-for="shop-tabs--028" class="shop-tabs__pane">
-                    <p class="shop-text--mini">Mini textLorem ipsum dolor sit amet</p>
-                    <p class="shop-text--success">
-                        Success text
-                    </p>
-                    <p class="shop-text--danger">
-                        Success text
-                    </p>
                 </div>
             </div>
         </div>

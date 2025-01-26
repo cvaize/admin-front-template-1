@@ -18,3 +18,49 @@
     height: 0.2rem;
     padding: 0;
 }
+
+input.shop-input:read-only, input.shop-input:disabled,
+select.shop-input:disabled {
+    background-color: rgba(var(--shop-app-color), 0.1);
+}
+
+input.shop-input:read-only:focus, input.shop-input:disabled:focus,
+select.shop-input:disabled:focus {
+    box-shadow: none;
+}
+
+.shop-success > .shop-input__label {
+    color: rgb(var(--shop-app-success-color));
+}
+
+.shop-success > .shop-input {
+    border-color: rgb(var(--shop-app-success-color));
+}
+
+.shop-success > .shop-input:focus {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
+}
+
+.shop-success > .shop-input[type="range"] {
+    color: rgb(var(--shop-app-success-color));
+    background-color: rgb(var(--shop-app-success-color));
+}
+
+
+
+.shop-danger > .shop-input__label {
+    color: rgb(var(--shop-app-danger-color));
+}
+
+.shop-danger > .shop-input {
+    border-color: rgb(var(--shop-app-danger-color));
+}
+
+.shop-danger > .shop-input:focus {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
+}
+
+.shop-danger > .shop-input[type="range"] {
+    color: rgb(var(--shop-app-danger-color));
+    background-color: rgb(var(--shop-app-danger-color));
+}
