@@ -69,19 +69,3 @@ input.shop-field__input:read-only:focus, input.shop-field__input:disabled:focus 
     color: rgb(var(--shop-app-danger-color));
     background-color: rgb(var(--shop-app-danger-color));
 }
-
-/*.shop-field.shop-success:focus {*/
-/*    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);*/
-/*}*/
-
-/*.shop-field__input.shop-success:focus > .shop-field__text {*/
-/*    color: rgb(var(--shop-app-success-color));*/
-/*}*/
-
-/*.shop-field.shop-danger:focus {*/
-/*    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);*/
-/*}*/
-
-/*.shop-field__input.shop-danger:focus > .shop-field__text {*/
-/*    color: rgb(var(--shop-app-danger-color));*/
-/*}*/
