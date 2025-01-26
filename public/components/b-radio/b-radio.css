@@ -39,3 +39,20 @@
     opacity: 0.5;
     cursor: auto;
 }
+
+.shop-success > .shop-b-radio__label,
+.shop-b-radio.shop-success ~ .shop-b-radio__label {
+    color: rgb(var(--shop-app-success-color));
+}
+
+.shop-danger > .shop-b-radio__label,
+.shop-b-radio.shop-danger ~ .shop-b-radio__label {
+    color: rgb(var(--shop-app-danger-color));
+}
+
+.shop-success > .shop-b-radio__label:after,
+.shop-b-radio.shop-success ~ .shop-b-radio__label:after,
+.shop-danger > .shop-b-radio__label:after,
+.shop-b-radio.shop-danger ~ .shop-b-radio__label:after {
+    color: rgb(var(--shop-app-color));
+}

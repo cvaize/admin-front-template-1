@@ -94,28 +94,28 @@
     cursor: auto;
 }
 
-.shop-form__success .shop-form__checkbox-label, .shop-form__success .shop-form__radio-label,
-.shop-form__success .shop-form__label, .shop-form__success .shop-form__text {
+.shop-success .shop-form__checkbox-label, .shop-success .shop-form__radio-label,
+.shop-success .shop-form__label, .shop-success .shop-form__text {
     color: rgb(var(--shop-app-success-color));
 }
 
-.shop-form__success .shop-form__control {
+.shop-success .shop-form__control {
     border-color: rgb(var(--shop-app-success-color));
 }
 
-.shop-form__success .shop-form__control[type="range"] {
+.shop-success .shop-form__control[type="range"] {
     background-color: rgb(var(--shop-app-success-color));
 }
 
-.shop-form__danger .shop-form__checkbox-label, .shop-form__danger .shop-form__radio-label,
-.shop-form__danger .shop-form__label, .shop-form__danger .shop-form__text {
+.shop-danger .shop-form__checkbox-label, .shop-danger .shop-form__radio-label,
+.shop-danger .shop-form__label, .shop-danger .shop-form__text {
     color: rgb(var(--shop-app-danger-color));
 }
 
-.shop-form__danger .shop-form__control {
+.shop-danger .shop-form__control {
     border-color: rgb(var(--shop-app-danger-color));
 }
 
-.shop-form__danger .shop-form__control[type="range"] {
+.shop-danger .shop-form__control[type="range"] {
     background-color: rgb(var(--shop-app-danger-color));
 }

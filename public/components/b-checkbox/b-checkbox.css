@@ -41,3 +41,20 @@
     opacity: 0.5;
     cursor: auto;
 }
+
+.shop-success > .shop-b-checkbox__label,
+.shop-b-checkbox.shop-success ~ .shop-b-checkbox__label {
+    color: rgb(var(--shop-app-success-color));
+}
+
+.shop-danger > .shop-b-checkbox__label,
+.shop-b-checkbox.shop-danger ~ .shop-b-checkbox__label {
+    color: rgb(var(--shop-app-danger-color));
+}
+
+.shop-success > .shop-b-checkbox__label:after,
+.shop-b-checkbox.shop-success ~ .shop-b-checkbox__label:after,
+.shop-danger > .shop-b-checkbox__label:after,
+.shop-b-checkbox.shop-danger ~ .shop-b-checkbox__label:after {
+    color: rgb(var(--shop-app-color));
+}

@@ -343,10 +343,10 @@
                     <p><small>This line of text is meant to be treated as fine print.</small></p>
                     <p><strong>This line rendered as bold text.</strong></p>
                     <p><em>This line rendered as italicized text.</em></p>
-                    <p class="shop-text--success">
+                    <p class="shop-success">
                         Success text
                     </p>
-                    <p class="shop-text--danger">
+                    <p class="shop-danger">
                         Success text
                     </p>
                 </div>
@@ -378,10 +378,10 @@
                     </div>
                 </div>
                 <div data-for="shop-tabs--003" class="shop-tabs__pane">
-                    <div class="shop-alert shop-alert--success" role="alert" style="margin-bottom: 1rem;">
+                    <div class="shop-alert shop-success" role="alert" style="margin-bottom: 1rem;">
                         A simple success alert—check it out!
                     </div>
-                    <div class="shop-alert shop-alert--danger" role="alert">
+                    <div class="shop-alert shop-danger" role="alert">
                         A simple danger alert—check it out!
                     </div>
                 </div>
@@ -392,16 +392,28 @@
                             Lorem ipsum 1
                         </label>
                     </div>
-                    <div>
+                    <div class="shop-success">
                         <input class="shop-b-checkbox" type="checkbox" id="shop-b-checkbox-id-1" hidden>
                         <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-1">
                             Lorem ipsum 2
                         </label>
                     </div>
                     <div>
-                        <input class="shop-b-checkbox" type="checkbox" id="shop-b-checkbox-id-2" hidden>
+                        <input class="shop-b-checkbox shop-success" type="checkbox" id="shop-b-checkbox-id-2" hidden>
                         <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-2">
                             Lorem ipsum 3
+                        </label>
+                    </div>
+                    <div class="shop-danger">
+                        <input class="shop-b-checkbox" type="checkbox" id="shop-b-checkbox-id-3" hidden>
+                        <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-3">
+                            Lorem ipsum 4
+                        </label>
+                    </div>
+                    <div>
+                        <input class="shop-b-checkbox shop-danger" type="checkbox" id="shop-b-checkbox-id-4" hidden>
+                        <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-4">
+                            Lorem ipsum 5
                         </label>
                     </div>
                 </div>
@@ -413,16 +425,28 @@
                             Lorem ipsum 1
                         </label>
                     </div>
-                    <div>
+                    <div class="shop-success">
                         <input class="shop-b-radio" type="radio" name="shop-b-radio" id="shop-b-radio-id-1" hidden>
                         <label class="shop-b-radio__label" for="shop-b-radio-id-1">
                             Lorem ipsum 2
                         </label>
                     </div>
                     <div>
-                        <input class="shop-b-radio" type="radio" name="shop-b-radio" id="shop-b-radio-id-2" hidden>
+                        <input class="shop-b-radio shop-success" type="radio" name="shop-b-radio" id="shop-b-radio-id-2" hidden>
                         <label class="shop-b-radio__label" for="shop-b-radio-id-2">
                             Lorem ipsum 3
+                        </label>
+                    </div>
+                    <div class="shop-danger">
+                        <input class="shop-b-radio" type="radio" name="shop-b-radio" id="shop-b-radio-id-3" hidden>
+                        <label class="shop-b-radio__label" for="shop-b-radio-id-3">
+                            Lorem ipsum 4
+                        </label>
+                    </div>
+                    <div>
+                        <input class="shop-b-radio shop-danger" type="radio" name="shop-b-radio" id="shop-b-radio-id-4" hidden>
+                        <label class="shop-b-radio__label" for="shop-b-radio-id-4">
+                            Lorem ipsum 5
                         </label>
                     </div>
                 </div>
@@ -460,8 +484,8 @@
                 </div>
                 <div data-for="shop-tabs--008" class="shop-tabs__pane">
                     <button type="button" class="shop-btn">Primary</button>
-                    <button type="button" class="shop-btn shop-btn--success">Success</button>
-                    <button type="button" class="shop-btn shop-btn--danger">Danger</button>
+                    <button type="button" class="shop-btn shop-success">Success</button>
+                    <button type="button" class="shop-btn shop-danger">Danger</button>
                 </div>
                 <div data-for="shop-tabs--009" class="shop-tabs__pane">
                     <div>
@@ -589,8 +613,8 @@
                                 provident quasi quis soluta totam? Fuga id nostrum rerum?
                             </div>
                             <button type="button" class="shop-btn">Primary</button>
-                            <button type="button" class="shop-btn shop-btn--success">Success</button>
-                            <button type="button" class="shop-btn shop-btn--danger">Danger</button>
+                            <button type="button" class="shop-btn shop-success">Success</button>
+                            <button type="button" class="shop-btn shop-danger">Danger</button>
                         </div>
                     </main>
                 </div>
@@ -634,7 +658,7 @@
                         <input type="email" class="shop-form__control" id="exampleFormControlInput1"
                                placeholder="name@example.com">
                     </div>
-                    <div class="shop-form__success" style="margin-bottom: 1rem;">
+                    <div class="shop-success" style="margin-bottom: 1rem;">
                         <label for="exampleFormControlInput12" class="shop-form__label">Email address</label>
                         <input type="email" class="shop-form__control" id="exampleFormControlInput12"
                                placeholder="name@example.com">
@@ -643,7 +667,7 @@
                             contain spaces, special characters, or emoji.
                         </div>
                     </div>
-                    <div class="shop-form__danger" style="margin-bottom: 1rem;">
+                    <div class="shop-danger" style="margin-bottom: 1rem;">
                         <label for="exampleFormControlInput13" class="shop-form__label">Email address</label>
                         <input type="email" class="shop-form__control" id="exampleFormControlInput13"
                                placeholder="name@example.com">
@@ -672,11 +696,11 @@
                         <label for="exampleFormControlInput5" class="shop-form__label">Range</label>
                         <input type="range" class="shop-form__control" id="exampleFormControlInput5">
                     </div>
-                    <div class="shop-form__success" style="margin-bottom: 1rem;">
+                    <div class="shop-success" style="margin-bottom: 1rem;">
                         <label for="exampleFormControlInput52" class="shop-form__label">Range</label>
                         <input type="range" class="shop-form__control" id="exampleFormControlInput52">
                     </div>
-                    <div class="shop-form__danger" style="margin-bottom: 1rem;">
+                    <div class="shop-danger" style="margin-bottom: 1rem;">
                         <label for="exampleFormControlInput53" class="shop-form__label">Range</label>
                         <input type="range" class="shop-form__control" id="exampleFormControlInput53">
                     </div>
@@ -745,7 +769,7 @@
                             Checked checkbox
                         </label>
                     </div>
-                    <div class="shop-form__success">
+                    <div class="shop-success">
                         <input class="shop-form__checkbox" type="checkbox" value="" id="flexCheckDefault5" hidden>
                         <label class="shop-form__checkbox-label" for="flexCheckDefault5">
                             <svg class="shop-form__checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -755,7 +779,7 @@
                             Success checkbox
                         </label>
                     </div>
-                    <div class="shop-form__danger">
+                    <div class="shop-danger">
                         <input class="shop-form__checkbox" type="checkbox" value="" id="flexCheckDefault6" hidden>
                         <label class="shop-form__checkbox-label" for="flexCheckDefault6">
                             <svg class="shop-form__checkbox-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -798,7 +822,7 @@
                             Default checked radio
                         </label>
                     </div>
-                    <div class="shop-form__success">
+                    <div class="shop-success">
                         <input class="shop-form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault7"
                                hidden>
                         <label class="shop-form__radio-label" for="flexRadioDefault7">
@@ -809,7 +833,7 @@
                             Success radio
                         </label>
                     </div>
-                    <div class="shop-form__danger">
+                    <div class="shop-danger">
                         <input class="shop-form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault8"
                                hidden>
                         <label class="shop-form__radio-label" for="flexRadioDefault8">
@@ -1238,11 +1262,11 @@
 
                                 </div>
                                 <div class="shop-modal__footer" style="display: flex; flex-wrap: wrap;">
-                                    <button type="button" class="shop-btn shop-btn--success"
+                                    <button type="button" class="shop-btn shop-success"
                                             style="margin-right: 1rem;">
                                         Save changes
                                     </button>
-                                    <label for="shop-modal__1" class="shop-btn shop-btn--danger"
+                                    <label for="shop-modal__1" class="shop-btn shop-danger"
                                            style="margin-left: auto;">Close</label>
                                 </div>
                             </div>
@@ -1348,10 +1372,10 @@
                 </div>
                 <div data-for="shop-tabs--028" class="shop-tabs__pane">
                     <p class="shop-text">Mini textLorem ipsum dolor sit amet</p>
-                    <p class="shop-text--success">
+                    <p class="shop-success">
                         Success text
                     </p>
-                    <p class="shop-text--danger">
+                    <p class="shop-danger">
                         Success text
                     </p>
                 </div>

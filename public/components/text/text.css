@@ -4,10 +4,10 @@
     opacity: 0.8;
 }
 
-.shop-text--success {
+.shop-text.shop-success {
     color: rgb(var(--shop-app-success-color));
 }
 
-.shop-text--danger {
+.shop-text.shop-danger {
     color: rgb(var(--shop-app-danger-color));
 }
