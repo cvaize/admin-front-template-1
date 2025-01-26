@@ -5,6 +5,7 @@
     user-select: none;
     display: block;
     padding: 2px;
+    border-radius: 0.3em;
 }
 
 .shop-color-checkbox__text {
@@ -57,4 +58,25 @@
 .shop-color-checkbox__input:disabled ~ .shop-color-checkbox__text {
     opacity: 0.5;
     cursor: auto;
+}
+
+.shop-color-checkbox:focus {
+    box-shadow: var(--shop-app-focus-box-shadow);
+    outline: none;
+}
+
+.shop-color-checkbox.shop-success {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
+}
+
+.shop-color-checkbox.shop-success > .shop-color-checkbox__text {
+    color: rgb(var(--shop-app-success-color));
+}
+
+.shop-color-checkbox.shop-danger {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
+}
+
+.shop-color-checkbox.shop-danger > .shop-color-checkbox__text {
+    color: rgb(var(--shop-app-danger-color));
 }

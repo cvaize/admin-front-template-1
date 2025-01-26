@@ -3,6 +3,7 @@
     cursor: pointer;
     user-select: none;
     padding-left: 1.7em;
+    border-radius: 0.3em;
 }
 
 .shop-b-radio__label:before, .shop-b-radio__label:after {
@@ -40,13 +41,21 @@
     cursor: auto;
 }
 
+.shop-b-radio:focus ~ .shop-b-radio__label,
+.shop-b-radio__label:focus {
+    box-shadow: var(--shop-app-focus-box-shadow);
+    outline: none;
+}
+
 .shop-success > .shop-b-radio__label,
 .shop-b-radio.shop-success ~ .shop-b-radio__label {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
     color: rgb(var(--shop-app-success-color));
 }
 
 .shop-danger > .shop-b-radio__label,
 .shop-b-radio.shop-danger ~ .shop-b-radio__label {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
     color: rgb(var(--shop-app-danger-color));
 }
 

@@ -1,13 +1,12 @@
-.shop-text {
-    margin-top: .25rem;
+.shop-text--mini {
     font-size: .875em;
     opacity: 0.8;
 }
 
-.shop-text.shop-success {
+.shop-text--success {
     color: rgb(var(--shop-app-success-color));
 }
 
-.shop-text.shop-danger {
+.shop-text--danger {
     color: rgb(var(--shop-app-danger-color));
 }

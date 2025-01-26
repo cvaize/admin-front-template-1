@@ -3,6 +3,7 @@
     cursor: pointer;
     user-select: none;
     padding-left: 1.7em;
+    border-radius: 0.3em;
 }
 
 .shop-b-checkbox__label:before, .shop-b-checkbox__label:after {
@@ -42,13 +43,21 @@
     cursor: auto;
 }
 
+.shop-b-checkbox:focus ~ .shop-b-checkbox__label,
+.shop-b-checkbox__label:focus {
+    box-shadow: var(--shop-app-focus-box-shadow);
+    outline: none;
+}
+
 .shop-success > .shop-b-checkbox__label,
 .shop-b-checkbox.shop-success ~ .shop-b-checkbox__label {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
     color: rgb(var(--shop-app-success-color));
 }
 
 .shop-danger > .shop-b-checkbox__label,
 .shop-b-checkbox.shop-danger ~ .shop-b-checkbox__label {
+    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
     color: rgb(var(--shop-app-danger-color));
 }
 
