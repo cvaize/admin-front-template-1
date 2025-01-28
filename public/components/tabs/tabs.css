@@ -97,14 +97,18 @@
     order: -1;
 }
 
-.shop-tabs:not(.shop-tabs--menu-mod) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,
-.shop-tabs:not(.shop-tabs--menu-mod-xl) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,
-.shop-tabs:not(.shop-tabs--menu-mod-lg) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,
-.shop-tabs:not(.shop-tabs--menu-mod-mb) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,
-.shop-tabs:not(.shop-tabs--menu-mod-sm) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,
-.shop-tabs:not(.shop-tabs--menu-mod-xs) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link {
+.shop-tabs .shop-tabs__link {
     order: -1;
 }
+
+/*.shop-tabs:not(.shop-tabs--menu-mod) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,*/
+/*.shop-tabs:not(.shop-tabs--menu-mod-xl) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,*/
+/*.shop-tabs:not(.shop-tabs--menu-mod-lg) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,*/
+/*.shop-tabs:not(.shop-tabs--menu-mod-mb) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,*/
+/*.shop-tabs:not(.shop-tabs--menu-mod-sm) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link,*/
+/*.shop-tabs:not(.shop-tabs--menu-mod-xs) .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link {*/
+/*    order: -1;*/
+/*}*/
 
 .shop-tabs__checkbox:nth-child(1):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(1),
 .shop-tabs__checkbox:nth-child(2):checked ~ .shop-tabs__content > .shop-tabs__pane:nth-child(2),
@@ -251,6 +255,7 @@
     padding: 0.2rem 3rem 0.2rem 1rem;
     display: block;
     border-radius: 0;
+    order: unset;
 }
 
 .shop-tabs--menu-mod .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(n) {
@@ -338,6 +343,7 @@
         padding: 0.2rem 3rem 0.2rem 1rem;
         display: block;
         border-radius: 0;
+        order: unset;
     }
 
     .shop-tabs--menu-mod-xxl .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(n) {
@@ -425,6 +431,7 @@
         padding: 0.2rem 3rem 0.2rem 1rem;
         display: block;
         border-radius: 0;
+        order: unset;
     }
 
     .shop-tabs--menu-mod-xl .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(n) {
@@ -512,6 +519,7 @@
         padding: 0.2rem 3rem 0.2rem 1rem;
         display: block;
         border-radius: 0;
+        order: unset;
     }
 
     .shop-tabs--menu-mod-lg .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(n) {
@@ -599,6 +607,7 @@
         padding: 0.2rem 3rem 0.2rem 1rem;
         display: block;
         border-radius: 0;
+        order: unset;
     }
 
     .shop-tabs--menu-mod-mb .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(n) {
@@ -686,6 +695,7 @@
         padding: 0.2rem 3rem 0.2rem 1rem;
         display: block;
         border-radius: 0;
+        order: unset;
     }
 
     .shop-tabs--menu-mod-sm .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(n) {
@@ -773,6 +783,7 @@
         padding: 0.2rem 3rem 0.2rem 1rem;
         display: block;
         border-radius: 0;
+        order: unset;
     }
 
     .shop-tabs--menu-mod-xs .shop-tabs__checkbox:checked ~ .shop-tabs__nav > .shop-tabs__link:nth-child(n) {
