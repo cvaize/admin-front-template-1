@@ -9,6 +9,10 @@
     height: 100vh;
 }
 
+.shop-sidebar ~ .shop-content {
+    padding: 0.8rem 0.8rem 0.8rem 13rem;
+}
+
 .shop-sidebar__burger, .shop-sidebar__backdrop {
     display: none;
 }
@@ -101,6 +105,10 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 0 6.4rem 0 0.8rem;
+    }
+
+    .shop-sidebar ~ .shop-content {
+        padding: 2.8rem 0.8rem 0.8rem 0.8rem;
     }
 
     .shop-sidebar__brand {
