@@ -1,10 +1,10 @@
-.shop-s-collapse {
-    --shop-s-collapse-height: 50rem;
+.admin-s-collapse {
+    --admin-s-collapse-height: 50rem;
     max-height: 0;
     overflow: hidden;
 }
 
-.shop-s-collapse__label {
+.admin-s-collapse__label {
     width: 100%;
     opacity: 0.6;
     padding-right: 0.7rem;
@@ -13,11 +13,11 @@
     display: inline-block;
 }
 
-.shop-s-collapse__label:hover {
+.admin-s-collapse__label:hover {
     opacity: 0.4;
 }
 
-.shop-s-collapse__label:after {
+.admin-s-collapse__label:after {
     content: '';
     display: inline-block;
     width: 0.6em;
@@ -28,10 +28,10 @@
     margin-left: 0.1rem;
 }
 
-.shop-s-collapse__checkbox:checked ~ .shop-s-collapse {
-    max-height: var(--shop-s-collapse-height);
+.admin-s-collapse__checkbox:checked ~ .admin-s-collapse {
+    max-height: var(--admin-s-collapse-height);
 }
 
-.shop-s-collapse__checkbox:checked ~ .shop-s-collapse__label {
+.admin-s-collapse__checkbox:checked ~ .admin-s-collapse__label {
     display: none;
 }

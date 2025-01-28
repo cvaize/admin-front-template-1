@@ -1,4 +1,4 @@
-.shop-alert {
+.admin-alert {
     position: relative;
     padding: 0.8rem;
     color: currentColor;
@@ -7,14 +7,14 @@
     border-radius: 0.3rem;
 }
 
-.shop-alert.shop-success {
-    color: rgb(var(--shop-app-color));
-    background-color: rgba(var(--shop-app-success-color), 0.2);
-    border-color: rgba(var(--shop-app-success-color), 0.3);
+.admin-alert.admin-success {
+    color: rgb(var(--admin-app-color));
+    background-color: rgba(var(--admin-app-success-color), 0.2);
+    border-color: rgba(var(--admin-app-success-color), 0.3);
 }
 
-.shop-alert.shop-danger {
-    color: rgb(var(--shop-app-color));
-    background-color: rgba(var(--shop-app-danger-color), 0.2);
-    border-color: rgba(var(--shop-app-danger-color), 0.3);
+.admin-alert.admin-danger {
+    color: rgb(var(--admin-app-color));
+    background-color: rgba(var(--admin-app-danger-color), 0.2);
+    border-color: rgba(var(--admin-app-danger-color), 0.3);
 }

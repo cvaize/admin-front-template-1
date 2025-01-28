@@ -1,4 +1,4 @@
-.shop-btn {
+.admin-btn {
     display: inline-block;
     padding: 0.3rem 0.7rem;
     font-family: inherit;
@@ -8,8 +8,8 @@
     text-decoration: none;
     vertical-align: middle;
     user-select: none;
-    color: rgb(var(--shop-app-background-color));
-    background-color: rgb(var(--shop-app-color));
+    color: rgb(var(--admin-app-background-color));
+    background-color: rgb(var(--admin-app-color));
     border: 0.0625rem solid;
     border-radius: 0.3rem;
     cursor: pointer;
@@ -19,34 +19,34 @@
     box-shadow .15s ease-in-out;
 }
 
-.shop-btn:hover {
-    background-color: rgba(var(--shop-app-color), 0.9);
+.admin-btn:hover {
+    background-color: rgba(var(--admin-app-color), 0.9);
 }
 
-.shop-btn:active {
-    background-color: rgba(var(--shop-app-color), 0.8);
+.admin-btn:active {
+    background-color: rgba(var(--admin-app-color), 0.8);
 }
 
-.shop-btn.shop-success {
-    background-color: rgb(var(--shop-app-success-color));
+.admin-btn.admin-success {
+    background-color: rgb(var(--admin-app-success-color));
 }
 
-.shop-btn.shop-success:hover {
-    background-color: rgba(var(--shop-app-success-color), 0.9);
+.admin-btn.admin-success:hover {
+    background-color: rgba(var(--admin-app-success-color), 0.9);
 }
 
-.shop-btn.shop-success:active {
-    background-color: rgba(var(--shop-app-success-color), 0.8);
+.admin-btn.admin-success:active {
+    background-color: rgba(var(--admin-app-success-color), 0.8);
 }
 
-.shop-btn.shop-danger {
-    background-color: rgb(var(--shop-app-danger-color));
+.admin-btn.admin-danger {
+    background-color: rgb(var(--admin-app-danger-color));
 }
 
-.shop-btn.shop-danger:hover {
-    background-color: rgba(var(--shop-app-danger-color), 0.9);
+.admin-btn.admin-danger:hover {
+    background-color: rgba(var(--admin-app-danger-color), 0.9);
 }
 
-.shop-btn.shop-danger:active {
-    background-color: rgba(var(--shop-app-danger-color), 0.8);
+.admin-btn.admin-danger:active {
+    background-color: rgba(var(--admin-app-danger-color), 0.8);
 }

@@ -1,4 +1,4 @@
-.shop-checkbox {
+.admin-checkbox {
     position: relative;
     user-select: none;
     display: inline-block;
@@ -6,7 +6,7 @@
     border-radius: 0.3em;
 }
 
-.shop-checkbox__box {
+.admin-checkbox__box {
     display: inline-block;
     max-width: 1em;
     min-width: 1em;
@@ -19,11 +19,11 @@
     cursor: pointer;
 }
 
-.shop-checkbox__text {
+.admin-checkbox__text {
     cursor: pointer;
 }
 
-.shop-checkbox__box:before, .shop-checkbox__box:after {
+.admin-checkbox__box:before, .admin-checkbox__box:after {
     content: '';
     display: block;
     position: absolute;
@@ -37,7 +37,7 @@
     opacity: 0.2;
 }
 
-.shop-checkbox__box:after {
+.admin-checkbox__box:after {
     border-radius: 0;
     border-right: 1px solid currentColor;
     border-bottom: 1px solid currentColor;
@@ -48,32 +48,32 @@
     opacity: 0;
 }
 
-.shop-checkbox__input:checked ~ .shop-checkbox__box:after {
+.admin-checkbox__input:checked ~ .admin-checkbox__box:after {
     opacity: 1;
 }
 
-.shop-checkbox__input:disabled ~ .shop-checkbox__box,
-.shop-checkbox__input:disabled ~ .shop-checkbox__text {
+.admin-checkbox__input:disabled ~ .admin-checkbox__box,
+.admin-checkbox__input:disabled ~ .admin-checkbox__text {
     opacity: 0.5;
     cursor: auto;
 }
 
-.shop-checkbox:focus {
-    box-shadow: var(--shop-app-focus-box-shadow);
+.admin-checkbox:focus {
+    box-shadow: var(--admin-app-focus-box-shadow);
     outline: none;
 }
 
-.shop-success.shop-checkbox {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
-    color: rgb(var(--shop-app-success-color));
+.admin-success.admin-checkbox {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-success-color), 0.5);
+    color: rgb(var(--admin-app-success-color));
 }
 
-.shop-danger.shop-checkbox {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
-    color: rgb(var(--shop-app-danger-color));
+.admin-danger.admin-checkbox {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-danger-color), 0.5);
+    color: rgb(var(--admin-app-danger-color));
 }
 
-.shop-success.shop-checkbox > .shop-checkbox__box:after,
-.shop-danger.shop-checkbox > .shop-checkbox__box:after {
-    color: rgb(var(--shop-app-color));
+.admin-success.admin-checkbox > .admin-checkbox__box:after,
+.admin-danger.admin-checkbox > .admin-checkbox__box:after {
+    color: rgb(var(--admin-app-color));
 }

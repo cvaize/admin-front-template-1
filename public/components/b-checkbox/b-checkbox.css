@@ -1,4 +1,4 @@
-.shop-b-checkbox__label {
+.admin-b-checkbox__label {
     position: relative;
     cursor: pointer;
     user-select: none;
@@ -6,7 +6,7 @@
     border-radius: 0.3em;
 }
 
-.shop-b-checkbox__label:before, .shop-b-checkbox__label:after {
+.admin-b-checkbox__label:before, .admin-b-checkbox__label:after {
     content: '';
     display: block;
     position: absolute;
@@ -19,11 +19,11 @@
     transform-origin: center;
 }
 
-.shop-b-checkbox__label:before {
+.admin-b-checkbox__label:before {
     opacity: 0.2;
 }
 
-.shop-b-checkbox__label:after {
+.admin-b-checkbox__label:after {
     border-radius: 0;
     border-right: 2px solid currentColor;
     border-bottom: 2px solid currentColor;
@@ -34,36 +34,36 @@
     opacity: 0;
 }
 
-.shop-b-checkbox:checked ~ .shop-b-checkbox__label:after {
+.admin-b-checkbox:checked ~ .admin-b-checkbox__label:after {
     opacity: 1;
 }
 
-.shop-b-checkbox:disabled ~ .shop-b-checkbox__label {
+.admin-b-checkbox:disabled ~ .admin-b-checkbox__label {
     opacity: 0.5;
     cursor: auto;
 }
 
-.shop-b-checkbox:focus ~ .shop-b-checkbox__label,
-.shop-b-checkbox__label:focus {
-    box-shadow: var(--shop-app-focus-box-shadow);
+.admin-b-checkbox:focus ~ .admin-b-checkbox__label,
+.admin-b-checkbox__label:focus {
+    box-shadow: var(--admin-app-focus-box-shadow);
     outline: none;
 }
 
-.shop-success > .shop-b-checkbox__label,
-.shop-b-checkbox.shop-success ~ .shop-b-checkbox__label {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
-    color: rgb(var(--shop-app-success-color));
+.admin-success > .admin-b-checkbox__label,
+.admin-b-checkbox.admin-success ~ .admin-b-checkbox__label {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-success-color), 0.5);
+    color: rgb(var(--admin-app-success-color));
 }
 
-.shop-danger > .shop-b-checkbox__label,
-.shop-b-checkbox.shop-danger ~ .shop-b-checkbox__label {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
-    color: rgb(var(--shop-app-danger-color));
+.admin-danger > .admin-b-checkbox__label,
+.admin-b-checkbox.admin-danger ~ .admin-b-checkbox__label {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-danger-color), 0.5);
+    color: rgb(var(--admin-app-danger-color));
 }
 
-.shop-success > .shop-b-checkbox__label:after,
-.shop-b-checkbox.shop-success ~ .shop-b-checkbox__label:after,
-.shop-danger > .shop-b-checkbox__label:after,
-.shop-b-checkbox.shop-danger ~ .shop-b-checkbox__label:after {
-    color: rgb(var(--shop-app-color));
+.admin-success > .admin-b-checkbox__label:after,
+.admin-b-checkbox.admin-success ~ .admin-b-checkbox__label:after,
+.admin-danger > .admin-b-checkbox__label:after,
+.admin-b-checkbox.admin-danger ~ .admin-b-checkbox__label:after {
+    color: rgb(var(--admin-app-color));
 }

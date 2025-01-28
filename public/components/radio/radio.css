@@ -1,4 +1,4 @@
-.shop-radio {
+.admin-radio {
     position: relative;
     user-select: none;
     display: block;
@@ -6,7 +6,7 @@
     border-radius: 0.3em;
 }
 
-.shop-radio__box {
+.admin-radio__box {
     display: inline-block;
     max-width: 1em;
     min-width: 1em;
@@ -20,11 +20,11 @@
     cursor: pointer;
 }
 
-.shop-radio__text {
+.admin-radio__text {
     cursor: pointer;
 }
 
-.shop-radio__box:before, .shop-radio__box:after {
+.admin-radio__box:before, .admin-radio__box:after {
     content: '';
     display: block;
     position: absolute;
@@ -38,27 +38,27 @@
     opacity: 0.2;
 }
 
-.shop-radio__box:after {
+.admin-radio__box:after {
     transform: scale(0.5);
     opacity: 0;
 }
 
-.shop-radio__input:checked ~ .shop-radio__box:after {
+.admin-radio__input:checked ~ .admin-radio__box:after {
     opacity: 1;
 }
 
-.shop-radio__input:disabled ~ .shop-radio__box,
-.shop-radio__input:disabled ~ .shop-radio__text {
+.admin-radio__input:disabled ~ .admin-radio__box,
+.admin-radio__input:disabled ~ .admin-radio__text {
     opacity: 0.5;
     cursor: auto;
 }
 
-.shop-success.shop-radio {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
-    color: rgb(var(--shop-app-success-color));
+.admin-success.admin-radio {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-success-color), 0.5);
+    color: rgb(var(--admin-app-success-color));
 }
 
-.shop-danger.shop-radio {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
-    color: rgb(var(--shop-app-danger-color));
+.admin-danger.admin-radio {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-danger-color), 0.5);
+    color: rgb(var(--admin-app-danger-color));
 }

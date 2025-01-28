@@ -1,7 +1,7 @@
-.shop-collapse {
+.admin-collapse {
     display: none;
 }
 
-.shop-collapse__checkbox:checked + .shop-collapse {
+.admin-collapse__checkbox:checked + .admin-collapse {
     display: block;
 }

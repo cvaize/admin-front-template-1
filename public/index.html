@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="shop-html">
+<html lang="en" class="admin-html">
 <head>
     <meta charset="UTF-8">
     <title>Admin front v1 template</title>
@@ -37,58 +37,58 @@
     <script src="./components/number-validate/number-validate.js" defer></script>
     <!--    <script src="./libraries/embla-carousel/embla-carousel.umd.js" defer></script>-->
 </head>
-<body class="shop-body">
-<input id="shop-dark-mode__checkbox" class="shop-dark-mode__checkbox" type="checkbox" hidden>
-<input id="shop-sidebar__nav__checkbox" class="shop-sidebar__nav__checkbox" type="checkbox" hidden>
-<main class="shop-app">
-    <label class="shop-dark-mode__btn" for="shop-dark-mode__checkbox">
-        <svg class="shop-icon--svg shop-dark-mode__icon-dark" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+<body class="admin-body">
+<input id="admin-dark-mode__checkbox" class="admin-dark-mode__checkbox" type="checkbox" hidden>
+<input id="admin-sidebar__nav__checkbox" class="admin-sidebar__nav__checkbox" type="checkbox" hidden>
+<main class="admin-app">
+    <label class="admin-dark-mode__btn" for="admin-dark-mode__checkbox">
+        <svg class="admin-icon--svg admin-dark-mode__icon-dark" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
              viewBox="0 0 24 24">
             <path d="M11.01 3.05C6.51 3.54 3 7.36 3 12a9 9 0 0 0 9 9c4.63 0 8.45-3.5 8.95-8 .09-.79-.78-1.42-1.54-.95A5.403 5.403 0 0 1 11.1 7.5c0-1.06.31-2.06.84-2.89.45-.67-.04-1.63-.93-1.56z"/>
         </svg>
-        <svg class="shop-icon--svg shop-dark-mode__icon-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        <svg class="admin-icon--svg admin-dark-mode__icon-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
              viewBox="0 0 24 24">
             <path d="m6.05 4.14-.39-.39a.993.993 0 0 0-1.4 0l-.01.01a.984.984 0 0 0 0 1.4l.39.39c.39.39 1.01.39 1.4 0l.01-.01a.984.984 0 0 0 0-1.4zM3.01 10.5H1.99c-.55 0-.99.44-.99.99v.01c0 .55.44.99.99.99H3c.56.01 1-.43 1-.98v-.01c0-.56-.44-1-.99-1zm9-9.95H12c-.56 0-1 .44-1 .99v.96c0 .55.44.99.99.99H12c.56.01 1-.43 1-.98v-.97c0-.55-.44-.99-.99-.99zm7.74 3.21c-.39-.39-1.02-.39-1.41-.01l-.39.39a.984.984 0 0 0 0 1.4l.01.01c.39.39 1.02.39 1.4 0l.39-.39a.984.984 0 0 0 0-1.4zm-1.81 15.1.39.39a.996.996 0 1 0 1.41-1.41l-.39-.39a.993.993 0 0 0-1.4 0c-.4.4-.4 1.02-.01 1.41zM20 11.49v.01c0 .55.44.99.99.99H22c.55 0 .99-.44.99-.99v-.01c0-.55-.44-.99-.99-.99h-1.01c-.55 0-.99.44-.99.99zM12 5.5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-.01 16.95H12c.55 0 .99-.44.99-.99v-.96c0-.55-.44-.99-.99-.99h-.01c-.55 0-.99.44-.99.99v.96c0 .55.44.99.99.99zm-7.74-3.21c.39.39 1.02.39 1.41 0l.39-.39a.993.993 0 0 0 0-1.4l-.01-.01a.996.996 0 0 0-1.41 0l-.39.39c-.38.4-.38 1.02.01 1.41z"/>
         </svg>
     </label>
-    <label for="shop-sidebar__nav__checkbox" class="shop-sidebar__burger" aria-label="Open menu"></label>
-    <label for="shop-sidebar__nav__checkbox" class="shop-sidebar__backdrop" aria-label="Close menu"></label>
+    <label for="admin-sidebar__nav__checkbox" class="admin-sidebar__burger" aria-label="Open menu"></label>
+    <label for="admin-sidebar__nav__checkbox" class="admin-sidebar__backdrop" aria-label="Close menu"></label>
 
-    <div class="shop-sidebar">
-        <div class="shop-sidebar__brand">
+    <div class="admin-sidebar">
+        <div class="admin-sidebar__brand">
             Admin front
-            <img style="display: none" class="shop-sidebar__brand__logo" src="https://placehold.co/600x400"
+            <img style="display: none" class="admin-sidebar__brand__logo" src="https://placehold.co/600x400"
                  alt="Admin front">
         </div>
-        <nav class="shop-sidebar__nav">
-            <div class="shop-accordion shop-sidebar__menu">
-                <input id="shop-sidebar__accordion-account"
-                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
+        <nav class="admin-sidebar__nav">
+            <div class="admin-accordion admin-sidebar__menu">
+                <input id="admin-sidebar__accordion-account"
+                       class="admin-accordion__checkbox admin-sidebar__menu__checkbox"
                        type="checkbox"
-                       name="shop-accordion__checkbox"
+                       name="admin-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion__header shop-sidebar__menu__header"
-                       for="shop-sidebar__accordion-account">
-                    <svg class="shop-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <label class="admin-accordion__header admin-sidebar__menu__header"
+                       for="admin-sidebar__accordion-account">
+                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                          viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"/>
                     </svg>
                     Орлов Д. А.
                 </label>
-                <div class="shop-accordion__body" style="--shop-accordion-max-height: 4rem;">
-                    <ul class="shop-sidebar__menu__items">
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">
-                                <svg class="shop-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <div class="admin-accordion__body" style="--admin-accordion-max-height: 4rem;">
+                    <ul class="admin-sidebar__menu__items">
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">
+                                <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"/>
                                 </svg>
                                 Профиль
                             </a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">
-                                <svg class="shop-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">
+                                <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M5 5h6c.55 0 1-.45 1-1s-.45-1-1-1H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h6c.55 0 1-.45 1-1s-.45-1-1-1H5V5z"/>
                                     <path d="m20.65 11.65-2.79-2.79a.501.501 0 0 0-.86.35V11h-7c-.55 0-1 .45-1 1s.45 1 1 1h7v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.19.2-.51.01-.7z"/>
@@ -99,61 +99,61 @@
                     </ul>
                 </div>
             </div>
-            <div class="shop-sidebar__menu">
-                <a class="shop-sidebar__menu__header" href="#">
-                    <svg class="shop-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <div class="admin-sidebar__menu">
+                <a class="admin-sidebar__menu__header" href="#">
+                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                          viewBox="0 0 24 24">
                         <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
                     </svg>
                     Панель
                 </a>
             </div>
-            <div class="shop-accordion shop-sidebar__menu">
-                <input id="shop-sidebar__accordion-sales"
-                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
+            <div class="admin-accordion admin-sidebar__menu">
+                <input id="admin-sidebar__accordion-sales"
+                       class="admin-accordion__checkbox admin-sidebar__menu__checkbox"
                        type="checkbox"
-                       name="shop-accordion__checkbox"
+                       name="admin-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion__header shop-sidebar__menu__header"
-                       for="shop-sidebar__accordion-sales">
-                    <svg class="shop-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <label class="admin-accordion__header admin-sidebar__menu__header"
+                       for="admin-sidebar__accordion-sales">
+                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                          viewBox="0 0 24 24">
                         <path d="M17 2H7c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-.5 4h-9c-.28 0-.5-.22-.5-.5v-1c0-.28.22-.5.5-.5h9c.28 0 .5.22.5.5v1c0 .28-.22.5-.5.5zM20 22H4c-1.1 0-2-.9-2-2v-1h20v1c0 1.1-.9 2-2 2zm-1.47-11.81A2.008 2.008 0 0 0 16.7 9H7.3c-.79 0-1.51.47-1.83 1.19L2 18h20l-3.47-7.81zM9.5 16h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm3 4h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm3 4h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5zm0-2h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h1c.28 0 .5.22.5.5s-.22.5-.5.5z"/>
                     </svg>
                     Продажи
                 </label>
-                <div class="shop-accordion__body">
-                    <ul class="shop-sidebar__menu__items" style="--shop-accordion-max-height: 8rem;">
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">
-                                <svg class="shop-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <div class="admin-accordion__body">
+                    <ul class="admin-sidebar__menu__items" style="--admin-accordion-max-height: 8rem;">
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">
+                                <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
                                 </svg>
                                 Заказы
                             </a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">
-                                <svg class="shop-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">
+                                <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
                                 </svg>
                                 Возвраты
                             </a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">
-                                <svg class="shop-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">
+                                <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
                                 </svg>
                                 Подписки
                             </a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">
-                                <svg class="shop-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">
+                                <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24">
                                     <path d="M14 9.5h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm0 7h3c.55 0 1-.45 1-1s-.45-1-1-1h-3c-.55 0-1 .45-1 1s.45 1 1 1zm5 4.5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zM7 11h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7V7zm0 11h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1zm0-4h3v3H7v-3z"/>
                                 </svg>
@@ -163,90 +163,90 @@
                     </ul>
                 </div>
             </div>
-            <div class="shop-accordion shop-sidebar__menu">
-                <input id="shop-sidebar__accordion-catalog"
-                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
+            <div class="admin-accordion admin-sidebar__menu">
+                <input id="admin-sidebar__accordion-catalog"
+                       class="admin-accordion__checkbox admin-sidebar__menu__checkbox"
                        type="checkbox"
-                       name="shop-accordion__checkbox"
+                       name="admin-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion__header shop-sidebar__menu__header"
-                       for="shop-sidebar__accordion-catalog">
+                <label class="admin-accordion__header admin-sidebar__menu__header"
+                       for="admin-sidebar__accordion-catalog">
                     Каталог товаров
                 </label>
-                <div class="shop-accordion__body" style="--shop-accordion-max-height: 8rem;">
-                    <ul class="shop-sidebar__menu__items">
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">Товары</a>
+                <div class="admin-accordion__body" style="--admin-accordion-max-height: 8rem;">
+                    <ul class="admin-sidebar__menu__items">
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">Товары</a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">Категории</a>
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">Категории</a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">Атрибуты</a>
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">Атрибуты</a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">Поставщики</a>
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">Поставщики</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="shop-accordion shop-sidebar__menu">
-                <input id="shop-sidebar__accordion-users"
-                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
+            <div class="admin-accordion admin-sidebar__menu">
+                <input id="admin-sidebar__accordion-users"
+                       class="admin-accordion__checkbox admin-sidebar__menu__checkbox"
                        type="checkbox"
-                       name="shop-accordion__checkbox"
+                       name="admin-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion__header shop-sidebar__menu__header"
-                       for="shop-sidebar__accordion-users">
+                <label class="admin-accordion__header admin-sidebar__menu__header"
+                       for="admin-sidebar__accordion-users">
                     Пользователи
                 </label>
-                <div class="shop-accordion__body" style="--shop-accordion-max-height: 4rem;">
-                    <ul class="shop-sidebar__menu__items">
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">Пользователи</a>
+                <div class="admin-accordion__body" style="--admin-accordion-max-height: 4rem;">
+                    <ul class="admin-sidebar__menu__items">
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">Пользователи</a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">Роли</a>
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">Роли</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="shop-accordion shop-sidebar__menu">
-                <input id="shop-sidebar__accordion-marketing"
-                       class="shop-accordion__checkbox shop-sidebar__menu__checkbox"
+            <div class="admin-accordion admin-sidebar__menu">
+                <input id="admin-sidebar__accordion-marketing"
+                       class="admin-accordion__checkbox admin-sidebar__menu__checkbox"
                        type="checkbox"
-                       name="shop-accordion__checkbox"
+                       name="admin-accordion__checkbox"
                        hidden>
-                <label class="shop-accordion__header shop-sidebar__menu__header"
-                       for="shop-sidebar__accordion-marketing">
+                <label class="admin-accordion__header admin-sidebar__menu__header"
+                       for="admin-sidebar__accordion-marketing">
                     Маркетинг
                 </label>
-                <div class="shop-accordion__body" style="--shop-accordion-max-height: 6rem;">
-                    <ul class="shop-sidebar__menu__items">
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">Промокоды</a>
+                <div class="admin-accordion__body" style="--admin-accordion-max-height: 6rem;">
+                    <ul class="admin-sidebar__menu__items">
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">Промокоды</a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">Правило</a>
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">Правило</a>
                         </li>
-                        <li class="shop-sidebar__menu__item">
-                            <a class="shop-sidebar__menu__item__link" href="#">Отзывы</a>
+                        <li class="admin-sidebar__menu__item">
+                            <a class="admin-sidebar__menu__item__link" href="#">Отзывы</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="shop-sidebar__menu">
-                <a class="shop-sidebar__menu__header" href="#">Настройки</a>
+            <div class="admin-sidebar__menu">
+                <a class="admin-sidebar__menu__header" href="#">Настройки</a>
             </div>
         </nav>
     </div>
-    <div class="shop-content">
+    <div class="admin-content">
 
         <nav aria-label="breadcrumb">
-            <ol class="shop-breadcrumb">
-                <li class="shop-breadcrumb__item"><a href="#" class="shop-breadcrumb__link">Панель</a></li>
-                <li class="shop-breadcrumb__item"><a href="#" class="shop-breadcrumb__link">Пользователи</a></li>
-                <li class="shop-breadcrumb__item shop-breadcrumb__item--active" aria-current="page">Редактирование
+            <ol class="admin-breadcrumb">
+                <li class="admin-breadcrumb__item"><a href="#" class="admin-breadcrumb__link">Панель</a></li>
+                <li class="admin-breadcrumb__item"><a href="#" class="admin-breadcrumb__link">Пользователи</a></li>
+                <li class="admin-breadcrumb__item admin-breadcrumb__item--active" aria-current="page">Редактирование
                     пользователя №1
                 </li>
             </ol>
@@ -254,69 +254,69 @@
 
         <h1>Компоненты</h1>
 
-        <div class="shop-tabs shop-tabs--menu-mod-xl">
-            <input id="shop-tabs--001" class="shop-tabs__checkbox" type="radio" name="st" hidden checked>
-            <input id="shop-tabs--002" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--003" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--004" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--005" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--006" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--007" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--008" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--009" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--010" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--011" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--012" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--013" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--014" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--015" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--016" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--017" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--018" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--019" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--020" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--021" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--022" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--023" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--024" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--025" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--026" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--027" class="shop-tabs__checkbox" type="radio" name="st" hidden>
-            <input id="shop-tabs--menu-checkbox" class="shop-tabs__menu-checkbox" type="checkbox" hidden>
-            <label for="shop-tabs--menu-checkbox" class="shop-tabs__menu-label">
-                <span class="shop-tabs__burger"></span>
+        <div class="admin-tabs admin-tabs--menu-mod-xl">
+            <input id="admin-tabs--001" class="admin-tabs__checkbox" type="radio" name="st" hidden checked>
+            <input id="admin-tabs--002" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--003" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--004" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--005" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--006" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--007" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--008" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--009" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--010" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--011" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--012" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--013" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--014" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--015" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--016" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--017" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--018" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--019" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--020" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--021" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--022" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--023" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--024" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--025" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--026" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--027" class="admin-tabs__checkbox" type="radio" name="st" hidden>
+            <input id="admin-tabs--menu-checkbox" class="admin-tabs__menu-checkbox" type="checkbox" hidden>
+            <label for="admin-tabs--menu-checkbox" class="admin-tabs__menu-label">
+                <span class="admin-tabs__burger"></span>
             </label>
-            <nav class="shop-tabs__nav">
-                <label for="shop-tabs--001" class="shop-tabs__link">Типография</label>
-                <label for="shop-tabs--002" class="shop-tabs__link">Accordion</label>
-                <label for="shop-tabs--003" class="shop-tabs__link">Alerts</label>
-                <label for="shop-tabs--004" class="shop-tabs__link">B-Checkbox</label>
-                <label for="shop-tabs--005" class="shop-tabs__link">B-Radio</label>
-                <label for="shop-tabs--006" class="shop-tabs__link">B-Tabs</label>
-                <label for="shop-tabs--007" class="shop-tabs__link">Breadcrumb</label>
-                <label for="shop-tabs--008" class="shop-tabs__link">Btn</label>
-                <label for="shop-tabs--009" class="shop-tabs__link">C-Checkbox</label>
-                <label for="shop-tabs--010" class="shop-tabs__link">C-Radio</label>
-                <label for="shop-tabs--011" class="shop-tabs__link">Checkbox</label>
-                <label for="shop-tabs--012" class="shop-tabs__link">Collapse</label>
-                <label for="shop-tabs--013" class="shop-tabs__link">Color-Checkbox</label>
-                <label for="shop-tabs--014" class="shop-tabs__link">Dark-mode</label>
-                <label for="shop-tabs--015" class="shop-tabs__link">Dropdowns</label>
-                <label for="shop-tabs--016" class="shop-tabs__link">Field</label>
-                <label for="shop-tabs--017" class="shop-tabs__link">Input</label>
-                <label for="shop-tabs--018" class="shop-tabs__link">Layout</label>
-                <label for="shop-tabs--019" class="shop-tabs__link">Menu</label>
-                <label for="shop-tabs--020" class="shop-tabs__link">Modal</label>
-                <label for="shop-tabs--021" class="shop-tabs__link">Number-validate</label>
-                <label for="shop-tabs--022" class="shop-tabs__link">Pagination</label>
-                <label for="shop-tabs--023" class="shop-tabs__link">Radio</label>
-                <label for="shop-tabs--024" class="shop-tabs__link">S-Collapse</label>
-                <label for="shop-tabs--025" class="shop-tabs__link">Sidebar</label>
-                <label for="shop-tabs--026" class="shop-tabs__link">Table</label>
-                <label for="shop-tabs--027" class="shop-tabs__link">Tabs</label>
+            <nav class="admin-tabs__nav">
+                <label for="admin-tabs--001" class="admin-tabs__link">Типография</label>
+                <label for="admin-tabs--002" class="admin-tabs__link">Accordion</label>
+                <label for="admin-tabs--003" class="admin-tabs__link">Alerts</label>
+                <label for="admin-tabs--004" class="admin-tabs__link">B-Checkbox</label>
+                <label for="admin-tabs--005" class="admin-tabs__link">B-Radio</label>
+                <label for="admin-tabs--006" class="admin-tabs__link">B-Tabs</label>
+                <label for="admin-tabs--007" class="admin-tabs__link">Breadcrumb</label>
+                <label for="admin-tabs--008" class="admin-tabs__link">Btn</label>
+                <label for="admin-tabs--009" class="admin-tabs__link">C-Checkbox</label>
+                <label for="admin-tabs--010" class="admin-tabs__link">C-Radio</label>
+                <label for="admin-tabs--011" class="admin-tabs__link">Checkbox</label>
+                <label for="admin-tabs--012" class="admin-tabs__link">Collapse</label>
+                <label for="admin-tabs--013" class="admin-tabs__link">Color-Checkbox</label>
+                <label for="admin-tabs--014" class="admin-tabs__link">Dark-mode</label>
+                <label for="admin-tabs--015" class="admin-tabs__link">Dropdowns</label>
+                <label for="admin-tabs--016" class="admin-tabs__link">Field</label>
+                <label for="admin-tabs--017" class="admin-tabs__link">Input</label>
+                <label for="admin-tabs--018" class="admin-tabs__link">Layout</label>
+                <label for="admin-tabs--019" class="admin-tabs__link">Menu</label>
+                <label for="admin-tabs--020" class="admin-tabs__link">Modal</label>
+                <label for="admin-tabs--021" class="admin-tabs__link">Number-validate</label>
+                <label for="admin-tabs--022" class="admin-tabs__link">Pagination</label>
+                <label for="admin-tabs--023" class="admin-tabs__link">Radio</label>
+                <label for="admin-tabs--024" class="admin-tabs__link">S-Collapse</label>
+                <label for="admin-tabs--025" class="admin-tabs__link">Sidebar</label>
+                <label for="admin-tabs--026" class="admin-tabs__link">Table</label>
+                <label for="admin-tabs--027" class="admin-tabs__link">Tabs</label>
             </nav>
-            <div class="shop-tabs__content">
-                <div data-for="shop-tabs--001" class="shop-tabs__pane">
+            <div class="admin-tabs__content">
+                <div data-for="admin-tabs--001" class="admin-tabs__pane">
                     <h1>h1. Bootstrap heading</h1>
                     <h2>h2. Bootstrap heading</h2>
                     <h3>h3. Bootstrap heading</h3>
@@ -338,26 +338,26 @@
                     <p><small>This line of text is meant to be treated as fine print.</small></p>
                     <p><strong>This line rendered as bold text.</strong></p>
                     <p><em>This line rendered as italicized text.</em></p>
-                    <p class="shop-text--mini">Mini text</p>
-                    <p class="shop-text--success">
+                    <p class="admin-text--mini">Mini text</p>
+                    <p class="admin-text--success">
                         Success text
                     </p>
-                    <p class="shop-text--danger">
+                    <p class="admin-text--danger">
                         Success text
                     </p>
                 </div>
-                <div data-for="shop-tabs--002" class="shop-tabs__pane">
-                    <div class="shop-accordion">
-                        <input id="shop-accordion-checkbox"
-                               class="shop-accordion__checkbox"
+                <div data-for="admin-tabs--002" class="admin-tabs__pane">
+                    <div class="admin-accordion">
+                        <input id="admin-accordion-checkbox"
+                               class="admin-accordion__checkbox"
                                type="checkbox"
-                               name="shop-accordion__checkbox"
+                               name="admin-accordion__checkbox"
                                hidden>
-                        <label class="shop-accordion__header"
-                               for="shop-accordion-checkbox">
+                        <label class="admin-accordion__header"
+                               for="admin-accordion-checkbox">
                             Accordion
                         </label>
-                        <div class="shop-accordion__body" style="--shop-accordion-max-height: 10rem;">
+                        <div class="admin-accordion__body" style="--admin-accordion-max-height: 10rem;">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam, dolores
                             doloribus earum est, explicabo facere illo laborum libero mollitia nam nihil obcaecati
                             perferendis perspiciatis, quibusdam suscipit totam voluptas voluptates?
@@ -373,393 +373,393 @@
                         </div>
                     </div>
                 </div>
-                <div data-for="shop-tabs--003" class="shop-tabs__pane">
-                    <div class="shop-alert shop-success" role="alert" style="margin-bottom: 1rem;">
+                <div data-for="admin-tabs--003" class="admin-tabs__pane">
+                    <div class="admin-alert admin-success" role="alert" style="margin-bottom: 1rem;">
                         A simple success alert—check it out!
                     </div>
-                    <div class="shop-alert shop-danger" role="alert">
+                    <div class="admin-alert admin-danger" role="alert">
                         A simple danger alert—check it out!
                     </div>
                 </div>
-                <div data-for="shop-tabs--004" class="shop-tabs__pane">
+                <div data-for="admin-tabs--004" class="admin-tabs__pane">
                     <div>
-                        <input class="shop-b-checkbox" type="checkbox" id="shop-b-checkbox-id-0" hidden checked>
-                        <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-0" tabindex="0">
+                        <input class="admin-b-checkbox" type="checkbox" id="admin-b-checkbox-id-0" hidden checked>
+                        <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-0" tabindex="0">
                             Lorem ipsum 1
                         </label>
                     </div>
                     <div>
-                        <input class="shop-b-checkbox" type="checkbox" id="shop-b-checkbox-id-1" hidden disabled>
-                        <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-1" tabindex="0">
+                        <input class="admin-b-checkbox" type="checkbox" id="admin-b-checkbox-id-1" hidden disabled>
+                        <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-1" tabindex="0">
                             Lorem ipsum 1
                         </label>
                     </div>
-                    <div class="shop-success">
-                        <input class="shop-b-checkbox" type="checkbox" id="shop-b-checkbox-id-2" hidden>
-                        <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-2" tabindex="0">
+                    <div class="admin-success">
+                        <input class="admin-b-checkbox" type="checkbox" id="admin-b-checkbox-id-2" hidden>
+                        <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-2" tabindex="0">
                             Lorem ipsum 2
                         </label>
                     </div>
                     <div>
-                        <input class="shop-b-checkbox shop-success" type="checkbox" id="shop-b-checkbox-id-3" hidden>
-                        <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-3" tabindex="0">
+                        <input class="admin-b-checkbox admin-success" type="checkbox" id="admin-b-checkbox-id-3" hidden>
+                        <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-3" tabindex="0">
                             Lorem ipsum 3
                         </label>
                     </div>
-                    <div class="shop-danger">
-                        <input class="shop-b-checkbox" type="checkbox" id="shop-b-checkbox-id-4" hidden>
-                        <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-4" tabindex="0">
+                    <div class="admin-danger">
+                        <input class="admin-b-checkbox" type="checkbox" id="admin-b-checkbox-id-4" hidden>
+                        <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-4" tabindex="0">
                             Lorem ipsum 4
                         </label>
                     </div>
                     <div>
-                        <input class="shop-b-checkbox shop-danger" type="checkbox" id="shop-b-checkbox-id-5" hidden>
-                        <label class="shop-b-checkbox__label" for="shop-b-checkbox-id-5" tabindex="0">
+                        <input class="admin-b-checkbox admin-danger" type="checkbox" id="admin-b-checkbox-id-5" hidden>
+                        <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-5" tabindex="0">
                             Lorem ipsum 5
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--005" class="shop-tabs__pane">
+                <div data-for="admin-tabs--005" class="admin-tabs__pane">
                     <div>
-                        <input class="shop-b-radio" type="radio" name="shop-b-radio" id="shop-b-radio-id-0" hidden
+                        <input class="admin-b-radio" type="radio" name="admin-b-radio" id="admin-b-radio-id-0" hidden
                                checked>
-                        <label class="shop-b-radio__label" for="shop-b-radio-id-0" tabindex="0">
+                        <label class="admin-b-radio__label" for="admin-b-radio-id-0" tabindex="0">
                             Lorem ipsum 1
                         </label>
                     </div>
                     <div>
-                        <input class="shop-b-radio" type="radio" name="shop-b-radio" id="shop-b-radio-id-1" hidden
+                        <input class="admin-b-radio" type="radio" name="admin-b-radio" id="admin-b-radio-id-1" hidden
                                disabled>
-                        <label class="shop-b-radio__label" for="shop-b-radio-id-1" tabindex="0">
+                        <label class="admin-b-radio__label" for="admin-b-radio-id-1" tabindex="0">
                             Lorem ipsum 1
                         </label>
                     </div>
-                    <div class="shop-success">
-                        <input class="shop-b-radio" type="radio" name="shop-b-radio" id="shop-b-radio-id-2" hidden>
-                        <label class="shop-b-radio__label" for="shop-b-radio-id-2" tabindex="0">
+                    <div class="admin-success">
+                        <input class="admin-b-radio" type="radio" name="admin-b-radio" id="admin-b-radio-id-2" hidden>
+                        <label class="admin-b-radio__label" for="admin-b-radio-id-2" tabindex="0">
                             Lorem ipsum 2
                         </label>
                     </div>
                     <div>
-                        <input class="shop-b-radio shop-success" type="radio" name="shop-b-radio" id="shop-b-radio-id-3"
+                        <input class="admin-b-radio admin-success" type="radio" name="admin-b-radio" id="admin-b-radio-id-3"
                                hidden>
-                        <label class="shop-b-radio__label" for="shop-b-radio-id-3" tabindex="0">
+                        <label class="admin-b-radio__label" for="admin-b-radio-id-3" tabindex="0">
                             Lorem ipsum 3
                         </label>
                     </div>
-                    <div class="shop-danger">
-                        <input class="shop-b-radio" type="radio" name="shop-b-radio" id="shop-b-radio-id-4" hidden>
-                        <label class="shop-b-radio__label" for="shop-b-radio-id-4" tabindex="0">
+                    <div class="admin-danger">
+                        <input class="admin-b-radio" type="radio" name="admin-b-radio" id="admin-b-radio-id-4" hidden>
+                        <label class="admin-b-radio__label" for="admin-b-radio-id-4" tabindex="0">
                             Lorem ipsum 4
                         </label>
                     </div>
                     <div>
-                        <input class="shop-b-radio shop-danger" type="radio" name="shop-b-radio" id="shop-b-radio-id-5"
+                        <input class="admin-b-radio admin-danger" type="radio" name="admin-b-radio" id="admin-b-radio-id-5"
                                hidden>
-                        <label class="shop-b-radio__label" for="shop-b-radio-id-5" tabindex="0">
+                        <label class="admin-b-radio__label" for="admin-b-radio-id-5" tabindex="0">
                             Lorem ipsum 5
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--006" class="shop-tabs__pane">
-                    <div class="shop-b-tabs">
-                        <input id="shop-b-tabs__0" class="shop-b-tabs__checkbox" type="radio" name="shop-b-tabs" hidden
+                <div data-for="admin-tabs--006" class="admin-tabs__pane">
+                    <div class="admin-b-tabs">
+                        <input id="admin-b-tabs__0" class="admin-b-tabs__checkbox" type="radio" name="admin-b-tabs" hidden
                                checked>
-                        <input id="shop-b-tabs__1" class="shop-b-tabs__checkbox" type="radio" name="shop-b-tabs" hidden>
-                        <nav class="shop-b-tabs__nav">
-                            <label for="shop-b-tabs__0" class="shop-b-tabs__link">RU</label>
-                            <label for="shop-b-tabs__1" class="shop-b-tabs__link">EN</label>
+                        <input id="admin-b-tabs__1" class="admin-b-tabs__checkbox" type="radio" name="admin-b-tabs" hidden>
+                        <nav class="admin-b-tabs__nav">
+                            <label for="admin-b-tabs__0" class="admin-b-tabs__link">RU</label>
+                            <label for="admin-b-tabs__1" class="admin-b-tabs__link">EN</label>
                         </nav>
-                        <div class="shop-b-tabs__content">
-                            <div class="shop-b-tabs__pane">RU</div>
-                            <div class="shop-b-tabs__pane">EN</div>
+                        <div class="admin-b-tabs__content">
+                            <div class="admin-b-tabs__pane">RU</div>
+                            <div class="admin-b-tabs__pane">EN</div>
                         </div>
                     </div>
                 </div>
-                <div data-for="shop-tabs--007" class="shop-tabs__pane">
+                <div data-for="admin-tabs--007" class="admin-tabs__pane">
                     <nav aria-label="breadcrumb">
-                        <ol class="shop-breadcrumb">
-                            <li class="shop-breadcrumb__item"><a href="#" class="shop-breadcrumb__link">Lorem ipsum
+                        <ol class="admin-breadcrumb">
+                            <li class="admin-breadcrumb__item"><a href="#" class="admin-breadcrumb__link">Lorem ipsum
                                 dolor sit amet</a></li>
-                            <li class="shop-breadcrumb__item"><a href="#" class="shop-breadcrumb__link">Lorem ipsum
+                            <li class="admin-breadcrumb__item"><a href="#" class="admin-breadcrumb__link">Lorem ipsum
                                 dolor sit amet</a></li>
-                            <li class="shop-breadcrumb__item"><a href="#" class="shop-breadcrumb__link">Lorem ipsum
+                            <li class="admin-breadcrumb__item"><a href="#" class="admin-breadcrumb__link">Lorem ipsum
                                 dolor sit amet</a></li>
-                            <li class="shop-breadcrumb__item"><a href="#" class="shop-breadcrumb__link">Lorem ipsum
+                            <li class="admin-breadcrumb__item"><a href="#" class="admin-breadcrumb__link">Lorem ipsum
                                 dolor sit amet</a></li>
-                            <li class="shop-breadcrumb__item shop-breadcrumb__item--active" aria-current="page">
+                            <li class="admin-breadcrumb__item admin-breadcrumb__item--active" aria-current="page">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </li>
                         </ol>
                     </nav>
                 </div>
-                <div data-for="shop-tabs--008" class="shop-tabs__pane">
-                    <button type="button" class="shop-btn">Primary</button>
-                    <button type="button" class="shop-btn shop-success">Success</button>
-                    <button type="button" class="shop-btn shop-danger">Danger</button>
+                <div data-for="admin-tabs--008" class="admin-tabs__pane">
+                    <button type="button" class="admin-btn">Primary</button>
+                    <button type="button" class="admin-btn admin-success">Success</button>
+                    <button type="button" class="admin-btn admin-danger">Danger</button>
                 </div>
-                <div data-for="shop-tabs--009" class="shop-tabs__pane">
+                <div data-for="admin-tabs--009" class="admin-tabs__pane">
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-checkbox" tabindex="0">
-                            <input class="shop-c-checkbox__input" type="checkbox" hidden>
-                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-checkbox" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
-                            <span class="shop-c-checkbox__text">Lorem ipsum</span>
+                            <span class="admin-c-checkbox__text">Lorem ipsum</span>
                         </label>
                     </div>
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-checkbox" tabindex="0">
-                            <input class="shop-c-checkbox__input" type="checkbox" hidden disabled>
-                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-checkbox" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden disabled>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
-                            <span class="shop-c-checkbox__text">Lorem ipsum</span>
+                            <span class="admin-c-checkbox__text">Lorem ipsum</span>
                         </label>
                     </div>
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-checkbox shop-success" tabindex="0">
-                            <input class="shop-c-checkbox__input" type="checkbox" hidden>
-                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-checkbox admin-success" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
-                            <span class="shop-c-checkbox__text">Lorem ipsum</span>
+                            <span class="admin-c-checkbox__text">Lorem ipsum</span>
                         </label>
                     </div>
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-checkbox shop-danger" tabindex="0">
-                            <input class="shop-c-checkbox__input" type="checkbox" hidden>
-                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-checkbox admin-danger" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
-                            <span class="shop-c-checkbox__text">Lorem ipsum</span>
+                            <span class="admin-c-checkbox__text">Lorem ipsum</span>
                         </label>
                     </div>
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-checkbox shop-c-checkbox--without-text" tabindex="0"
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0"
                                style="margin-right: 0.25rem;">
-                            <input class="shop-c-checkbox__input" type="checkbox" hidden>
-                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
                         </label>
-                        <label class="shop-c-checkbox shop-success shop-c-checkbox--without-text" tabindex="0"
+                        <label class="admin-c-checkbox admin-success admin-c-checkbox--without-text" tabindex="0"
                                style="margin-right: 0.25rem;">
-                            <input class="shop-c-checkbox__input" type="checkbox" hidden>
-                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
                         </label>
-                        <label class="shop-c-checkbox shop-danger shop-c-checkbox--without-text" tabindex="0"
+                        <label class="admin-c-checkbox admin-danger admin-c-checkbox--without-text" tabindex="0"
                                style="margin-right: 0.25rem;">
-                            <input class="shop-c-checkbox__input" type="checkbox" hidden>
-                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
                         </label>
                     </div>
                     <div style="max-width: 200px">
-                        <label class="shop-c-checkbox" tabindex="0">
-                            <input class="shop-c-checkbox__input" type="checkbox" hidden>
-                            <svg class="shop-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-checkbox" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
                             </svg>
-                            <span class="shop-c-checkbox__text">
+                            <span class="admin-c-checkbox__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate exercitationem nesciunt officia, reiciendis velit! Distinctio dolore eaque est excepturi iusto maxime, nulla odio omnis porro provident similique, unde velit?
                             </span>
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--010" class="shop-tabs__pane">
+                <div data-for="admin-tabs--010" class="admin-tabs__pane">
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-radio" tabindex="0">
-                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden checked>
-                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-radio" tabindex="0">
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden checked>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
-                            <span class="shop-c-radio__text">Lorem ipsum</span>
+                            <span class="admin-c-radio__text">Lorem ipsum</span>
                         </label>
                     </div>
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-radio" tabindex="0">
-                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden disabled>
-                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-radio" tabindex="0">
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden disabled>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
-                            <span class="shop-c-radio__text">Lorem ipsum</span>
+                            <span class="admin-c-radio__text">Lorem ipsum</span>
                         </label>
                     </div>
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-radio shop-success" tabindex="0">
-                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
-                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-radio admin-success" tabindex="0">
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
-                            <span class="shop-c-radio__text">Lorem ipsum</span>
+                            <span class="admin-c-radio__text">Lorem ipsum</span>
                         </label>
                     </div>
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-radio shop-danger" tabindex="0">
-                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
-                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-radio admin-danger" tabindex="0">
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
-                            <span class="shop-c-radio__text">Lorem ipsum</span>
+                            <span class="admin-c-radio__text">Lorem ipsum</span>
                         </label>
                     </div>
                     <div style="margin-bottom: 0.25rem;">
-                        <label class="shop-c-radio shop-c-radio--without-text" tabindex="0"
+                        <label class="admin-c-radio admin-c-radio--without-text" tabindex="0"
                                style="margin-right: 0.25rem;">
-                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
-                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
                         </label>
-                        <label class="shop-c-radio shop-success shop-c-radio--without-text" tabindex="0"
+                        <label class="admin-c-radio admin-success admin-c-radio--without-text" tabindex="0"
                                style="margin-right: 0.25rem;">
-                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
-                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
                         </label>
-                        <label class="shop-c-radio shop-danger shop-c-radio--without-text" tabindex="0"
+                        <label class="admin-c-radio admin-danger admin-c-radio--without-text" tabindex="0"
                                style="margin-right: 0.25rem;">
-                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden>
-                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
                         </label>
                     </div>
                     <div style="max-width: 200px">
-                        <label class="shop-c-radio" tabindex="0">
-                            <input class="shop-c-radio__input" type="radio" name="shop-c-radio" hidden checked>
-                            <svg class="shop-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                        <label class="admin-c-radio" tabindex="0">
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden checked>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="5"/>
                             </svg>
-                            <span class="shop-c-radio__text">
+                            <span class="admin-c-radio__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus accusantium aliquid amet doloremque dolorum est illo ipsam itaque nostrum obcaecati officia quas reiciendis rem sapiente soluta, tempora ut voluptate.
                             </span>
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--011" class="shop-tabs__pane">
+                <div data-for="admin-tabs--011" class="admin-tabs__pane">
                     <div>
-                        <label class="shop-checkbox" tabindex="0">
-                            <input class="shop-checkbox__input" type="checkbox" name="shop-checkbox-1" hidden checked>
-                            <span class="shop-checkbox__box"></span>
-                            <span class="shop-checkbox__text">Example 1</span>
+                        <label class="admin-checkbox" tabindex="0">
+                            <input class="admin-checkbox__input" type="checkbox" name="admin-checkbox-1" hidden checked>
+                            <span class="admin-checkbox__box"></span>
+                            <span class="admin-checkbox__text">Example 1</span>
                         </label>
                     </div>
                     <div>
-                        <label class="shop-checkbox" tabindex="0">
-                            <input class="shop-checkbox__input" type="checkbox" name="shop-checkbox-1" hidden disabled>
-                            <span class="shop-checkbox__box"></span>
-                            <span class="shop-checkbox__text">Example 1</span>
+                        <label class="admin-checkbox" tabindex="0">
+                            <input class="admin-checkbox__input" type="checkbox" name="admin-checkbox-1" hidden disabled>
+                            <span class="admin-checkbox__box"></span>
+                            <span class="admin-checkbox__text">Example 1</span>
                         </label>
                     </div>
                     <div>
-                        <label class="shop-checkbox shop-success" tabindex="0">
-                            <input class="shop-checkbox__input" type="checkbox" name="shop-checkbox-2" hidden>
-                            <span class="shop-checkbox__box"></span>
-                            <span class="shop-checkbox__text">Example 2</span>
+                        <label class="admin-checkbox admin-success" tabindex="0">
+                            <input class="admin-checkbox__input" type="checkbox" name="admin-checkbox-2" hidden>
+                            <span class="admin-checkbox__box"></span>
+                            <span class="admin-checkbox__text">Example 2</span>
                         </label>
                     </div>
                     <div>
-                        <label class="shop-checkbox shop-danger" tabindex="0">
-                            <input class="shop-checkbox__input" type="checkbox" name="shop-checkbox-3" hidden>
-                            <span class="shop-checkbox__box"></span>
-                            <span class="shop-checkbox__text">Example 3</span>
+                        <label class="admin-checkbox admin-danger" tabindex="0">
+                            <input class="admin-checkbox__input" type="checkbox" name="admin-checkbox-3" hidden>
+                            <span class="admin-checkbox__box"></span>
+                            <span class="admin-checkbox__text">Example 3</span>
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--012" class="shop-tabs__pane">
-                    <label for="shop-collapse__1" class="shop-btn">Show data</label>
-                    <input id="shop-collapse__1" class="shop-collapse__checkbox" type="checkbox" name="shop-collapse__1"
+                <div data-for="admin-tabs--012" class="admin-tabs__pane">
+                    <label for="admin-collapse__1" class="admin-btn">Show data</label>
+                    <input id="admin-collapse__1" class="admin-collapse__checkbox" type="checkbox" name="admin-collapse__1"
                            hidden>
-                    <div class="shop-collapse">
+                    <div class="admin-collapse">
                         Some placeholder content for the collapse component. This panel is hidden by default but
                         revealed when the user activates the relevant trigger.
                     </div>
                 </div>
-                <div data-for="shop-tabs--013" class="shop-tabs__pane">
+                <div data-for="admin-tabs--013" class="admin-tabs__pane">
                     <div>
                         <label style="--checkbox-circle-color: black; --checkbox-chevron-color: white;"
-                               class="shop-color-checkbox" tabindex="0">
-                            <input class="shop-color-checkbox__input" type="checkbox" hidden checked>
-                            <span class="shop-color-checkbox__box"></span>
-                            <span class="shop-color-checkbox__text">Black</span>
+                               class="admin-color-checkbox" tabindex="0">
+                            <input class="admin-color-checkbox__input" type="checkbox" hidden checked>
+                            <span class="admin-color-checkbox__box"></span>
+                            <span class="admin-color-checkbox__text">Black</span>
                         </label>
                     </div>
                     <div>
                         <label style="--checkbox-circle-color: red; --checkbox-chevron-color: white;"
-                               class="shop-color-checkbox" tabindex="0">
-                            <input class="shop-color-checkbox__input" type="checkbox" hidden>
-                            <span class="shop-color-checkbox__box"></span>
-                            <span class="shop-color-checkbox__text">Red</span>
+                               class="admin-color-checkbox" tabindex="0">
+                            <input class="admin-color-checkbox__input" type="checkbox" hidden>
+                            <span class="admin-color-checkbox__box"></span>
+                            <span class="admin-color-checkbox__text">Red</span>
                         </label>
                     </div>
                     <div>
                         <label style="--checkbox-circle-color: green; --checkbox-chevron-color: white;"
-                               class="shop-color-checkbox" tabindex="0">
-                            <input class="shop-color-checkbox__input" type="checkbox" hidden>
-                            <span class="shop-color-checkbox__box"></span>
-                            <span class="shop-color-checkbox__text">Green</span>
+                               class="admin-color-checkbox" tabindex="0">
+                            <input class="admin-color-checkbox__input" type="checkbox" hidden>
+                            <span class="admin-color-checkbox__box"></span>
+                            <span class="admin-color-checkbox__text">Green</span>
                         </label>
                     </div>
                     <div>
                         <label style="--checkbox-circle-color: black; --checkbox-chevron-color: white;"
-                               class="shop-color-checkbox" tabindex="0">
-                            <input class="shop-color-checkbox__input" type="checkbox" hidden disabled>
-                            <span class="shop-color-checkbox__box"></span>
-                            <span class="shop-color-checkbox__text">Black</span>
+                               class="admin-color-checkbox" tabindex="0">
+                            <input class="admin-color-checkbox__input" type="checkbox" hidden disabled>
+                            <span class="admin-color-checkbox__box"></span>
+                            <span class="admin-color-checkbox__text">Black</span>
                         </label>
                     </div>
                     <div>
                         <label style="--checkbox-circle-color: black; --checkbox-chevron-color: white;"
-                               class="shop-color-checkbox shop-success" tabindex="0">
-                            <input class="shop-color-checkbox__input" type="checkbox" hidden>
-                            <span class="shop-color-checkbox__box"></span>
-                            <span class="shop-color-checkbox__text">Black</span>
+                               class="admin-color-checkbox admin-success" tabindex="0">
+                            <input class="admin-color-checkbox__input" type="checkbox" hidden>
+                            <span class="admin-color-checkbox__box"></span>
+                            <span class="admin-color-checkbox__text">Black</span>
                         </label>
                     </div>
                     <div>
                         <label style="--checkbox-circle-color: black; --checkbox-chevron-color: white;"
-                               class="shop-color-checkbox shop-danger" tabindex="0">
-                            <input class="shop-color-checkbox__input" type="checkbox" hidden>
-                            <span class="shop-color-checkbox__box"></span>
-                            <span class="shop-color-checkbox__text">Black</span>
+                               class="admin-color-checkbox admin-danger" tabindex="0">
+                            <input class="admin-color-checkbox__input" type="checkbox" hidden>
+                            <span class="admin-color-checkbox__box"></span>
+                            <span class="admin-color-checkbox__text">Black</span>
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--014" class="shop-tabs__pane">
-                    <input id="shop-dark-mode__checkbox-1"
-                           class="shop-dark-mode__checkbox"
+                <div data-for="admin-tabs--014" class="admin-tabs__pane">
+                    <input id="admin-dark-mode__checkbox-1"
+                           class="admin-dark-mode__checkbox"
                            type="checkbox"
                            hidden>
-                    <main class="shop-app">
-                        <label class="shop-dark-mode__btn" for="shop-dark-mode__checkbox-1" style="position: static;">
-                            <svg class="shop-icon--svg shop-dark-mode__icon-dark" xmlns="http://www.w3.org/2000/svg"
+                    <main class="admin-app">
+                        <label class="admin-dark-mode__btn" for="admin-dark-mode__checkbox-1" style="position: static;">
+                            <svg class="admin-icon--svg admin-dark-mode__icon-dark" xmlns="http://www.w3.org/2000/svg"
                                  width="24" height="24"
                                  viewBox="0 0 24 24">
                                 <path d="M11.01 3.05C6.51 3.54 3 7.36 3 12a9 9 0 0 0 9 9c4.63 0 8.45-3.5 8.95-8 .09-.79-.78-1.42-1.54-.95A5.403 5.403 0 0 1 11.1 7.5c0-1.06.31-2.06.84-2.89.45-.67-.04-1.63-.93-1.56z"/>
                             </svg>
-                            <svg class="shop-icon--svg shop-dark-mode__icon-light" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="admin-icon--svg admin-dark-mode__icon-light" xmlns="http://www.w3.org/2000/svg"
                                  width="24" height="24"
                                  viewBox="0 0 24 24">
                                 <path d="m6.05 4.14-.39-.39a.993.993 0 0 0-1.4 0l-.01.01a.984.984 0 0 0 0 1.4l.39.39c.39.39 1.01.39 1.4 0l.01-.01a.984.984 0 0 0 0-1.4zM3.01 10.5H1.99c-.55 0-.99.44-.99.99v.01c0 .55.44.99.99.99H3c.56.01 1-.43 1-.98v-.01c0-.56-.44-1-.99-1zm9-9.95H12c-.56 0-1 .44-1 .99v.96c0 .55.44.99.99.99H12c.56.01 1-.43 1-.98v-.97c0-.55-.44-.99-.99-.99zm7.74 3.21c-.39-.39-1.02-.39-1.41-.01l-.39.39a.984.984 0 0 0 0 1.4l.01.01c.39.39 1.02.39 1.4 0l.39-.39a.984.984 0 0 0 0-1.4zm-1.81 15.1.39.39a.996.996 0 1 0 1.41-1.41l-.39-.39a.993.993 0 0 0-1.4 0c-.4.4-.4 1.02-.01 1.41zM20 11.49v.01c0 .55.44.99.99.99H22c.55 0 .99-.44.99-.99v-.01c0-.55-.44-.99-.99-.99h-1.01c-.55 0-.99.44-.99.99zM12 5.5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-.01 16.95H12c.55 0 .99-.44.99-.99v-.96c0-.55-.44-.99-.99-.99h-.01c-.55 0-.99.44-.99.99v.96c0 .55.44.99.99.99zm-7.74-3.21c.39.39 1.02.39 1.41 0l.39-.39a.993.993 0 0 0 0-1.4l-.01-.01a.996.996 0 0 0-1.41 0l-.39.39c-.38.4-.38 1.02.01 1.41z"/>
@@ -771,267 +771,267 @@
                                 assumenda consequuntur cum debitis distinctio doloribus ducimus ea, fuga iure nemo
                                 provident quasi quis soluta totam? Fuga id nostrum rerum?
                             </div>
-                            <button type="button" class="shop-btn">Primary</button>
-                            <button type="button" class="shop-btn shop-success">Success</button>
-                            <button type="button" class="shop-btn shop-danger">Danger</button>
+                            <button type="button" class="admin-btn">Primary</button>
+                            <button type="button" class="admin-btn admin-success">Success</button>
+                            <button type="button" class="admin-btn admin-danger">Danger</button>
                         </div>
                     </main>
                 </div>
-                <div data-for="shop-tabs--015" class="shop-tabs__pane">
-                    <div class="shop-dropdown" tabindex="-1">
-                        <button class="shop-btn shop-dropdown__btn" type="button">
+                <div data-for="admin-tabs--015" class="admin-tabs__pane">
+                    <div class="admin-dropdown" tabindex="-1">
+                        <button class="admin-btn admin-dropdown__btn" type="button">
                             Dropdown button
                         </button>
-                        <ul class="shop-dropdown__menu">
-                            <li><a class="shop-dropdown__item" href="#">Action</a></li>
-                            <li><a class="shop-dropdown__item" href="#">Another action</a></li>
-                            <li><a class="shop-dropdown__item" href="#">Something else here</a></li>
+                        <ul class="admin-dropdown__menu">
+                            <li><a class="admin-dropdown__item" href="#">Action</a></li>
+                            <li><a class="admin-dropdown__item" href="#">Another action</a></li>
+                            <li><a class="admin-dropdown__item" href="#">Something else here</a></li>
                         </ul>
                     </div>
                 </div>
-                <div data-for="shop-tabs--016" class="shop-tabs__pane">
-                    <label class="shop-field" style="margin-bottom: 0.5rem;">
-                        <span class="shop-field__text">Text</span>
-                        <input class="shop-field__input" type="text">
+                <div data-for="admin-tabs--016" class="admin-tabs__pane">
+                    <label class="admin-field" style="margin-bottom: 0.5rem;">
+                        <span class="admin-field__text">Text</span>
+                        <input class="admin-field__input" type="text">
                     </label>
                     <div style="margin-bottom: 0.5rem;">
-                        <label class="shop-field">
-                            <span class="shop-field__text">Text</span>
-                            <input class="shop-field__input" type="text" disabled value="test">
+                        <label class="admin-field">
+                            <span class="admin-field__text">Text</span>
+                            <input class="admin-field__input" type="text" disabled value="test">
                         </label>
-                        <div class="shop-text--mini">
+                        <div class="admin-text--mini">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </div>
                     </div>
-                    <label class="shop-field" style="margin-bottom: 0.5rem;">
-                        <span class="shop-field__text">Select</span>
-                        <select class="shop-field__input" disabled>
+                    <label class="admin-field" style="margin-bottom: 0.5rem;">
+                        <span class="admin-field__text">Select</span>
+                        <select class="admin-field__input" disabled>
                             <option>Lorem 1</option>
                             <option>Lorem 2</option>
                             <option>Lorem 3</option>
                         </select>
                     </label>
-                    <div class="shop-row" style="margin-bottom: 0.5rem;">
-                        <div class="shop-col-auto">
-                            <label for="shop-field__input-90" class="shop-field" style="padding-top: 0.3rem;">
-                                <span class="shop-field__text">Text</span>
+                    <div class="admin-row" style="margin-bottom: 0.5rem;">
+                        <div class="admin-col-auto">
+                            <label for="admin-field__input-90" class="admin-field" style="padding-top: 0.3rem;">
+                                <span class="admin-field__text">Text</span>
                             </label>
                         </div>
-                        <div class="shop-col-auto">
-                            <label class="shop-field">
-                                <input id="shop-field__input-90" class="shop-field__input" type="text">
+                        <div class="admin-col-auto">
+                            <label class="admin-field">
+                                <input id="admin-field__input-90" class="admin-field__input" type="text">
                             </label>
                         </div>
-                        <div class="shop-col-auto">
-                            <div class="shop-text--mini" style="padding-top: 0.35rem;">
+                        <div class="admin-col-auto">
+                            <div class="admin-text--mini" style="padding-top: 0.35rem;">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </div>
                         </div>
                     </div>
-                    <label class="shop-field" style="margin-bottom: 0.5rem;">
-                        <span class="shop-field__text">Text</span>
-                        <input class="shop-field__input" type="text" readonly value="test">
+                    <label class="admin-field" style="margin-bottom: 0.5rem;">
+                        <span class="admin-field__text">Text</span>
+                        <input class="admin-field__input" type="text" readonly value="test">
                     </label>
                     <div style="margin-bottom: 0.5rem;">
-                        <label class="shop-field shop-success">
-                            <span class="shop-field__text">Number</span>
-                            <input class="shop-field__input" type="number">
+                        <label class="admin-field admin-success">
+                            <span class="admin-field__text">Number</span>
+                            <input class="admin-field__input" type="number">
                         </label>
-                        <div class="shop-text--mini shop-text--success">
+                        <div class="admin-text--mini admin-text--success">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </div>
-                        <div class="shop-text--mini">
+                        <div class="admin-text--mini">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </div>
                     </div>
-                    <label class="shop-field shop-success" style="margin-bottom: 0.5rem;">
-                        <span class="shop-field__text">Range</span>
-                        <input class="shop-field__input" type="range">
+                    <label class="admin-field admin-success" style="margin-bottom: 0.5rem;">
+                        <span class="admin-field__text">Range</span>
+                        <input class="admin-field__input" type="range">
                     </label>
                     <div style="margin-bottom: 0.5rem;">
-                        <label class="shop-field shop-danger">
-                            <span class="shop-field__text">Textarea</span>
-                            <textarea class="shop-field__input"></textarea>
+                        <label class="admin-field admin-danger">
+                            <span class="admin-field__text">Textarea</span>
+                            <textarea class="admin-field__input"></textarea>
                         </label>
-                        <div class="shop-text--mini shop-text--danger">
+                        <div class="admin-text--mini admin-text--danger">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </div>
-                        <div class="shop-text--mini">
+                        <div class="admin-text--mini">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </div>
                     </div>
-                    <label class="shop-field shop-danger" style="margin-bottom: 0.5rem;">
-                        <span class="shop-field__text">Range</span>
-                        <input class="shop-field__input" type="range">
+                    <label class="admin-field admin-danger" style="margin-bottom: 0.5rem;">
+                        <span class="admin-field__text">Range</span>
+                        <input class="admin-field__input" type="range">
                     </label>
-                    <label class="shop-field shop-danger" style="margin-bottom: 0.5rem;">
-                        <span class="shop-field__text">Select</span>
-                        <select class="shop-field__input">
+                    <label class="admin-field admin-danger" style="margin-bottom: 0.5rem;">
+                        <span class="admin-field__text">Select</span>
+                        <select class="admin-field__input">
                             <option>Lorem 1</option>
                             <option>Lorem 2</option>
                             <option>Lorem 3</option>
                         </select>
                     </label>
                 </div>
-                <div data-for="shop-tabs--017" class="shop-tabs__pane">
+                <div data-for="admin-tabs--017" class="admin-tabs__pane">
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-1" class="shop-input__label">Text</label>
-                        <input id="shop-input-id-1" class="shop-input" type="text">
-                    </div>
-                    <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-2" class="shop-input__label">Text</label>
-                        <input id="shop-input-id-2" class="shop-input" type="text" disabled>
-                    </div>
-                    <div class="shop-success" style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-3" class="shop-input__label">Text</label>
-                        <input id="shop-input-id-3" class="shop-input" type="text">
-                    </div>
-                    <div class="shop-danger" style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-4" class="shop-input__label">Text</label>
-                        <input id="shop-input-id-4" class="shop-input" type="text">
+                        <label for="admin-input-id-1" class="admin-input__label">Text</label>
+                        <input id="admin-input-id-1" class="admin-input" type="text">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-5" class="shop-input__label">Number</label>
-                        <input id="shop-input-id-5" class="shop-input" type="number">
+                        <label for="admin-input-id-2" class="admin-input__label">Text</label>
+                        <input id="admin-input-id-2" class="admin-input" type="text" disabled>
+                    </div>
+                    <div class="admin-success" style="margin-bottom: 0.5rem;">
+                        <label for="admin-input-id-3" class="admin-input__label">Text</label>
+                        <input id="admin-input-id-3" class="admin-input" type="text">
+                    </div>
+                    <div class="admin-danger" style="margin-bottom: 0.5rem;">
+                        <label for="admin-input-id-4" class="admin-input__label">Text</label>
+                        <input id="admin-input-id-4" class="admin-input" type="text">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-6" class="shop-input__label">Range</label>
-                        <input id="shop-input-id-6" class="shop-input" type="range">
+                        <label for="admin-input-id-5" class="admin-input__label">Number</label>
+                        <input id="admin-input-id-5" class="admin-input" type="number">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-7" class="shop-input__label">Range</label>
-                        <input id="shop-input-id-7" class="shop-input" type="range" disabled>
-                    </div>
-                    <div class="shop-success" style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-8" class="shop-input__label">Range</label>
-                        <input id="shop-input-id-8" class="shop-input" type="range">
-                    </div>
-                    <div class="shop-danger" style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-9" class="shop-input__label">Range</label>
-                        <input id="shop-input-id-9" class="shop-input" type="range">
+                        <label for="admin-input-id-6" class="admin-input__label">Range</label>
+                        <input id="admin-input-id-6" class="admin-input" type="range">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-10" class="shop-input__label">Textarea</label>
-                        <textarea id="shop-input-id-10" class="shop-input"></textarea>
+                        <label for="admin-input-id-7" class="admin-input__label">Range</label>
+                        <input id="admin-input-id-7" class="admin-input" type="range" disabled>
+                    </div>
+                    <div class="admin-success" style="margin-bottom: 0.5rem;">
+                        <label for="admin-input-id-8" class="admin-input__label">Range</label>
+                        <input id="admin-input-id-8" class="admin-input" type="range">
+                    </div>
+                    <div class="admin-danger" style="margin-bottom: 0.5rem;">
+                        <label for="admin-input-id-9" class="admin-input__label">Range</label>
+                        <input id="admin-input-id-9" class="admin-input" type="range">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-11" class="shop-input__label">Select</label>
-                        <select id="shop-input-id-11" class="shop-input">
+                        <label for="admin-input-id-10" class="admin-input__label">Textarea</label>
+                        <textarea id="admin-input-id-10" class="admin-input"></textarea>
+                    </div>
+                    <div style="margin-bottom: 0.5rem;">
+                        <label for="admin-input-id-11" class="admin-input__label">Select</label>
+                        <select id="admin-input-id-11" class="admin-input">
                             <option>Lorem 1</option>
                             <option>Lorem 2</option>
                             <option>Lorem 3</option>
                         </select>
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-12" class="shop-input__label">Select</label>
-                        <select id="shop-input-id-12" class="shop-input" disabled>
+                        <label for="admin-input-id-12" class="admin-input__label">Select</label>
+                        <select id="admin-input-id-12" class="admin-input" disabled>
                             <option>Lorem 1</option>
                             <option>Lorem 2</option>
                             <option>Lorem 3</option>
                         </select>
                     </div>
-                    <div class="shop-success" style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-13" class="shop-input__label">Select</label>
-                        <select id="shop-input-id-13" class="shop-input">
+                    <div class="admin-success" style="margin-bottom: 0.5rem;">
+                        <label for="admin-input-id-13" class="admin-input__label">Select</label>
+                        <select id="admin-input-id-13" class="admin-input">
                             <option>Lorem 1</option>
                             <option>Lorem 2</option>
                             <option>Lorem 3</option>
                         </select>
                     </div>
-                    <div class="shop-danger" style="margin-bottom: 0.5rem;">
-                        <label for="shop-input-id-14" class="shop-input__label">Select</label>
-                        <select id="shop-input-id-14" class="shop-input">
+                    <div class="admin-danger" style="margin-bottom: 0.5rem;">
+                        <label for="admin-input-id-14" class="admin-input__label">Select</label>
+                        <select id="admin-input-id-14" class="admin-input">
                             <option>Lorem 1</option>
                             <option>Lorem 2</option>
                             <option>Lorem 3</option>
                         </select>
                     </div>
                 </div>
-                <div data-for="shop-tabs--018" class="shop-tabs__pane">
+                <div data-for="admin-tabs--018" class="admin-tabs__pane">
                     <pre>
 &lt;!doctype html&gt;
-&lt;html lang="en" class="shop-html"&gt;
+&lt;html lang="en" class="admin-html"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"&gt;
     &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
 &lt;/head&gt;
-&lt;body class="shop-body"&gt;
-&lt;main class="shop-app"&gt;
-    &lt;div class="shop-content"&gt;
+&lt;body class="admin-body"&gt;
+&lt;main class="admin-app"&gt;
+    &lt;div class="admin-content"&gt;
     &lt;/div&gt;
 &lt;/main&gt;
 &lt;/body&gt;
 &lt;/html&gt;
                     </pre>
                 </div>
-                <div data-for="shop-tabs--019" class="shop-tabs__pane">
-                    <div class="shop-menu">
-                        <ul class="shop-menu__list">
-                            <li class="shop-menu__list__item">
-                                <a href="#" class="shop-menu__list__link">
+                <div data-for="admin-tabs--019" class="admin-tabs__pane">
+                    <div class="admin-menu">
+                        <ul class="admin-menu__list">
+                            <li class="admin-menu__list__item">
+                                <a href="#" class="admin-menu__list__link">
                                     Поиск и выбор товаров
                                 </a>
                             </li>
-                            <li class="shop-menu__list__item">
-                                <a href="#" class="shop-menu__list__link">
+                            <li class="admin-menu__list__item">
+                                <a href="#" class="admin-menu__list__link">
                                     Как выбрать из нескольких моделей
                                 </a>
                             </li>
-                            <li class="shop-menu__list__item">
-                                <input id="shop-menu__list__checkbox--1" class="shop-menu__list__checkbox"
+                            <li class="admin-menu__list__item">
+                                <input id="admin-menu__list__checkbox--1" class="admin-menu__list__checkbox"
                                        type="checkbox" hidden checked>
-                                <label for="shop-menu__list__checkbox--1" class="shop-menu__list__label"></label>
-                                <a href="#" class="shop-menu__list__link">
+                                <label for="admin-menu__list__checkbox--1" class="admin-menu__list__label"></label>
+                                <a href="#" class="admin-menu__list__link">
                                     Поиск и выбор товаров
                                 </a>
-                                <ul class="shop-menu__list" style="--shop-items-count: 3">
-                                    <li class="shop-menu__list__item shop-active">
-                                        <a href="#" class="shop-menu__list__link">
+                                <ul class="admin-menu__list" style="--admin-items-count: 3">
+                                    <li class="admin-menu__list__item admin-active">
+                                        <a href="#" class="admin-menu__list__link">
                                             Поиск и выбор товаров
                                         </a>
                                     </li>
-                                    <li class="shop-menu__list__item">
-                                        <a href="#" class="shop-menu__list__link">
+                                    <li class="admin-menu__list__item">
+                                        <a href="#" class="admin-menu__list__link">
                                             Как выбрать из нескольких моделей
                                         </a>
                                     </li>
-                                    <li class="shop-menu__list__item">
-                                        <a href="#" class="shop-menu__list__link">
+                                    <li class="admin-menu__list__item">
+                                        <a href="#" class="admin-menu__list__link">
                                             Как выбрать товар в конкретном магазине
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="shop-menu__list__item">
-                                <a href="#" class="shop-menu__list__link">
+                            <li class="admin-menu__list__item">
+                                <a href="#" class="admin-menu__list__link">
                                     Поиск и выбор товаров
                                 </a>
                             </li>
-                            <li class="shop-menu__list__item">
-                                <a href="#" class="shop-menu__list__link">
+                            <li class="admin-menu__list__item">
+                                <a href="#" class="admin-menu__list__link">
                                     Как выбрать из нескольких моделей
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div data-for="shop-tabs--020" class="shop-tabs__pane">
-                    <label for="shop-modal__1" class="shop-btn shop-btn">
+                <div data-for="admin-tabs--020" class="admin-tabs__pane">
+                    <label for="admin-modal__1" class="admin-btn admin-btn">
                         Open Modal
                     </label>
-                    <input id="shop-modal__1" class="shop-modal__checkbox" type="checkbox" name="shop-modal__1"
+                    <input id="admin-modal__1" class="admin-modal__checkbox" type="checkbox" name="admin-modal__1"
                            hidden>
-                    <div class="shop-modal" tabindex="-1">
-                        <label for="shop-modal__1" class="shop-modal__backdrop"></label>
-                        <div class="shop-modal__dialog">
-                            <div class="shop-modal__content">
-                                <div class="shop-modal__header">
-                                    <h5 class="shop-modal__title">Modal title</h5>
-                                    <label for="shop-modal__1" class="shop-modal__close-btn" aria-label="Close"></label>
+                    <div class="admin-modal" tabindex="-1">
+                        <label for="admin-modal__1" class="admin-modal__backdrop"></label>
+                        <div class="admin-modal__dialog">
+                            <div class="admin-modal__content">
+                                <div class="admin-modal__header">
+                                    <h5 class="admin-modal__title">Modal title</h5>
+                                    <label for="admin-modal__1" class="admin-modal__close-btn" aria-label="Close"></label>
                                 </div>
-                                <div class="shop-modal__body">
+                                <div class="admin-modal__body">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda
                                     dicta dignissimos dolore ex minima natus vitae. Consequuntur, dolorem iste?
                                     Exercitationem hic itaque natus quisquam quo recusandae saepe totam!
@@ -1304,131 +1304,131 @@
                                     Exercitationem hic itaque natus quisquam quo recusandae saepe totam!
 
                                 </div>
-                                <div class="shop-modal__footer" style="display: flex; flex-wrap: wrap;">
-                                    <button type="button" class="shop-btn shop-success"
+                                <div class="admin-modal__footer" style="display: flex; flex-wrap: wrap;">
+                                    <button type="button" class="admin-btn admin-success"
                                             style="margin-right: 1rem;">
                                         Save changes
                                     </button>
-                                    <label for="shop-modal__1" class="shop-btn shop-danger"
+                                    <label for="admin-modal__1" class="admin-btn admin-danger"
                                            style="margin-left: auto;">Close</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div data-for="shop-tabs--021" class="shop-tabs__pane">
+                <div data-for="admin-tabs--021" class="admin-tabs__pane">
                     <div>
                         <label for="number-validate-id">Number validate min=45 max=1000</label>
-                        <input id="number-validate-id" class="shop-input js-number-validate" type="text" value="45"
+                        <input id="number-validate-id" class="admin-input js-number-validate" type="text" value="45"
                                min="45" max="1000">
                     </div>
                 </div>
-                <div data-for="shop-tabs--022" class="shop-tabs__pane">
+                <div data-for="admin-tabs--022" class="admin-tabs__pane">
                     <nav aria-label="Page navigation example">
-                        <ul class="shop-pagination">
-                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">1</a></li>
-                            <li class="shop-pagination__item"><span class="shop-pagination__link">...</span></li>
-                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">7</a></li>
-                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">8</a></li>
-                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">9</a></li>
-                            <li class="shop-pagination__item"><span class="shop-pagination__link">...</span></li>
-                            <li class="shop-pagination__item"><a class="shop-pagination__link" href="#">10</a></li>
+                        <ul class="admin-pagination">
+                            <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">1</a></li>
+                            <li class="admin-pagination__item"><span class="admin-pagination__link">...</span></li>
+                            <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">7</a></li>
+                            <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">8</a></li>
+                            <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">9</a></li>
+                            <li class="admin-pagination__item"><span class="admin-pagination__link">...</span></li>
+                            <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">10</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div data-for="shop-tabs--023" class="shop-tabs__pane">
+                <div data-for="admin-tabs--023" class="admin-tabs__pane">
                     <div>
-                        <label class="shop-radio" tabindex="0">
-                            <input class="shop-radio__input" type="radio" name="shop-radio" hidden checked>
-                            <span class="shop-radio__box"></span>
-                            <span class="shop-radio__text">Radio 1</span>
+                        <label class="admin-radio" tabindex="0">
+                            <input class="admin-radio__input" type="radio" name="admin-radio" hidden checked>
+                            <span class="admin-radio__box"></span>
+                            <span class="admin-radio__text">Radio 1</span>
                         </label>
                     </div>
                     <div>
-                        <label class="shop-radio" tabindex="0">
-                            <input class="shop-radio__input" type="radio" name="shop-radio" hidden disabled>
-                            <span class="shop-radio__box"></span>
-                            <span class="shop-radio__text">Radio 2</span>
+                        <label class="admin-radio" tabindex="0">
+                            <input class="admin-radio__input" type="radio" name="admin-radio" hidden disabled>
+                            <span class="admin-radio__box"></span>
+                            <span class="admin-radio__text">Radio 2</span>
                         </label>
                     </div>
                     <div>
-                        <label class="shop-radio shop-success" tabindex="0">
-                            <input class="shop-radio__input" type="radio" name="shop-radio" hidden>
-                            <span class="shop-radio__box"></span>
-                            <span class="shop-radio__text">Radio 3</span>
+                        <label class="admin-radio admin-success" tabindex="0">
+                            <input class="admin-radio__input" type="radio" name="admin-radio" hidden>
+                            <span class="admin-radio__box"></span>
+                            <span class="admin-radio__text">Radio 3</span>
                         </label>
                     </div>
                     <div>
-                        <label class="shop-radio shop-danger" tabindex="0">
-                            <input class="shop-radio__input" type="radio" name="shop-radio" hidden>
-                            <span class="shop-radio__box"></span>
-                            <span class="shop-radio__text">Radio 4</span>
+                        <label class="admin-radio admin-danger" tabindex="0">
+                            <input class="admin-radio__input" type="radio" name="admin-radio" hidden>
+                            <span class="admin-radio__box"></span>
+                            <span class="admin-radio__text">Radio 4</span>
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--024" class="shop-tabs__pane">
+                <div data-for="admin-tabs--024" class="admin-tabs__pane">
                     <div>
-                        <input id="shop-s-collapse" class="shop-s-collapse__checkbox" type="checkbox" hidden>
+                        <input id="admin-s-collapse" class="admin-s-collapse__checkbox" type="checkbox" hidden>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        <div class="shop-s-collapse">
+                        <div class="admin-s-collapse">
                             Animi architecto consequatur delectus dolor doloremque ducimus ea explicabo facere fugiat
                             iusto minus molestias odio quam, quasi quod saepe, tempore velit voluptas?
                         </div>
-                        <label for="shop-s-collapse" class="shop-s-collapse__label">
+                        <label for="admin-s-collapse" class="admin-s-collapse__label">
                             Show collapse
                         </label>
                     </div>
                 </div>
-                <div data-for="shop-tabs--025" class="shop-tabs__pane">
+                <div data-for="admin-tabs--025" class="admin-tabs__pane">
                     Пример по ссылке <a href="./components/sidebar/sidebar.html">./components/sidebar/sidebar.html</a>
                 </div>
-                <div data-for="shop-tabs--026" class="shop-tabs__pane">
-                    <div class="shop-table__responsive">
-                        <table class="shop-table shop-table--hover">
-                            <thead class="shop-table__thead">
-                            <tr class="shop-table__tr">
-                                <th class="shop-table__th" scope="col">#</th>
-                                <th class="shop-table__th" scope="col">First</th>
-                                <th class="shop-table__th" scope="col">Last</th>
-                                <th class="shop-table__th" scope="col">Handle</th>
+                <div data-for="admin-tabs--026" class="admin-tabs__pane">
+                    <div class="admin-table__responsive">
+                        <table class="admin-table admin-table--hover">
+                            <thead class="admin-table__thead">
+                            <tr class="admin-table__tr">
+                                <th class="admin-table__th" scope="col">#</th>
+                                <th class="admin-table__th" scope="col">First</th>
+                                <th class="admin-table__th" scope="col">Last</th>
+                                <th class="admin-table__th" scope="col">Handle</th>
                             </tr>
                             </thead>
-                            <tbody class="shop-table__tbody">
-                            <tr class="shop-table__tr">
-                                <th class="shop-table__th" scope="row">1</th>
-                                <td class="shop-table__td">Mark</td>
-                                <td class="shop-table__td">Otto</td>
-                                <td class="shop-table__td">@mdo</td>
+                            <tbody class="admin-table__tbody">
+                            <tr class="admin-table__tr">
+                                <th class="admin-table__th" scope="row">1</th>
+                                <td class="admin-table__td">Mark</td>
+                                <td class="admin-table__td">Otto</td>
+                                <td class="admin-table__td">@mdo</td>
                             </tr>
-                            <tr class="shop-table__tr shop-table--active">
-                                <th class="shop-table__th" scope="row">2</th>
-                                <td class="shop-table__td">Mark</td>
-                                <td class="shop-table__td">Otto</td>
-                                <td class="shop-table__td">@mdo</td>
+                            <tr class="admin-table__tr admin-table--active">
+                                <th class="admin-table__th" scope="row">2</th>
+                                <td class="admin-table__td">Mark</td>
+                                <td class="admin-table__td">Otto</td>
+                                <td class="admin-table__td">@mdo</td>
                             </tr>
-                            <tr class="shop-table__tr">
-                                <th class="shop-table__th" scope="row">3</th>
-                                <td class="shop-table__td" colspan="2">Larry the Bird</td>
-                                <td class="shop-table__td shop-table--active">@mdo</td>
+                            <tr class="admin-table__tr">
+                                <th class="admin-table__th" scope="row">3</th>
+                                <td class="admin-table__td" colspan="2">Larry the Bird</td>
+                                <td class="admin-table__td admin-table--active">@mdo</td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div data-for="shop-tabs--027" class="shop-tabs__pane">
-                    <div class="shop-tabs">
-                        <input id="shop-tabs__0" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden
+                <div data-for="admin-tabs--027" class="admin-tabs__pane">
+                    <div class="admin-tabs">
+                        <input id="admin-tabs__0" class="admin-tabs__checkbox" type="radio" name="admin-tabs__1" hidden
                                checked>
-                        <input id="shop-tabs__1" class="shop-tabs__checkbox" type="radio" name="shop-tabs__1" hidden>
-                        <nav class="shop-tabs__nav">
-                            <label for="shop-tabs__0" class="shop-tabs__link">Lorem 1</label>
-                            <label for="shop-tabs__1" class="shop-tabs__link">Lorem 2</label>
+                        <input id="admin-tabs__1" class="admin-tabs__checkbox" type="radio" name="admin-tabs__1" hidden>
+                        <nav class="admin-tabs__nav">
+                            <label for="admin-tabs__0" class="admin-tabs__link">Lorem 1</label>
+                            <label for="admin-tabs__1" class="admin-tabs__link">Lorem 2</label>
                         </nav>
-                        <div class="shop-tabs__content">
-                            <div class="shop-tabs__pane">
+                        <div class="admin-tabs__content">
+                            <div class="admin-tabs__pane">
                                 Content 1
                             </div>
-                            <div class="shop-tabs__pane">
+                            <div class="admin-tabs__pane">
                                 Content 2
                             </div>
                         </div>

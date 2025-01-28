@@ -1,4 +1,4 @@
-.shop-dark-mode__btn {
+.admin-dark-mode__btn {
     position: fixed;
     left: 0;
     top: 0;
@@ -9,18 +9,18 @@
     font-size: 0.8rem;
 }
 
-.shop-dark-mode__checkbox:checked ~ .shop-app > .shop-dark-mode__btn .shop-dark-mode__icon-dark,
-.shop-dark-mode__checkbox:not(:checked) ~ .shop-app > .shop-dark-mode__btn .shop-dark-mode__icon-light {
+.admin-dark-mode__checkbox:checked ~ .admin-app > .admin-dark-mode__btn .admin-dark-mode__icon-dark,
+.admin-dark-mode__checkbox:not(:checked) ~ .admin-app > .admin-dark-mode__btn .admin-dark-mode__icon-light {
     display: block;
 }
 
-.shop-dark-mode__checkbox:not(:checked) ~ .shop-app > .shop-dark-mode__btn .shop-dark-mode__icon-dark,
-.shop-dark-mode__checkbox:checked ~ .shop-app > .shop-dark-mode__btn .shop-dark-mode__icon-light {
+.admin-dark-mode__checkbox:not(:checked) ~ .admin-app > .admin-dark-mode__btn .admin-dark-mode__icon-dark,
+.admin-dark-mode__checkbox:checked ~ .admin-app > .admin-dark-mode__btn .admin-dark-mode__icon-light {
     display: none;
 }
 
 @media (max-width: 767px) {
-    .shop-dark-mode__btn {
+    .admin-dark-mode__btn {
         left: auto;
         right: 4rem;
         top: 0.3rem;

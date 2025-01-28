@@ -1,4 +1,4 @@
-.shop-c-checkbox {
+.admin-c-checkbox {
     position: relative;
     cursor: pointer;
     user-select: none;
@@ -8,7 +8,7 @@
     line-height: 1.5;
 }
 
-.shop-c-checkbox > .shop-c-checkbox__svg-icon {
+.admin-c-checkbox > .admin-c-checkbox__svg-icon {
     fill: currentColor;
     width: 1.5em;
     height: 1.5em;
@@ -25,39 +25,39 @@
     margin-right: 0.1em;
 }
 
-.shop-c-checkbox > .shop-c-checkbox__svg-icon path {
+.admin-c-checkbox > .admin-c-checkbox__svg-icon path {
     transform: scale(0.7);
     transform-origin: center;
     opacity: 0;
 }
 
-.shop-c-checkbox__input:checked ~ .shop-c-checkbox__svg-icon path {
+.admin-c-checkbox__input:checked ~ .admin-c-checkbox__svg-icon path {
     opacity: 1;
 }
 
-.shop-c-checkbox__input:disabled ~ .shop-c-checkbox__svg-icon, .shop-c-checkbox__input:disabled ~ .shop-c-checkbox__text {
+.admin-c-checkbox__input:disabled ~ .admin-c-checkbox__svg-icon, .admin-c-checkbox__input:disabled ~ .admin-c-checkbox__text {
     opacity: 0.5;
     cursor: auto;
 }
 
-.shop-c-checkbox--without-text:focus {
+.admin-c-checkbox--without-text:focus {
     box-shadow: none;
 }
 
-.shop-c-checkbox--without-text:focus .shop-c-checkbox__svg-icon {
-    box-shadow: inset 0 0 0 0.2em currentColor, var(--shop-app-focus-box-shadow);
+.admin-c-checkbox--without-text:focus .admin-c-checkbox__svg-icon {
+    box-shadow: inset 0 0 0 0.2em currentColor, var(--admin-app-focus-box-shadow);
 }
 
-.shop-c-checkbox--without-text > .shop-c-checkbox__svg-icon {
+.admin-c-checkbox--without-text > .admin-c-checkbox__svg-icon {
     margin-right: 0;
 }
 
-.shop-success.shop-c-checkbox {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
-    color: rgb(var(--shop-app-success-color));
+.admin-success.admin-c-checkbox {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-success-color), 0.5);
+    color: rgb(var(--admin-app-success-color));
 }
 
-.shop-danger.shop-c-checkbox {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
-    color: rgb(var(--shop-app-danger-color));
+.admin-danger.admin-c-checkbox {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-danger-color), 0.5);
+    color: rgb(var(--admin-app-danger-color));
 }

@@ -1,4 +1,4 @@
-.shop-b-radio__label {
+.admin-b-radio__label {
     position: relative;
     cursor: pointer;
     user-select: none;
@@ -6,7 +6,7 @@
     border-radius: 0.3em;
 }
 
-.shop-b-radio__label:before, .shop-b-radio__label:after {
+.admin-b-radio__label:before, .admin-b-radio__label:after {
     content: '';
     display: block;
     position: absolute;
@@ -19,49 +19,49 @@
     transform-origin: center;
 }
 
-.shop-b-radio__label:before, .shop-b-radio__label:after {
+.admin-b-radio__label:before, .admin-b-radio__label:after {
     border-radius: 50%;
 }
 
-.shop-b-radio__label:before {
+.admin-b-radio__label:before {
     opacity: 0.2;
 }
 
-.shop-b-radio__label:after {
+.admin-b-radio__label:after {
     transform: scale(0.5);
     opacity: 0;
 }
 
-.shop-b-radio:checked ~ .shop-b-radio__label:after {
+.admin-b-radio:checked ~ .admin-b-radio__label:after {
     opacity: 1;
 }
 
-.shop-b-radio:disabled ~ .shop-b-radio__label {
+.admin-b-radio:disabled ~ .admin-b-radio__label {
     opacity: 0.5;
     cursor: auto;
 }
 
-.shop-b-radio:focus ~ .shop-b-radio__label,
-.shop-b-radio__label:focus {
-    box-shadow: var(--shop-app-focus-box-shadow);
+.admin-b-radio:focus ~ .admin-b-radio__label,
+.admin-b-radio__label:focus {
+    box-shadow: var(--admin-app-focus-box-shadow);
     outline: none;
 }
 
-.shop-success > .shop-b-radio__label,
-.shop-b-radio.shop-success ~ .shop-b-radio__label {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-success-color), 0.5);
-    color: rgb(var(--shop-app-success-color));
+.admin-success > .admin-b-radio__label,
+.admin-b-radio.admin-success ~ .admin-b-radio__label {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-success-color), 0.5);
+    color: rgb(var(--admin-app-success-color));
 }
 
-.shop-danger > .shop-b-radio__label,
-.shop-b-radio.shop-danger ~ .shop-b-radio__label {
-    --shop-app-focus-box-shadow: 0 0 0 2px rgba(var(--shop-app-danger-color), 0.5);
-    color: rgb(var(--shop-app-danger-color));
+.admin-danger > .admin-b-radio__label,
+.admin-b-radio.admin-danger ~ .admin-b-radio__label {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-danger-color), 0.5);
+    color: rgb(var(--admin-app-danger-color));
 }
 
-.shop-success > .shop-b-radio__label:after,
-.shop-b-radio.shop-success ~ .shop-b-radio__label:after,
-.shop-danger > .shop-b-radio__label:after,
-.shop-b-radio.shop-danger ~ .shop-b-radio__label:after {
-    color: rgb(var(--shop-app-color));
+.admin-success > .admin-b-radio__label:after,
+.admin-b-radio.admin-success ~ .admin-b-radio__label:after,
+.admin-danger > .admin-b-radio__label:after,
+.admin-b-radio.admin-danger ~ .admin-b-radio__label:after {
+    color: rgb(var(--admin-app-color));
 }
