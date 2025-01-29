@@ -35,8 +35,8 @@
     height: 0.5rem;
     transform-origin: center;
     transform: translateY(-50%) rotate(-135deg);
-    border-left: 1px solid rgb(var(--admin-app-color));
-    border-bottom: 1px solid rgb(var(--admin-app-color));
+    border-left: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
     transition: transform 0.25s;
 }
 
@@ -50,17 +50,17 @@
 }
 
 .admin-menu__list__link:hover, .admin-menu__list__link:focus {
-    background-color: rgba(var(--admin-app-color), 0.1);
+    background-color: rgba(var(--admin-app-accent-color), 0.1);
     outline: none;
     box-shadow: none;
 }
 
 .admin-menu__list__label:hover ~ .admin-menu__list__link {
-    background-color: rgba(var(--admin-app-color), 0.1);
+    background-color: rgba(var(--admin-app-accent-color), 0.1);
 }
 
 .admin-menu__list__item.admin-active > .admin-menu__list__link {
-    background-color: rgba(var(--admin-app-color), 0.2);
+    background-color: rgba(var(--admin-app-accent-color), 0.2);
 }
 
 .admin-menu__list .admin-menu__list {

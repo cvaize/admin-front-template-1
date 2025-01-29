@@ -43,8 +43,15 @@
 
 .admin-b-radio:focus ~ .admin-b-radio__label,
 .admin-b-radio__label:focus {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-color), 0.5);
     box-shadow: var(--admin-app-focus-box-shadow);
     outline: none;
+}
+
+.admin-accent > .admin-b-radio__label,
+.admin-b-radio.admin-accent ~ .admin-b-radio__label {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-accent-color), 0.5);
+    color: rgb(var(--admin-app-accent-color));
 }
 
 .admin-success > .admin-b-radio__label,
@@ -59,6 +66,8 @@
     color: rgb(var(--admin-app-danger-color));
 }
 
+.admin-accent > .admin-b-radio__label:after,
+.admin-b-radio.admin-accent ~ .admin-b-radio__label:after,
 .admin-success > .admin-b-radio__label:after,
 .admin-b-radio.admin-success ~ .admin-b-radio__label:after,
 .admin-danger > .admin-b-radio__label:after,

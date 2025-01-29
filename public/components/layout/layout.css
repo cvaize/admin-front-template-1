@@ -1,25 +1,33 @@
 :root {
+    --admin-app-accent-color: 0, 0, 255;
+    --admin-app-mark-bg-color: 255, 255, 0;
     --admin-app-color: 59, 67, 81;
     --admin-app-background-color: 255, 255, 255;
     --admin-app-backdrop-color: 0, 0, 0;
     --admin-app-light-background-color: 225, 225, 225;
     --admin-app-success-color: 30, 180, 20;
     --admin-app-danger-color: 220, 53, 69;
-    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-color), 0.5);
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-accent-color), 0.5);
 }
 
 .admin-dark-mode__checkbox:checked ~ * {
+    --admin-app-accent-color: 0, 190, 255;
+    --admin-app-mark-bg-color: 255, 255, 0;
     --admin-app-color: 196, 187, 173;
     --admin-app-background-color: 0, 0, 0;
     --admin-app-backdrop-color: 255, 255, 255;
     --admin-app-light-background-color: 29, 29, 29;
     --admin-app-success-color: 0, 255, 136;
     --admin-app-danger-color: 255, 0, 24;
-    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-color), 0.5);
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-accent-color), 0.5);
 }
 
 ::selection {
-    background: rgba(var(--admin-app-color), 0.2);
+    background-color: rgba(var(--admin-app-accent-color), 0.2);
+}
+
+mark {
+    background-color: rgb(var(--admin-app-mark-bg-color));
 }
 
 *, *:before, *:after {
@@ -92,6 +100,10 @@ button, select {
 .admin-text--mini {
     font-size: .875em;
     opacity: 0.8;
+}
+
+.admin-text--accent {
+    color: rgb(var(--admin-app-accent-color));
 }
 
 .admin-text--success {

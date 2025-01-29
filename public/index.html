@@ -339,6 +339,9 @@
                     <p><strong>This line rendered as bold text.</strong></p>
                     <p><em>This line rendered as italicized text.</em></p>
                     <p class="admin-text--mini">Mini text</p>
+                    <p class="admin-text--accent">
+                        Accent text
+                    </p>
                     <p class="admin-text--success">
                         Success text
                     </p>
@@ -374,6 +377,9 @@
                     </div>
                 </div>
                 <div data-for="admin-tabs--003" class="admin-tabs__pane">
+                    <div class="admin-alert admin-accent" role="alert" style="margin-bottom: 1rem;">
+                        A simple accent alert—check it out!
+                    </div>
                     <div class="admin-alert admin-success" role="alert" style="margin-bottom: 1rem;">
                         A simple success alert—check it out!
                     </div>
@@ -394,15 +400,27 @@
                             Lorem ipsum 1
                         </label>
                     </div>
-                    <div class="admin-success">
+                    <div class="admin-accent">
                         <input class="admin-b-checkbox" type="checkbox" id="admin-b-checkbox-id-2" hidden>
                         <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-2" tabindex="0">
                             Lorem ipsum 2
                         </label>
                     </div>
                     <div>
-                        <input class="admin-b-checkbox admin-success" type="checkbox" id="admin-b-checkbox-id-3" hidden>
+                        <input class="admin-b-checkbox admin-accent" type="checkbox" id="admin-b-checkbox-id-3" hidden>
                         <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-3" tabindex="0">
+                            Lorem ipsum 3
+                        </label>
+                    </div>
+                    <div class="admin-success">
+                        <input class="admin-b-checkbox" type="checkbox" id="admin-b-checkbox-id-6" hidden>
+                        <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-6" tabindex="0">
+                            Lorem ipsum 2
+                        </label>
+                    </div>
+                    <div>
+                        <input class="admin-b-checkbox admin-success" type="checkbox" id="admin-b-checkbox-id-7" hidden>
+                        <label class="admin-b-checkbox__label" for="admin-b-checkbox-id-7" tabindex="0">
                             Lorem ipsum 3
                         </label>
                     </div>
@@ -432,6 +450,19 @@
                                disabled>
                         <label class="admin-b-radio__label" for="admin-b-radio-id-1" tabindex="0">
                             Lorem ipsum 1
+                        </label>
+                    </div>
+                    <div class="admin-accent">
+                        <input class="admin-b-radio" type="radio" name="admin-b-radio" id="admin-b-radio-id-6" hidden>
+                        <label class="admin-b-radio__label" for="admin-b-radio-id-6" tabindex="0">
+                            Lorem ipsum 2
+                        </label>
+                    </div>
+                    <div>
+                        <input class="admin-b-radio admin-accent" type="radio" name="admin-b-radio" id="admin-b-radio-id-7"
+                               hidden>
+                        <label class="admin-b-radio__label" for="admin-b-radio-id-7" tabindex="0">
+                            Lorem ipsum 3
                         </label>
                     </div>
                     <div class="admin-success">
@@ -495,6 +526,7 @@
                 </div>
                 <div data-for="admin-tabs--008" class="admin-tabs__pane">
                     <button type="button" class="admin-btn">Primary</button>
+                    <button type="button" class="admin-btn admin-accent">Accent</button>
                     <button type="button" class="admin-btn admin-success">Success</button>
                     <button type="button" class="admin-btn admin-danger">Danger</button>
                 </div>
@@ -512,6 +544,16 @@
                     <div style="margin-bottom: 0.25rem;">
                         <label class="admin-c-checkbox" tabindex="0">
                             <input class="admin-c-checkbox__input" type="checkbox" hidden disabled>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                            <span class="admin-c-checkbox__text">Lorem ipsum</span>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 0.25rem;">
+                        <label class="admin-c-checkbox admin-accent" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
                             <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
                                  height="24" viewBox="0 0 24 24">
                                 <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
@@ -541,6 +583,14 @@
                     </div>
                     <div style="margin-bottom: 0.25rem;">
                         <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0"
+                               style="margin-right: 0.25rem;">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                        <label class="admin-c-checkbox admin-accent admin-c-checkbox--without-text" tabindex="0"
                                style="margin-right: 0.25rem;">
                             <input class="admin-c-checkbox__input" type="checkbox" hidden>
                             <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -600,6 +650,16 @@
                         </label>
                     </div>
                     <div style="margin-bottom: 0.25rem;">
+                        <label class="admin-c-radio admin-accent" tabindex="0">
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                            <span class="admin-c-radio__text">Lorem ipsum</span>
+                        </label>
+                    </div>
+                    <div style="margin-bottom: 0.25rem;">
                         <label class="admin-c-radio admin-success" tabindex="0">
                             <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden>
                             <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -621,6 +681,14 @@
                     </div>
                     <div style="margin-bottom: 0.25rem;">
                         <label class="admin-c-radio admin-c-radio--without-text" tabindex="0"
+                               style="margin-right: 0.25rem;">
+                            <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden>
+                            <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                        </label>
+                        <label class="admin-c-radio admin-accent admin-c-radio--without-text" tabindex="0"
                                style="margin-right: 0.25rem;">
                             <input class="admin-c-radio__input" type="radio" name="admin-c-radio" hidden>
                             <svg class="admin-c-radio__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -671,6 +739,13 @@
                             <input class="admin-checkbox__input" type="checkbox" name="admin-checkbox-1" hidden disabled>
                             <span class="admin-checkbox__box"></span>
                             <span class="admin-checkbox__text">Example 1</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="admin-checkbox admin-accent" tabindex="0">
+                            <input class="admin-checkbox__input" type="checkbox" name="admin-checkbox-2" hidden>
+                            <span class="admin-checkbox__box"></span>
+                            <span class="admin-checkbox__text">Example 2</span>
                         </label>
                     </div>
                     <div>
@@ -732,6 +807,14 @@
                     </div>
                     <div>
                         <label style="--checkbox-circle-color: black; --checkbox-chevron-color: white;"
+                               class="admin-color-checkbox admin-accent" tabindex="0">
+                            <input class="admin-color-checkbox__input" type="checkbox" hidden>
+                            <span class="admin-color-checkbox__box"></span>
+                            <span class="admin-color-checkbox__text">Black</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label style="--checkbox-circle-color: black; --checkbox-chevron-color: white;"
                                class="admin-color-checkbox admin-success" tabindex="0">
                             <input class="admin-color-checkbox__input" type="checkbox" hidden>
                             <span class="admin-color-checkbox__box"></span>
@@ -772,6 +855,7 @@
                                 provident quasi quis soluta totam? Fuga id nostrum rerum?
                             </div>
                             <button type="button" class="admin-btn">Primary</button>
+                            <button type="button" class="admin-btn admin-accent">Accent</button>
                             <button type="button" class="admin-btn admin-success">Success</button>
                             <button type="button" class="admin-btn admin-danger">Danger</button>
                         </div>
@@ -831,6 +915,14 @@
                     <label class="admin-field" style="margin-bottom: 0.5rem;">
                         <span class="admin-field__text">Text</span>
                         <input class="admin-field__input" type="text" readonly value="test">
+                    </label>
+                    <label class="admin-field" style="margin-bottom: 0.5rem;">
+                        <span class="admin-field__text">Range</span>
+                        <input class="admin-field__input" type="range">
+                    </label>
+                    <label class="admin-field" style="margin-bottom: 0.5rem;">
+                        <span class="admin-field__text">Disabled Range</span>
+                        <input class="admin-field__input" type="range" disabled>
                     </label>
                     <div style="margin-bottom: 0.5rem;">
                         <label class="admin-field admin-success">
@@ -899,7 +991,7 @@
                         <input id="admin-input-id-6" class="admin-input" type="range">
                     </div>
                     <div style="margin-bottom: 0.5rem;">
-                        <label for="admin-input-id-7" class="admin-input__label">Range</label>
+                        <label for="admin-input-id-7" class="admin-input__label">Disabled Range</label>
                         <input id="admin-input-id-7" class="admin-input" type="range" disabled>
                     </div>
                     <div class="admin-success" style="margin-bottom: 0.5rem;">
@@ -1349,6 +1441,13 @@
                             <input class="admin-radio__input" type="radio" name="admin-radio" hidden disabled>
                             <span class="admin-radio__box"></span>
                             <span class="admin-radio__text">Radio 2</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="admin-radio admin-accent" tabindex="0">
+                            <input class="admin-radio__input" type="radio" name="admin-radio" hidden>
+                            <span class="admin-radio__box"></span>
+                            <span class="admin-radio__text">Radio 3</span>
                         </label>
                     </div>
                     <div>

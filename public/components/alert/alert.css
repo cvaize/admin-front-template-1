@@ -7,6 +7,12 @@
     border-radius: 0.3rem;
 }
 
+.admin-alert.admin-accent {
+    color: rgb(var(--admin-app-color));
+    background-color: rgba(var(--admin-app-accent-color), 0.2);
+    border-color: rgba(var(--admin-app-accent-color), 0.3);
+}
+
 .admin-alert.admin-success {
     color: rgb(var(--admin-app-color));
     background-color: rgba(var(--admin-app-success-color), 0.2);

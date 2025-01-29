@@ -24,6 +24,10 @@ select.admin-input:disabled {
     background-color: rgba(var(--admin-app-color), 0.1);
 }
 
+.admin-input[type="range"]:disabled {
+    opacity: 0.5;
+}
+
 input.admin-input:read-only:focus, input.admin-input:disabled:focus,
 select.admin-input:disabled:focus {
     box-shadow: none;

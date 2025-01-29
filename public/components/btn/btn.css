@@ -27,6 +27,26 @@
     background-color: rgba(var(--admin-app-color), 0.8);
 }
 
+.admin-btn:focus {
+    box-shadow: 0 0 0 2px rgba(var(--admin-app-color), 0.5);
+}
+
+.admin-btn.admin-accent {
+    background-color: rgb(var(--admin-app-accent-color));
+}
+
+.admin-btn.admin-accent:hover {
+    background-color: rgba(var(--admin-app-accent-color), 0.9);
+}
+
+.admin-btn.admin-accent:active {
+    background-color: rgba(var(--admin-app-accent-color), 0.8);
+}
+
+.admin-btn.admin-accent:focus {
+    box-shadow: 0 0 0 2px rgba(var(--admin-app-accent-color), 0.5);
+}
+
 .admin-btn.admin-success {
     background-color: rgb(var(--admin-app-success-color));
 }
@@ -39,6 +59,10 @@
     background-color: rgba(var(--admin-app-success-color), 0.8);
 }
 
+.admin-btn.admin-success:focus {
+    box-shadow: 0 0 0 2px rgba(var(--admin-app-success-color), 0.5);
+}
+
 .admin-btn.admin-danger {
     background-color: rgb(var(--admin-app-danger-color));
 }
@@ -49,4 +73,8 @@
 
 .admin-btn.admin-danger:active {
     background-color: rgba(var(--admin-app-danger-color), 0.8);
+}
+
+.admin-btn.admin-danger:focus {
+    box-shadow: 0 0 0 2px rgba(var(--admin-app-danger-color), 0.5);
 }

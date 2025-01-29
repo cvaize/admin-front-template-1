@@ -1,4 +1,5 @@
 .admin-c-checkbox {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-color), 0.5);
     position: relative;
     cursor: pointer;
     user-select: none;
@@ -50,6 +51,11 @@
 
 .admin-c-checkbox--without-text > .admin-c-checkbox__svg-icon {
     margin-right: 0;
+}
+
+.admin-accent.admin-c-checkbox {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-accent-color), 0.5);
+    color: rgb(var(--admin-app-accent-color));
 }
 
 .admin-success.admin-c-checkbox {

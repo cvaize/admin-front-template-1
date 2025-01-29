@@ -1,4 +1,5 @@
 .admin-checkbox {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-color), 0.5);
     position: relative;
     user-select: none;
     display: inline-block;
@@ -63,6 +64,11 @@
     outline: none;
 }
 
+.admin-accent.admin-checkbox {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-accent-color), 0.5);
+    color: rgb(var(--admin-app-accent-color));
+}
+
 .admin-success.admin-checkbox {
     --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-success-color), 0.5);
     color: rgb(var(--admin-app-success-color));
@@ -73,6 +79,7 @@
     color: rgb(var(--admin-app-danger-color));
 }
 
+.admin-accent.admin-checkbox > .admin-checkbox__box:after,
 .admin-success.admin-checkbox > .admin-checkbox__box:after,
 .admin-danger.admin-checkbox > .admin-checkbox__box:after {
     color: rgb(var(--admin-app-color));

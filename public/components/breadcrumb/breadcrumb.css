@@ -8,6 +8,7 @@
 
 .admin-breadcrumb__item .admin-breadcrumb__link {
     color: inherit;
+    border-radius: 0.3rem;
 }
 
 .admin-breadcrumb__item .admin-breadcrumb__link:hover {

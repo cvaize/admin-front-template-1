@@ -34,11 +34,11 @@
 }
 
 .admin-table--hover > .admin-table__tbody > .admin-table__tr:hover > * {
-    background-color: rgba(var(--admin-app-color), 0.1);
+    background-color: rgba(var(--admin-app-accent-color), 0.1);
 }
 
 .admin-table__td.admin-table--active,
 .admin-table__th.admin-table--active,
 .admin-table__tr.admin-table--active > * {
-    background-color: rgba(var(--admin-app-color), 0.2);
+    background-color: rgba(var(--admin-app-accent-color), 0.2);
 }

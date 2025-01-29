@@ -36,9 +36,9 @@
 }
 
 a.admin-pagination__link:hover, button.admin-pagination__link:hover {
-    background-color: rgba(var(--admin-app-color), 0.1);
+    background-color: rgba(var(--admin-app-accent-color), 0.1);
 }
 
 a.admin-pagination__link:active, button.admin-pagination__link:active {
-    background-color: rgba(var(--admin-app-color), 0.2);
+    background-color: rgba(var(--admin-app-accent-color), 0.2);
 }

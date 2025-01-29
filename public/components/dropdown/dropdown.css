@@ -41,7 +41,7 @@
 }
 
 .admin-dropdown__item:hover {
-    background-color: rgba(var(--admin-app-color), 0.1);
+    background-color: rgba(var(--admin-app-accent-color), 0.1);
 }
 
 .admin-dropdown:focus > .admin-dropdown__menu,

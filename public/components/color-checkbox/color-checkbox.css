@@ -61,22 +61,31 @@
 }
 
 .admin-color-checkbox:focus {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-color), 0.5);
     box-shadow: var(--admin-app-focus-box-shadow);
     outline: none;
 }
 
-.admin-color-checkbox.admin-success {
+.admin-accent.admin-color-checkbox {
+    --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-accent-color), 0.5);
+}
+
+.admin-accent.admin-color-checkbox > .admin-color-checkbox__text {
+    color: rgb(var(--admin-app-accent-color));
+}
+
+.admin-success.admin-color-checkbox {
     --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-success-color), 0.5);
 }
 
-.admin-color-checkbox.admin-success > .admin-color-checkbox__text {
+.admin-success.admin-color-checkbox > .admin-color-checkbox__text {
     color: rgb(var(--admin-app-success-color));
 }
 
-.admin-color-checkbox.admin-danger {
+.admin-danger.admin-color-checkbox {
     --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-danger-color), 0.5);
 }
 
-.admin-color-checkbox.admin-danger > .admin-color-checkbox__text {
+.admin-danger.admin-color-checkbox > .admin-color-checkbox__text {
     color: rgb(var(--admin-app-danger-color));
 }

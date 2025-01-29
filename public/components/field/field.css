@@ -29,6 +29,10 @@ select.admin-field__input:disabled {
     background-color: rgba(var(--admin-app-color), 0.1);
 }
 
+.admin-field__input[type="range"]:disabled {
+    opacity: 0.5;
+}
+
 input.admin-field__input:read-only:focus, input.admin-field__input:disabled:focus {
     box-shadow: none;
 }
@@ -37,36 +41,36 @@ input.admin-field__input:read-only:focus, input.admin-field__input:disabled:focu
 
 }
 
-.admin-field.admin-success .admin-field__text {
+.admin-success.admin-field .admin-field__text {
     color: rgb(var(--admin-app-success-color));
 }
 
-.admin-field.admin-success .admin-field__input {
+.admin-success.admin-field .admin-field__input {
     border-color: rgb(var(--admin-app-success-color));
 }
 
-.admin-field.admin-success > .admin-field__input:focus {
+.admin-success.admin-field > .admin-field__input:focus {
     --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-success-color), 0.5);
 }
 
-.admin-field.admin-success .admin-field__input[type="range"] {
+.admin-success.admin-field .admin-field__input[type="range"] {
     color: rgb(var(--admin-app-success-color));
     background-color: rgb(var(--admin-app-success-color));
 }
 
-.admin-field.admin-danger .admin-field__text {
+.admin-danger.admin-field .admin-field__text {
     color: rgb(var(--admin-app-danger-color));
 }
 
-.admin-field.admin-danger .admin-field__input {
+.admin-danger.admin-field .admin-field__input {
     border-color: rgb(var(--admin-app-danger-color));
 }
 
-.admin-field.admin-danger > .admin-field__input:focus {
+.admin-danger.admin-field > .admin-field__input:focus {
     --admin-app-focus-box-shadow: 0 0 0 2px rgba(var(--admin-app-danger-color), 0.5);
 }
 
-.admin-field.admin-danger .admin-field__input[type="range"] {
+.admin-danger.admin-field .admin-field__input[type="range"] {
     color: rgb(var(--admin-app-danger-color));
     background-color: rgb(var(--admin-app-danger-color));
 }
