@@ -10,7 +10,7 @@
     user-select: none;
     color: rgb(var(--admin-app-background-color));
     background-color: rgb(var(--admin-app-color));
-    border: 0.0625rem solid;
+    border: 0.0625rem solid rgb(var(--admin-app-color));
     border-radius: 0.3rem;
     cursor: pointer;
     transition: color .15s ease-in-out,
@@ -21,10 +21,12 @@
 
 .admin-btn:hover {
     background-color: rgba(var(--admin-app-color), 0.9);
+    border-color: rgba(var(--admin-app-color), 0.9);
 }
 
 .admin-btn:active {
     background-color: rgba(var(--admin-app-color), 0.8);
+    border-color: rgba(var(--admin-app-color), 0.8);
 }
 
 .admin-btn:focus {
@@ -33,14 +35,17 @@
 
 .admin-btn.admin-accent {
     background-color: rgb(var(--admin-app-accent-color));
+    border-color: rgb(var(--admin-app-accent-color));
 }
 
 .admin-btn.admin-accent:hover {
     background-color: rgba(var(--admin-app-accent-color), 0.9);
+    border-color: rgba(var(--admin-app-accent-color), 0.9);
 }
 
 .admin-btn.admin-accent:active {
     background-color: rgba(var(--admin-app-accent-color), 0.8);
+    border-color: rgba(var(--admin-app-accent-color), 0.8);
 }
 
 .admin-btn.admin-accent:focus {
@@ -49,14 +54,17 @@
 
 .admin-btn.admin-success {
     background-color: rgb(var(--admin-app-success-color));
+    border-color: rgb(var(--admin-app-success-color));
 }
 
 .admin-btn.admin-success:hover {
     background-color: rgba(var(--admin-app-success-color), 0.9);
+    border-color: rgba(var(--admin-app-success-color), 0.9);
 }
 
 .admin-btn.admin-success:active {
     background-color: rgba(var(--admin-app-success-color), 0.8);
+    border-color: rgba(var(--admin-app-success-color), 0.8);
 }
 
 .admin-btn.admin-success:focus {
@@ -65,16 +73,31 @@
 
 .admin-btn.admin-danger {
     background-color: rgb(var(--admin-app-danger-color));
+    border-color: rgb(var(--admin-app-danger-color));
 }
 
 .admin-btn.admin-danger:hover {
     background-color: rgba(var(--admin-app-danger-color), 0.9);
+    border-color: rgba(var(--admin-app-danger-color), 0.9);
 }
 
 .admin-btn.admin-danger:active {
     background-color: rgba(var(--admin-app-danger-color), 0.8);
+    border-color: rgba(var(--admin-app-danger-color), 0.8);
 }
 
 .admin-btn.admin-danger:focus {
     box-shadow: 0 0 0 2px rgba(var(--admin-app-danger-color), 0.5);
+}
+
+
+.admin-btn.admin-btn--link {
+    color: rgb(var(--admin-app-color));
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.admin-btn.admin-btn--link:hover, .admin-btn.admin-btn--link:active {
+    background-color: transparent;
 }

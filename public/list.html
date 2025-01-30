@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./components/btn/btn.css">
     <link rel="stylesheet" href="./components/d-block/d-block.css">
     <link rel="stylesheet" href="./components/d-none/d-none.css">
+    <link rel="stylesheet" href="./components/c-checkbox/c-checkbox.css">
+    <link rel="stylesheet" href="./components/dropdown/dropdown.css">
     <link rel="stylesheet" href="./components/dark-mode/dark-mode.css">
 </head>
 <body class="admin-body">
@@ -228,31 +230,47 @@
     </div>
     <div class="admin-content">
 
+
         <div class="admin-row">
             <div class="admin-col-auto">
-                <nav aria-label="breadcrumb" style="margin-top: 0.5rem;">
+                <nav aria-label="breadcrumb">
                     <ol class="admin-breadcrumb">
                         <li class="admin-breadcrumb__item"><a href="#" class="admin-breadcrumb__link">Панель</a></li>
-                        <li class="admin-breadcrumb__item admin-breadcrumb__item--active" aria-current="page">Пользователи</li>
+                        <li class="admin-breadcrumb__item admin-breadcrumb__item--active" aria-current="page">Список пользователей. Страница №1</li>
                     </ol>
                 </nav>
             </div>
-            <div class="admin-col-auto admin-d-none--xs" style="margin-left: auto;">
+            <div class="admin-col-auto admin-d-none--xs admin-d-none--sm admin-d-none--md" style="margin-left: auto;">
                 <a href="#" class="admin-btn admin-success">Добавить пользователя</a>
             </div>
-            <div class="admin-col-auto admin-d-block--xs" style="margin-left: auto; display: none;">
-                <a href="#" class="admin-btn admin-success" title="Добавить пользователя">+</a>
+        </div>
+
+        <div class="admin-row" style="align-items: flex-end;">
+            <div class="admin-col-auto">
+                <h1 style="margin-top: 0.25rem; margin-bottom: 0;">Список пользователей</h1>
+            </div>
+            <div class="admin-col-auto" style="margin-top: 0.5rem; margin-left: auto;">
+                <div class="admin-row" style="align-items: flex-start;">
+                    <div class="admin-col-auto" style="display: flex; flex-wrap: nowrap;">
+                        <label class="admin-field">
+                            <input class="admin-field__input" type="search" placeholder="Поиск..." style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                        </label>
+                        <button type="button" class="admin-btn" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                            <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </button>
+                    </div>
+                    <div class="admin-col-auto admin-d-block--xs admin-d-block--sm admin-d-block--md" style="display: none;">
+                        <a href="#" class="admin-btn admin-success" title="Добавить пользователя">+</a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="admin-row">
-            <div class="admin-col-auto">
-                <h1 style="margin-bottom: 1rem;">Страница 1: Список пользователей</h1>
-            </div>
             <div class="admin-col-auto" style="margin-left: auto;">
-                <div class="admin-row" style="margin-top: 0.25rem; margin-bottom: 1rem;">
+                <div class="admin-row" style="margin-top: 0.25rem;">
                     <div class="admin-col-auto" style="margin-left: auto;">
-                        <label class="admin-field" style="margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; align-items: center;">
+                        <label class="admin-field" style="margin-top: 0.25rem; display: flex; flex-wrap: wrap; align-items: center;">
                             <span class="admin-field__text" style="white-space: nowrap; margin-right: 0.5rem;">Сортировка</span>
                             <select class="admin-field__input" style="min-width: 0; width: fit-content;">
                                 <option>Фамилия А-Я</option>
@@ -264,9 +282,9 @@
                             </select>
                         </label>
                     </div>
-                    <nav class="admin-col-auto" aria-label="Page navigation example">
-                        <ul class="admin-pagination" style="margin-bottom: 0.5rem;">
-                            <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">1</a></li>
+                    <nav class="admin-col-auto admin-d-none--xs admin-d-none--sm admin-d-none--md" style="margin-left: auto;" aria-label="Page navigation example">
+                        <ul class="admin-pagination" style="margin-top: 0.25rem;">
+                            <li class="admin-pagination__item"><a class="admin-pagination__link admin-active" href="#">1</a></li>
                             <li class="admin-pagination__item"><span class="admin-pagination__link">...</span></li>
                             <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">7</a></li>
                             <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">8</a></li>
@@ -275,8 +293,8 @@
                             <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">50</a></li>
                         </ul>
                     </nav>
-                    <div class="admin-col-auto">
-                        <label class="admin-field" style="margin-bottom: 0.5rem;" title="Выбрать страницу">
+                    <div class="admin-col-auto admin-d-none--xs admin-d-none--sm admin-d-none--md" style="margin-left: auto;">
+                        <label class="admin-field" style="margin-top: 0.25rem;" title="Выбрать страницу">
                             <select class="admin-field__input" style="min-width: 0; width: fit-content;">
                                 <option>1</option>
                                 <option>5</option>
@@ -300,7 +318,26 @@
             <table class="admin-table admin-table--hover">
                 <thead class="admin-table__thead">
                 <tr class="admin-table__tr">
-                    <th class="admin-table__th" scope="col">#</th>
+                    <th class="admin-table__th" scope="col" style="width: 0;">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
+                    <th class="admin-table__th" scope="col" style="width: 0;">
+                        <div class="admin-dropdown" tabindex="-1" style="margin-top: 0.5rem; white-space: nowrap;">
+                            <button class="admin-btn admin-btn--link admin-dropdown__btn" type="button" style="padding-left: 0.25rem; padding-right: 0.5rem;">
+                                Выбрано 0
+                            </button>
+                            <ul class="admin-dropdown__menu">
+                                <li><a class="admin-dropdown__item" href="#">Удалить выбранное</a></li>
+                                <li><a class="admin-dropdown__item" href="#">Изменить выбранное</a></li>
+                            </ul>
+                        </div>
+                    </th>
                     <th class="admin-table__th" scope="col">First</th>
                     <th class="admin-table__th" scope="col">Last</th>
                     <th class="admin-table__th" scope="col">Handle</th>
@@ -308,119 +345,299 @@
                 </thead>
                 <tbody class="admin-table__tbody">
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">1</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr admin-table--active">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">2</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">3</th>
                     <td class="admin-table__td" colspan="2">Larry the Bird</td>
                     <td class="admin-table__td admin-table--active">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">4</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">5</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">6</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">7</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">8</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">9</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">10</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">11</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">12</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">13</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">14</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">15</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">16</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">17</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">18</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">19</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
                     <td class="admin-table__td">@mdo</td>
                 </tr>
                 <tr class="admin-table__tr">
+                    <th class="admin-table__th" scope="row">
+                        <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
+                            <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                            <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                 height="24" viewBox="0 0 24 24">
+                                <path d="M9 16.17 5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41L9 16.17z"/>
+                            </svg>
+                        </label>
+                    </th>
                     <th class="admin-table__th" scope="row">20</th>
                     <td class="admin-table__td">Mark</td>
                     <td class="admin-table__td">Otto</td>
@@ -431,6 +648,9 @@
         </div>
 
         <div class="admin-row">
+            <div class="admin-col-auto" style="white-space: nowrap; margin-top: 0.4rem;">
+                Страница 1 из 50
+            </div>
             <div class="admin-col-auto" style="margin-left: auto;">
                 <label class="admin-field" style="margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; align-items: center;">
                     <span class="admin-field__text" style="white-space: nowrap; margin-right: 0.5rem;">Кол-во записей на странице</span>
@@ -446,7 +666,7 @@
             </div>
             <nav class="admin-col-auto" aria-label="Page navigation example">
                 <ul class="admin-pagination" style="margin-bottom: 0.5rem;">
-                    <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">1</a></li>
+                    <li class="admin-pagination__item"><a class="admin-pagination__link admin-active" href="#">1</a></li>
                     <li class="admin-pagination__item"><span class="admin-pagination__link">...</span></li>
                     <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">7</a></li>
                     <li class="admin-pagination__item"><a class="admin-pagination__link" href="#">8</a></li>

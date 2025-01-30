@@ -14,6 +14,7 @@
     border-radius: 0.3rem;
     list-style: none;
     margin: 0;
+    z-index: 10;
 }
 
 .admin-dropdown__item {
@@ -35,8 +36,8 @@
     width: 0.6em;
     height: 0.6em;
     margin: 0 0.3em 0 0;
-    border-right: 0.2em solid rgb(var(--admin-app-background-color));
-    border-bottom: 0.2em solid rgb(var(--admin-app-background-color));
+    border-right: 0.2em solid currentColor;
+    border-bottom: 0.2em solid currentColor;
     transform: rotateZ(45deg) translate(0.1em, -0.4em);
 }
 
