@@ -33,6 +33,24 @@ select.admin-field__input:disabled {
     opacity: 0.5;
 }
 
+input.admin-field__input[type="file"], input.admin-field__input[type="file"]:read-only, input.admin-field__input[type="file"]:disabled {
+    background: transparent;
+    display: inline-block;
+    width: fit-content;
+    border: none;
+}
+
+.admin-field__input::file-selector-button {
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
 input.admin-field__input:read-only:focus, input.admin-field__input:disabled:focus {
     box-shadow: none;
 }
