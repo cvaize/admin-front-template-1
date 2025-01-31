@@ -1,26 +1,62 @@
 .admin-list-page {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto auto auto;
+    gap: 0.5rem 0.5rem;
+    grid-template-areas:
+    "breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb"
+    "header header header header header buttons buttons"
+    "tags tags search search search search search"
+    "tags tags top-sort top-paginate top-paginate top-paginate top-page-control"
+    "data data data data data data data"
+    "page-number page-number per-page bottom-paginate bottom-paginate bottom-paginate bottom-page-control"
+;
+}
+
+.admin-list-page__breadcrumb, .admin-list-page__header, .admin-list-page__tags, .admin-list-page__page-number {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.admin-list-page__buttons, .admin-list-page__search, .admin-list-page__top-sort, .admin-list-page__top-paginate,
+.admin-list-page__top-page-control, .admin-list-page__per-page, .admin-list-page__bottom-paginate,
+.admin-list-page__bottom-page-control {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .admin-list-page__breadcrumb {
     display: block;
     width: 100%;
+    grid-area: breadcrumb;
 }
 
 .admin-list-page__header {
     display: block;
+    grid-area: header;
+    margin-bottom: 0;
 }
 
-.admin-list-page__lg-add-btn {
-    display: inline-block;
+.admin-list-page__buttons {
+    grid-area: buttons;
 }
 
 .admin-list-page__tags {
+    grid-area: tags;
 }
 
 .admin-list-page__search {
+    grid-area: search;
 }
 
 .admin-list-page__top-sort {
+    grid-area: top-sort;
+}
+
+.admin-list-page__top-sort__field {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -31,27 +67,29 @@
     margin-right: 0.5rem;
 }
 
-.admin-list-page__top-sort__select {
-}
-
 .admin-list-page__top-paginate {
+    grid-area: top-paginate;
 }
 
 .admin-list-page__top-page-control {
-}
-
-.admin-list-page__top-page-control__select {
+    grid-area: top-page-control;
 }
 
 .admin-list-page__data {
+    grid-area: data;
 }
 
 .admin-list-page__page-number {
     white-space: nowrap;
     margin-top: 0.4rem;
+    grid-area: page-number;
 }
 
 .admin-list-page__per-page {
+    grid-area: per-page;
+}
+
+.admin-list-page__per-page__field {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -62,16 +100,11 @@
     margin-right: 0.5rem;
 }
 
-.admin-list-page__per-page__select {
-
-}
-
 .admin-list-page__bottom-paginate {
+    grid-area: bottom-paginate;
 }
 
 .admin-list-page__bottom-page-control {
+    grid-area: bottom-page-control;
 }
 
-.admin-list-page__bottom-page-control__select {
-
-}
