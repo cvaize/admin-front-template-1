@@ -25,6 +25,10 @@
     padding: 0;
 }
 
+select.admin-field__input {
+    width: fit-content;
+}
+
 input.admin-field__input:read-only, input.admin-field__input:disabled,
 select.admin-field__input:disabled {
     background-color: rgba(var(--admin-app-color), 0.1);

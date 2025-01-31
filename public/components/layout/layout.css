@@ -149,6 +149,14 @@ button, select {
     padding-right: 0.5rem;
 }
 
+.admin-col {
+    flex: 1 0 0;
+    width: auto;
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 @media (min-width: 1400px) and (max-width: 1460px) {
     .admin-container {
         max-width: 1320px;
