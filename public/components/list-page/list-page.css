@@ -1,74 +1,75 @@
 .admin-list-page {
-
 }
 
 .admin-list-page__breadcrumb {
-
+    display: block;
+    width: 100%;
 }
 
 .admin-list-page__header {
-
+    display: block;
 }
 
 .admin-list-page__lg-add-btn {
-
+    display: inline-block;
 }
 
 .admin-list-page__tags {
-
 }
 
 .admin-list-page__search {
-
 }
 
 .admin-list-page__top-sort {
-    display: flex; flex-wrap: wrap; align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .admin-list-page__top-sort__label {
-    white-space: nowrap; margin-right: 0.5rem;
+    white-space: nowrap;
+    margin-right: 0.5rem;
 }
 
 .admin-list-page__top-sort__select {
 }
 
 .admin-list-page__top-paginate {
-
 }
 
 .admin-list-page__top-page-control {
-
 }
 
 .admin-list-page__top-page-control__select {
 }
 
-.admin-list-page__table {
-
+.admin-list-page__data {
 }
 
 .admin-list-page__page-number {
-    white-space: nowrap; margin-top: 0.4rem;
+    white-space: nowrap;
+    margin-top: 0.4rem;
 }
 
 .admin-list-page__per-page {
-    display: flex; flex-wrap: wrap; align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .admin-list-page__per-page__label {
-    white-space: nowrap; margin-right: 0.5rem;
+    white-space: nowrap;
+    margin-right: 0.5rem;
 }
+
 .admin-list-page__per-page__select {
 
 }
 
 .admin-list-page__bottom-paginate {
-
 }
 
 .admin-list-page__bottom-page-control {
-
 }
 
 .admin-list-page__bottom-page-control__select {
