@@ -4,7 +4,7 @@
     gap: 0.5rem 0.5rem;
     grid-template-areas:
     "breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb"
-    "header header header header header buttons buttons"
+    "header header buttons buttons buttons buttons buttons"
     "tags tags search search search search search"
     "tags tags top-sort top-paginate top-paginate top-paginate top-page-control"
     "data data data data data data data"
