@@ -505,7 +505,7 @@
                             </th>
                             <th class="admin-table__th" scope="col">First</th>
                             <th class="admin-table__th" scope="col">Last</th>
-                            <th class="admin-table__th" scope="col">Handle</th>
+                            <th class="admin-table__th" scope="col">Действия</th>
                         </tr>
                         </thead>
                         <tbody class="admin-table__tbody">
@@ -523,9 +523,18 @@
                             <th class="admin-table__th" scope="row">1</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
-                        <tr class="admin-table__tr admin-table--active">
+                        <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
                                     <input class="admin-c-checkbox__input" type="checkbox" hidden>
@@ -539,7 +548,16 @@
                             <th class="admin-table__th" scope="row">2</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -553,8 +571,18 @@
                                 </label>
                             </th>
                             <th class="admin-table__th" scope="row">3</th>
-                            <td class="admin-table__td" colspan="2">Larry the Bird</td>
-                            <td class="admin-table__td admin-table--active">@mdo</td>
+                            <td class="admin-table__td">Mark</td>
+                            <td class="admin-table__td">Otto</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -570,7 +598,16 @@
                             <th class="admin-table__th" scope="row">4</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -586,7 +623,16 @@
                             <th class="admin-table__th" scope="row">5</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -602,7 +648,16 @@
                             <th class="admin-table__th" scope="row">6</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -618,7 +673,16 @@
                             <th class="admin-table__th" scope="row">7</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -634,7 +698,16 @@
                             <th class="admin-table__th" scope="row">8</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -650,7 +723,16 @@
                             <th class="admin-table__th" scope="row">9</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -666,7 +748,16 @@
                             <th class="admin-table__th" scope="row">10</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -682,7 +773,16 @@
                             <th class="admin-table__th" scope="row">11</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -698,7 +798,16 @@
                             <th class="admin-table__th" scope="row">12</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -714,7 +823,16 @@
                             <th class="admin-table__th" scope="row">13</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -730,7 +848,16 @@
                             <th class="admin-table__th" scope="row">14</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -746,7 +873,16 @@
                             <th class="admin-table__th" scope="row">15</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -762,7 +898,16 @@
                             <th class="admin-table__th" scope="row">16</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -778,7 +923,16 @@
                             <th class="admin-table__th" scope="row">17</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -794,7 +948,16 @@
                             <th class="admin-table__th" scope="row">18</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -810,7 +973,16 @@
                             <th class="admin-table__th" scope="row">19</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
@@ -826,7 +998,16 @@
                             <th class="admin-table__th" scope="row">20</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">@mdo</td>
+                            <td class="admin-table__td">
+                                <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                </a>
+                                <form action="#" style="display: inline-block">
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
