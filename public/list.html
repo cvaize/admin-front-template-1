@@ -263,7 +263,7 @@
             </div>
 
             <div class="admin-list-page__tags">
-                <div class="admin-tags">
+                <div class="admin-tags" style="min-height: 100%;">
                     <div class="admin-tag">
                         <div class="admin-tag__name">Цвет:</div>
                         <div class="admin-tag__value">
@@ -312,7 +312,7 @@
                             <a href="#" class="admin-tag__close"></a>
                         </div>
                     </div>
-                    <div style="width: 100%">
+                    <div style="width: 100%; margin-top: auto;">
                         <a href="#" class="admin-btn admin-btn--link" style="text-decoration: underline;">
                             Сбросить все фильтры
                         </a>
@@ -441,7 +441,7 @@
 
             <div class="admin-list-page__data">
                 <form id="admin-list-page-mass-actions-form" action="#"></form>
-                <div class="admin-table__responsive" style="padding: 0.2rem 0 0 0.2rem; margin: -0.2rem 0 0 -0.2rem">
+                <div class="admin-table__responsive" style="padding: 0.25rem 0 0 0.25rem; margin: -0.25rem 0 0 -0.25rem">
                     <div class="admin-list-page__actions-dropdown admin-dropdown" tabindex="-1"
                          style="white-space: nowrap; opacity: 0; pointer-events: none;">
                         <button class="admin-btn admin-btn--link admin-dropdown__btn" type="button"
@@ -453,7 +453,7 @@
                             <li>
                                 <button type="submit" class="admin-dropdown__item"
                                         form="admin-list-page-mass-actions-form"
-                                        name="action" value="selected-delete">
+                                        name="action" value="selected-delete" onclick="return confirm('Удалить выбранное?');">
                                     Удалить выбранное
                                 </button>
                             </li>
