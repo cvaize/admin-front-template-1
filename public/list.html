@@ -491,6 +491,7 @@
             </div>
 
             <div class="admin-list-page__data">
+                <form id="admin-list-page-mass-actions-form" action="#"></form>
                 <div class="admin-table__responsive" style="padding: 0.2rem 0 0 0.2rem; margin: -0.2rem 0 0 -0.2rem">
                     <div class="admin-list-page__actions-dropdown admin-dropdown" tabindex="-1"
                          style="white-space: nowrap; opacity: 0; pointer-events: none;">
@@ -500,8 +501,20 @@
                             <span class="admin-list-page__actions-dropdown__count">0</span>
                         </button>
                         <ul class="admin-dropdown__menu">
-                            <li><a class="admin-dropdown__item" href="#">Удалить выбранное</a></li>
-                            <li><a class="admin-dropdown__item" href="#">Изменить выбранное</a></li>
+                            <li>
+                                <button type="submit" class="admin-dropdown__item"
+                                        form="admin-list-page-mass-actions-form"
+                                        name="action" value="selected-delete">
+                                    Удалить выбранное
+                                </button>
+                            </li>
+                            <li>
+                                <button type="submit" class="admin-dropdown__item"
+                                        form="admin-list-page-mass-actions-form"
+                                        name="action" value="selected-edit">
+                                    Изменить выбранное
+                                </button>
+                            </li>
                         </ul>
                     </div>
                     <table class="admin-table admin-table--hover">
@@ -527,7 +540,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="1">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -559,7 +574,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="2">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -591,7 +608,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="3">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -623,7 +642,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="4">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -655,7 +676,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="5">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -687,7 +710,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="6">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -719,7 +744,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="7">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -751,7 +778,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="8">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -783,7 +812,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="9">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -815,7 +846,9 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden
+                                        form="admin-list-page-mass-actions-form"
+                                        name="selected[]" value="10">
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
