@@ -157,25 +157,25 @@ button, select {
     padding-right: 0.5rem;
 }
 
-@media (min-width: 1400px) and (max-width: 1460px) {
+@media (max-width: 1460px) {
     .admin-container {
         max-width: 1320px;
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1399px) {
+@media (max-width: 1399px) {
     .admin-container {
         max-width: 1140px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
     .admin-container {
         max-width: 960px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
     .admin-container {
         max-width: 720px;
     }

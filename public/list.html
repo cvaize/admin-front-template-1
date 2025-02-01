@@ -247,11 +247,17 @@
             </div>
 
             <div class="admin-list-page__header">
-                <h1 style="margin: 0;">Список пользователей</h1>
+                <h1 class="admin-list-page__header__text" style="margin: 0;">Список пользователей</h1>
             </div>
 
             <div class="admin-list-page__buttons">
-                <a href="#" class="admin-btn admin-success">Добавить пользователя</a>
+                <a href="#" class="admin-btn admin-success">
+                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24">
+                        <path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"/>
+                    </svg>
+                    Добавить пользователя
+                </a>
             </div>
 
             <div class="admin-list-page__tags">
@@ -364,8 +370,8 @@
             </div>
 
             <div class="admin-list-page__search">
-                <form action="#" class="admin-search-group">
-                    <label class="admin-search-group__input-wrapper">
+                <form action="#" class="admin-list-page__search__grow admin-search-group">
+                    <label class="admin-list-page__search__grow admin-search-group__input-wrapper">
                         <input class="admin-search-group__input admin-field__input" type="search"
                                placeholder="Поиск...">
                         <button class="admin-search-group__reset" type="reset" aria-label="Сбросить">
@@ -383,10 +389,16 @@
                     </button>
                 </form>
                 <label for="admin-modal__filters" class="admin-btn admin-btn" style="margin-left: 0.5rem;">
-                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 6h10l-5.01 6.3L7 6zm-2.75-.39C6.27 8.2 10 13 10 13v6c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-6s3.72-4.8 5.74-7.39A.998.998 0 0 0 18.95 4H5.04c-.83 0-1.3.95-.79 1.61z"/></svg>
-                    Фильтры
+                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24">
+                        <path d="M7 6h10l-5.01 6.3L7 6zm-2.75-.39C6.27 8.2 10 13 10 13v6c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-6s3.72-4.8 5.74-7.39A.998.998 0 0 0 18.95 4H5.04c-.83 0-1.3.95-.79 1.61z"/>
+                    </svg>
+                    <span class="admin-list-page__search__text">
+                        Фильтры
+                    </span>
                 </label>
-                <input id="admin-modal__filters" class="admin-modal__checkbox" type="checkbox" name="admin-modal__filters"
+                <input id="admin-modal__filters" class="admin-modal__checkbox" type="checkbox"
+                       name="admin-modal__filters"
                        hidden>
                 <div class="admin-modal" tabindex="-1">
                     <label for="admin-modal__filters" class="admin-modal__backdrop"></label>
@@ -394,7 +406,8 @@
                         <div class="admin-modal__content">
                             <div class="admin-modal__header">
                                 <h5 class="admin-modal__title">Фильтры</h5>
-                                <label for="admin-modal__filters" class="admin-modal__close-btn" aria-label="Close"></label>
+                                <label for="admin-modal__filters" class="admin-modal__close-btn"
+                                       aria-label="Close"></label>
                             </div>
                             <div class="admin-modal__body">
                                 <label class="admin-field" style="margin-bottom: 0.5rem;">
@@ -523,13 +536,20 @@
                             <th class="admin-table__th" scope="row">1</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -548,13 +568,20 @@
                             <th class="admin-table__th" scope="row">2</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -573,13 +600,20 @@
                             <th class="admin-table__th" scope="row">3</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -598,13 +632,20 @@
                             <th class="admin-table__th" scope="row">4</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -623,13 +664,20 @@
                             <th class="admin-table__th" scope="row">5</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -648,13 +696,20 @@
                             <th class="admin-table__th" scope="row">6</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -673,13 +728,20 @@
                             <th class="admin-table__th" scope="row">7</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -698,13 +760,20 @@
                             <th class="admin-table__th" scope="row">8</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -723,13 +792,20 @@
                             <th class="admin-table__th" scope="row">9</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -748,13 +824,20 @@
                             <th class="admin-table__th" scope="row">10</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -773,13 +856,20 @@
                             <th class="admin-table__th" scope="row">11</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -798,13 +888,20 @@
                             <th class="admin-table__th" scope="row">12</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -823,13 +920,20 @@
                             <th class="admin-table__th" scope="row">13</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -848,13 +952,20 @@
                             <th class="admin-table__th" scope="row">14</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -873,13 +984,20 @@
                             <th class="admin-table__th" scope="row">15</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -898,13 +1016,20 @@
                             <th class="admin-table__th" scope="row">16</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -923,13 +1048,20 @@
                             <th class="admin-table__th" scope="row">17</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -948,13 +1080,20 @@
                             <th class="admin-table__th" scope="row">18</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -973,13 +1112,20 @@
                             <th class="admin-table__th" scope="row">19</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
@@ -998,13 +1144,20 @@
                             <th class="admin-table__th" scope="row">20</th>
                             <td class="admin-table__td">Mark</td>
                             <td class="admin-table__td">Otto</td>
-                            <td class="admin-table__td">
+                            <td class="admin-table__td" style="white-space: nowrap;">
                                 <a href="#" class="admin-btn admin-btn--square" title="Редактировать">
-                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                         height="24" viewBox="0 0 24 24">
+                                        <path d="m14.06 9.02.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83a.996.996 0 0 0 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/>
+                                    </svg>
                                 </a>
                                 <form action="#" style="display: inline-block">
-                                    <button type="submit" class="admin-btn admin-btn--square admin-danger" title="Удалить" onclick="return confirm('Удалить?');">
-                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/></svg>
+                                    <button type="submit" class="admin-btn admin-btn--square admin-danger"
+                                            title="Удалить" onclick="return confirm('Удалить?');">
+                                        <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24">
+                                            <path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z"/>
+                                        </svg>
                                     </button>
                                 </form>
                             </td>
