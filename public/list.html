@@ -302,21 +302,6 @@
                         </div>
                     </div>
                     <div class="admin-tag">
-                        <div class="admin-tag__name">Размер:</div>
-                        <div class="admin-tag__value">
-                            38
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                        <div class="admin-tag__value">
-                            40
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                        <div class="admin-tag__value">
-                            42
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                    </div>
-                    <div class="admin-tag">
                         <div class="admin-tag__name">Цвет:</div>
                         <div class="admin-tag__value">
                             Черный
@@ -327,63 +312,27 @@
                             <a href="#" class="admin-tag__close"></a>
                         </div>
                     </div>
-                    <div class="admin-tag">
-                        <div class="admin-tag__name">Размер:</div>
-                        <div class="admin-tag__value">
-                            38
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                        <div class="admin-tag__value">
-                            40
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                        <div class="admin-tag__value">
-                            42
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                    </div>
-                    <div class="admin-tag">
-                        <div class="admin-tag__name">Цвет:</div>
-                        <div class="admin-tag__value">
-                            Черный
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                        <div class="admin-tag__value">
-                            Белый
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                    </div>
-                    <div class="admin-tag">
-                        <div class="admin-tag__name">Размер:</div>
-                        <div class="admin-tag__value">
-                            38
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                        <div class="admin-tag__value">
-                            40
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
-                        <div class="admin-tag__value">
-                            42
-                            <a href="#" class="admin-tag__close"></a>
-                        </div>
+                    <div style="width: 100%">
+                        <button form="admin-list-page-search-form" class="admin-btn admin-btn--link" type="submit" name="action" value="all-reset" style="text-decoration: underline;">
+                            Сбросить все фильтры
+                        </button>
                     </div>
                 </div>
             </div>
 
             <div class="admin-list-page__search">
-                <form action="#" class="admin-list-page__search__grow admin-search-group">
+                <form id="admin-list-page-search-form" action="#" class="admin-list-page__search__grow admin-search-group">
                     <label class="admin-list-page__search__grow admin-search-group__input-wrapper">
                         <input class="admin-search-group__input admin-field__input" type="search"
                                placeholder="Поиск...">
-                        <button class="admin-search-group__reset" type="reset" aria-label="Сбросить">
+                        <button class="admin-search-group__reset" name="action" value="search-reset" type="submit" aria-label="Сбросить">
                             <svg class="admin-search-group__reset-icon-svg admin-icon--svg"
                                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
                             </svg>
                         </button>
                     </label>
-                    <button class="admin-search-group__submit admin-btn" type="button">
+                    <button class="admin-search-group__submit admin-btn" type="submit">
                         <svg class="admin-icon--svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                              viewBox="0 0 24 24">
                             <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
@@ -414,23 +363,23 @@
                             <div class="admin-modal__body">
                                 <label class="admin-field" style="margin-bottom: 0.5rem;">
                                     <span class="admin-field__text">Lorem</span>
-                                    <input class="admin-field__input" type="text">
+                                    <input form="admin-list-page-search-form" name="filter1" class="admin-field__input" type="text">
                                 </label>
                                 <label class="admin-field" style="margin-bottom: 0.5rem;">
                                     <span class="admin-field__text">Lorem</span>
-                                    <input class="admin-field__input" type="text">
+                                    <input form="admin-list-page-search-form" name="filter2" class="admin-field__input" type="text">
                                 </label>
                                 <label class="admin-field" style="margin-bottom: 0.5rem;">
                                     <span class="admin-field__text">Lorem</span>
-                                    <input class="admin-field__input" type="text">
+                                    <input form="admin-list-page-search-form" name="filter3" class="admin-field__input" type="text">
                                 </label>
                                 <label class="admin-field" style="margin-bottom: 0.5rem;">
                                     <span class="admin-field__text">Lorem</span>
-                                    <input class="admin-field__input" type="text">
+                                    <input form="admin-list-page-search-form" name="filter4" class="admin-field__input" type="text">
                                 </label>
                             </div>
                             <div class="admin-modal__footer" style="display: flex; flex-wrap: wrap;">
-                                <button type="button" class="admin-btn admin-success"
+                                <button form="admin-list-page-search-form" type="submit" class="admin-btn admin-success"
                                         style="margin-right: 1rem;">
                                     Применить
                                 </button>
@@ -442,10 +391,10 @@
                 </div>
             </div>
 
-            <div class="admin-list-page__top-sort">
-                <label class="admin-list-page__top-sort__field admin-field">
-                    <span class="admin-list-page__top-sort__label admin-field__text">Сортировка</span>
-                    <select class="admin-field__input">
+            <div class="admin-list-page__sort">
+                <label class="admin-list-page__sort__field admin-field">
+                    <span class="admin-list-page__sort__label admin-field__text">Сортировка</span>
+                    <select form="admin-list-page-search-form" name="sort" class="admin-field__input">
                         <option>Фамилия А-Я</option>
                         <option>Фамилия Я-А</option>
                         <option>Имя А-Я</option>
@@ -473,7 +422,7 @@
 
             <div class="admin-list-page__top-page-control">
                 <label class="admin-field" title="Выбрать страницу">
-                    <select class="admin-field__input">
+                    <select form="admin-list-page-search-form" name="top-page" class="admin-field__input">
                         <option>1</option>
                         <option>5</option>
                         <option selected>8</option>
@@ -889,7 +838,7 @@
             <div class="admin-list-page__per-page">
                 <label class="admin-list-page__per-page__field admin-field">
                     <span class="admin-list-page__per-page__label admin-field__text">Кол-во записей на странице</span>
-                    <select class="admin-field__input">
+                    <select form="admin-list-page-search-form" name="per-page" class="admin-field__input">
                         <option selected>10</option>
                         <option>20</option>
                         <option>30</option>
@@ -917,7 +866,7 @@
 
             <div class="admin-list-page__bottom-page-control">
                 <label class="admin-field" title="Выбрать страницу">
-                    <select class="admin-field__input">
+                    <select form="admin-list-page-search-form" name="bottom-page" class="admin-field__input">
                         <option>1</option>
                         <option>5</option>
                         <option selected>8</option>
