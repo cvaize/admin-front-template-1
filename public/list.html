@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="./components/modal/modal.css">
     <link rel="stylesheet" href="./components/list-page/list-page.css">
     <link rel="stylesheet" href="./components/dark-mode/dark-mode.css">
+
+    <script src="./components/list-page/list-page.js" defer></script>
 </head>
 <body class="admin-body">
 <input id="admin-dark-mode__checkbox" class="admin-dark-mode__checkbox" type="checkbox" hidden>
@@ -489,13 +491,25 @@
             </div>
 
             <div class="admin-list-page__data">
-                <div class="admin-table__responsive">
+                <div class="admin-table__responsive" style="padding: 0.2rem 0 0 0.2rem; margin: -0.2rem 0 0 -0.2rem">
+                    <div class="admin-list-page__actions-dropdown admin-dropdown" tabindex="-1"
+                         style="white-space: nowrap; opacity: 0; pointer-events: none;">
+                        <button class="admin-btn admin-btn--link admin-dropdown__btn" type="button"
+                                style="padding-left: 0.25rem; padding-right: 0.5rem;">
+                            Выбрано
+                            <span class="admin-list-page__actions-dropdown__count">0</span>
+                        </button>
+                        <ul class="admin-dropdown__menu">
+                            <li><a class="admin-dropdown__item" href="#">Удалить выбранное</a></li>
+                            <li><a class="admin-dropdown__item" href="#">Изменить выбранное</a></li>
+                        </ul>
+                    </div>
                     <table class="admin-table admin-table--hover">
                         <thead class="admin-table__thead">
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="col" style="width: 0;">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__all-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -503,19 +517,7 @@
                                     </svg>
                                 </label>
                             </th>
-                            <th class="admin-table__th" scope="col" style="width: 0;">
-                                <div class="admin-dropdown" tabindex="-1"
-                                     style="margin-top: 0.5rem; white-space: nowrap;">
-                                    <button class="admin-btn admin-btn--link admin-dropdown__btn" type="button"
-                                            style="padding-left: 0.25rem; padding-right: 0.5rem;">
-                                        Выбрано 2
-                                    </button>
-                                    <ul class="admin-dropdown__menu">
-                                        <li><a class="admin-dropdown__item" href="#">Удалить выбранное</a></li>
-                                        <li><a class="admin-dropdown__item" href="#">Изменить выбранное</a></li>
-                                    </ul>
-                                </div>
-                            </th>
+                            <th class="admin-table__th" scope="col" style="width: 0;">ID</th>
                             <th class="admin-table__th" scope="col">First</th>
                             <th class="admin-table__th" scope="col">Last</th>
                             <th class="admin-table__th" scope="col">Действия</th>
@@ -525,7 +527,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -557,7 +559,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -589,7 +591,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -621,7 +623,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -653,7 +655,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -685,7 +687,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -717,7 +719,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -749,7 +751,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -781,7 +783,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
@@ -813,7 +815,7 @@
                         <tr class="admin-table__tr">
                             <th class="admin-table__th" scope="row">
                                 <label class="admin-c-checkbox admin-c-checkbox--without-text" tabindex="0">
-                                    <input class="admin-c-checkbox__input" type="checkbox" hidden>
+                                    <input class="admin-list-page__row-checkbox admin-c-checkbox__input" type="checkbox" hidden>
                                     <svg class="admin-c-checkbox__svg-icon" xmlns="http://www.w3.org/2000/svg"
                                          width="24"
                                          height="24" viewBox="0 0 24 24">
