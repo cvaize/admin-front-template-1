@@ -24,3 +24,9 @@
     background-color: rgba(var(--admin-app-danger-color), 0.2);
     border-color: rgba(var(--admin-app-danger-color), 0.3);
 }
+
+.admin-alert.admin-warning {
+    color: rgb(var(--admin-app-color));
+    background-color: rgba(var(--admin-app-warning-color), 0.2);
+    border-color: rgba(var(--admin-app-warning-color), 0.3);
+}
