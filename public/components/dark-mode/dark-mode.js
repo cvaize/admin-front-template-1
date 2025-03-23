@@ -13,13 +13,13 @@
     }
 
     function toggleTheme() {
-        let theme = null;
-        if (radioDark.checked) theme = 'dark';
-        if (radioLight.checked) theme = 'light';
-        if (radioAuto.checked) theme = 'auto';
+        let mode = null;
+        if (radioDark.checked) mode = 'dark';
+        if (radioLight.checked) mode = 'light';
+        if (radioAuto.checked) mode = 'auto';
 
-        if (theme) {
-            document.cookie = 'front_theme=' + theme + '; path=/'
+        if (mode) {
+            document.cookie = 'dark_mode=' + mode + '; path=/'
         }
     }
 })();
