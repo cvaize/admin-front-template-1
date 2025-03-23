@@ -9,6 +9,7 @@
         radioDark.addEventListener('change', toggleTheme)
         radioLight.addEventListener('change', toggleTheme)
         radioAuto.addEventListener('change', toggleTheme)
+        toggleTheme();
     }
 
     function toggleTheme() {
@@ -21,6 +22,4 @@
             document.cookie = 'front_theme=' + theme + '; path=/'
         }
     }
-
-    toggleTheme();
 })();
