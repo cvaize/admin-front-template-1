@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./components/layout/layout.css">
     <link rel="stylesheet" href="./components/field/field.css">
     <link rel="stylesheet" href="./components/btn/btn.css">
+    <link rel="stylesheet" href="./components/dropdown/dropdown.css">
+    <link rel="stylesheet" href="./components/alert/alert.css">
     <link rel="stylesheet" href="./components/login/login.css">
     <link rel="stylesheet" href="./components/dark-mode/dark-mode.css">
     <script src="./components/dark-mode/dark-mode.js" defer></script>
@@ -45,7 +47,23 @@
     <div class="admin-content">
         <div class="admin-login">
             <div class="admin-container admin-login__container">
+                <div class="admin-login__alerts">
+                    <input id="admin-alert__1" class="admin-alert__checkbox" type="checkbox" name="admin-alert__1"
+                           hidden checked>
+                    <div class="admin-alert admin-success" role="alert" style="margin-bottom: 1rem;">
+                        A simple success alert—check it out!
+                        <label for="admin-alert__1" class="admin-alert__close" aria-label="Close">X</label>
+                    </div>
+                </div>
                 <form action="#" class="admin-login__card">
+                    <div class="admin-login__lang admin-dropdown" tabindex="-1">
+                        <button class="admin-btn admin-dropdown__btn" type="button">
+                            RU
+                        </button>
+                        <ul class="admin-dropdown__menu">
+                            <li><a class="admin-dropdown__item" href="#">EN</a></li>
+                        </ul>
+                    </div>
                     <h1 class="admin-login__header">Вход</h1>
                     <label class="admin-login__field admin-field">
                         <span class="admin-field__text">E-mail</span>

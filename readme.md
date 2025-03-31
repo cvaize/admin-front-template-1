@@ -21,7 +21,9 @@ Only HTML+CSS+VanillaJS.
 Mode: Light/Dark
 
 Icons for menu:
-https://marella.me/material-design-icons/demo/font/#round
+https://marella.github.io/material-design-icons/demo/font/
+
+https://github.com/marella/material-design-icons
 
 Images:
 ![1](images/1.png "1")
