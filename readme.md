@@ -13,8 +13,8 @@ Only HTML+CSS+VanillaJS.
 1) [Главная](public/index.html)
 2) [Вход](public/login.html)
 3) [Регистрация](public/register.html)
-4) [Сбросить пароль](public/forgot-password.html)
-5) [Подтверждение сброса пароля](public/forgot-password-confirm.html)
+4) [Сбросить пароль](public/reset-password.html)
+5) [Подтверждение сброса пароля](public/reset-password-confirm.html)
 6) [Список пользователей](public/list.html)
 7) [Создание пользователя](public/create-edit.html)
 
