@@ -14,18 +14,18 @@
     display: block;
     flex-grow: 1;
     border-bottom: 0.0625rem solid var(--admin-tabs-border-color);
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     margin-left: -0.0625rem;
 }
 
 .admin-tabs__link, .admin-tabs__menu-label {
     position: relative;
     display: block;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     padding: 0.5rem;
     border: 0.0625rem solid var(--admin-tabs-bg-color);
     border-bottom-color: var(--admin-tabs-border-color);
-    border-radius: 0.4rem 0.4rem 0 0;
+    border-radius: 0.5rem 0.5rem 0 0;
     cursor: pointer;
     transition: border 0.25s;
     font-weight: 400;

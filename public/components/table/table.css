@@ -1,6 +1,6 @@
 .admin-table {
     width: 100%;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     vertical-align: top;
     border-color: rgba(var(--admin-app-color), 0.2);
     caption-side: bottom;

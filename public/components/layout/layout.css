@@ -47,7 +47,7 @@ button, select {
 .admin-body {
     color: rgb(var(--admin-app-color));
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    font-size: .8rem;
+    font-size: 1rem;
     text-rendering: optimizeLegibility;
 }
 
@@ -63,7 +63,7 @@ button, select {
 .admin-content {
     width: 100%;
     min-height: 100vh;
-    padding: 0.8rem;
+    padding: 1rem;
 }
 
 .admin-hr {

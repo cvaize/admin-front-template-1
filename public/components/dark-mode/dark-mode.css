@@ -6,13 +6,13 @@
     z-index: 250;
 }
 .admin-dark-mode, .admin-dark-mode__label {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .admin-dark-mode__label, .admin-dark-mode__icon {
     position: absolute;
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: none;
 }
 
@@ -49,7 +49,7 @@
 
 .admin-dark-mode__radio--auto:checked ~ .admin-app > .admin-dark-mode .admin-dark-mode__icon--dark {
     left: 0.65rem;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
 }
 
 .admin-dark-mode__radio--auto:checked ~ .admin-app > .admin-dark-mode .admin-dark-mode__icon--light {

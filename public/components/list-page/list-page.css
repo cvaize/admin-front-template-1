@@ -80,7 +80,7 @@
 
 .admin-list-page__page-number {
     white-space: nowrap;
-    margin-top: 0.4rem;
+    margin-top: 0.5rem;
     grid-area: page-number;
 }
 

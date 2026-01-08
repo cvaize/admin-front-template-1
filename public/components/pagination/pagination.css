@@ -28,7 +28,7 @@
 .admin-pagination__link {
     position: relative;
     display: block;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: rgb(var(--admin-app-color));
     text-decoration: none;
     background-color: transparent;

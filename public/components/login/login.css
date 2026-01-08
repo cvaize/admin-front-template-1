@@ -45,11 +45,11 @@
 .admin-login__field {
     display: block;
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .admin-login__field__input {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .admin-login__nav {
