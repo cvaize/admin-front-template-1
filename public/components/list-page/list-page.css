@@ -121,31 +121,7 @@
     }
 }
 
-@media (max-width: 1199px) {
-
-
-}
-
 @media (max-width: 991px) {
-    .admin-list-page {
-        grid-template-areas:
-    "breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb"
-    "header header header header buttons buttons buttons"
-    "search search search search search search search"
-    "tags tags tags tags tags tags tags"
-    "top-sort top-sort top-sort top-paginate top-paginate top-paginate top-page-control"
-    "data data data data data data data"
-    "page-number page-number per-page per-page per-page per-page per-page"
-    "bottom-paginate bottom-paginate bottom-paginate bottom-paginate bottom-paginate bottom-paginate bottom-page-control";
-    }
-
-    .admin-list-page__top-paginate, .admin-list-page__top-page-control {
-        align-self: end;
-    }
-}
-
-
-@media (max-width: 530px) {
     .admin-list-page {
         display: flex;
         flex-wrap: wrap;
