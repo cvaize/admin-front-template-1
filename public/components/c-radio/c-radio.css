@@ -4,7 +4,7 @@
     position: relative;
     cursor: pointer;
     user-select: none;
-    border-radius: 0.3em;
+    border-radius: 5px;
     vertical-align: middle;
     line-height: 1.5;
 }
@@ -14,14 +14,14 @@
     display: inline-block;
     vertical-align: top;
     /*position: relative;*/
-    /*top: -0.1em;*/
-    /*margin-right: 0.2em;*/
-    margin-right: 0.1em;
-    width: 1.5em;
-    height: 1.5em;
+    /*top: -2px;*/
+    /*margin-right: 3px;*/
+    margin-right: 2px;
+    width: 24px;
+    height: 24px;
     /*transform: scale(1.1);*/
-    box-shadow: inset 0 0 0 0.2em currentColor;
-    border-radius: 1em;
+    box-shadow: inset 0 0 0 3px currentColor;
+    border-radius: 16px;
 }
 
 .admin-c-radio--without-text:focus {
@@ -29,7 +29,7 @@
 }
 
 .admin-c-radio--without-text:focus > .admin-c-radio__svg-icon {
-    box-shadow: inset 0 0 0 0.2em currentColor, var(--admin-app-focus-box-shadow);
+    box-shadow: inset 0 0 0 3px currentColor, var(--admin-app-focus-box-shadow);
 }
 
 .admin-c-radio--without-text > .admin-c-radio__svg-icon {

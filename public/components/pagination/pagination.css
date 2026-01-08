@@ -33,11 +33,11 @@
     text-decoration: none;
     background-color: transparent;
     border: 1px solid rgba(var(--admin-app-color), 0.1);
-    height: 30px;
-    min-width: 30px;
+    height: 36px;
+    min-width: 36px;
     padding: 6px;
     text-align: center;
-    line-height: 18px;
+    line-height: 22px;
 }
 
 a.admin-pagination__link, button.admin-pagination__link {

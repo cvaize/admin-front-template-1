@@ -34,9 +34,9 @@
     width: 8px;
     height: 8px;
     transform-origin: center;
-    transform: translateY(-50%) rotate(-135deg);
-    border-left: 1px solid currentColor;
-    border-bottom: 1px solid currentColor;
+    transform: translateY(0) rotate(-135deg);
+    border-left: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
     transition: transform 0.25s;
 }
 
@@ -75,5 +75,5 @@
 }
 
 .admin-menu__list__checkbox:checked ~ .admin-menu__list__label:before {
-    transform: translateY(-77%) rotate(-45deg);
+    transform: translateY(-2px) rotate(-45deg);
 }

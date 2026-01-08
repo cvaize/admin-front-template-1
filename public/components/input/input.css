@@ -17,6 +17,8 @@
 .admin-input[type="range"] {
     height: 3px;
     padding: 0;
+    margin-top: 12px;
+    margin-bottom: 16px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -65,6 +67,11 @@ input.admin-input[type="file"], input.admin-input[type="file"]:read-only, input.
     top: 0;
     opacity: 0;
     visibility: hidden;
+}
+
+.admin-input__label {
+    margin-bottom: 4px;
+    display: block;
 }
 
 .admin-success > .admin-input__label {

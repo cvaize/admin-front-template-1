@@ -30,7 +30,7 @@
     }
 
     .admin-tabs--menu-mod-xl .admin-tabs__menu-checkbox:checked ~ .admin-tabs__nav {
-        max-height: 800px;
+        max-height: 1000px;
         border-radius: 8px;
         border-bottom: 1px solid var(--admin-tabs-border-color);
     }

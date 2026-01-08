@@ -64,6 +64,14 @@
     align-items: center;
 }
 
+.admin-sidebar__menu > .admin-accordion__header::after {
+    transform: rotateZ(45deg) translate(4px, -6px);
+}
+
+.admin-sidebar__menu > .admin-accordion__checkbox:checked ~ .admin-accordion__header::after {
+    transform: rotateZ(-135deg) translate(-8px, 3px);
+}
+
 .admin-sidebar__menu__header__content {
     display: flex;
     align-items: center;
@@ -105,6 +113,10 @@
     position: relative;
     text-decoration: none;
     padding: 0 0 0 12px;
+}
+
+.admin-sidebar__menu__item .admin-icon--svg{
+    top: -1px;
 }
 
 .admin-sidebar__menu__item__link {

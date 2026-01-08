@@ -35,6 +35,7 @@
     height: 19px;
     position: relative;
     margin-left: 3px;
+    top: 3px;
 }
 
 .admin-tag__close:hover {

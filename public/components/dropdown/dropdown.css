@@ -34,12 +34,12 @@
 .admin-dropdown__btn:after {
     content: "";
     display: inline-block;
-    width: 0.6em;
-    height: 0.6em;
-    margin: 0 0.3em 0 0;
-    border-right: 0.2em solid currentColor;
-    border-bottom: 0.2em solid currentColor;
-    transform: rotateZ(45deg) translate(0.1em, -0.4em);
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0;
+    border-right: 3px solid currentColor;
+    border-bottom: 3px solid currentColor;
+    transform: rotateZ(45deg) translate(2px, -6px);
 }
 
 .admin-dropdown__item:hover {
@@ -53,5 +53,5 @@
 
 .admin-dropdown:focus > .admin-dropdown__btn:after,
 .admin-dropdown:focus-within > .admin-dropdown__btn:after {
-    transform: rotateZ(-135deg) translate(-0.4em, 0.2em);
+    transform: rotateZ(-135deg) translate(-6px, 3px);
 }

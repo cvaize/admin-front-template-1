@@ -2,8 +2,8 @@
     position: relative;
     cursor: pointer;
     user-select: none;
-    padding-left: 1.7em;
-    border-radius: 0.3em;
+    padding-left: 27px;
+    border-radius: 5px;
 }
 
 .admin-b-radio__label:before, .admin-b-radio__label:after {
@@ -12,10 +12,10 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 1.3em;
-    height: 1.3em;
+    width: 21px;
+    height: 21px;
     background: currentColor;
-    border-radius: 0.3em;
+    border-radius: 5px;
     transform-origin: center;
 }
 

@@ -20,9 +20,9 @@
 .admin-s-collapse__label:after {
     content: '';
     display: inline-block;
-    width: 0.6em;
-    height: 0.6em;
-    transform: translateY(-0.2em) rotate(-45deg);
+    width: 10px;
+    height: 10px;
+    transform: translateY(-3px) rotate(-45deg);
     border-left: 1px solid currentColor;
     border-bottom: 1px solid currentColor;
     margin-left: 2px;

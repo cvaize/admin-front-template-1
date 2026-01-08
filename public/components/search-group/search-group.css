@@ -10,17 +10,17 @@
 .admin-search-group__input {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    padding-right: 2.5em;
+    padding-right: 40px;
 }
 
 .admin-search-group__reset {
     display: flex;
     position: absolute;
-    right: 0.1em;
+    right: 2px;
     top: 50%;
     transform: translateY(-50%);
-    height: 1.2em;
-    width: 1.2em;
+    height: 19px;
+    width: 19px;
     border: none;
     background: none;
     color: inherit;

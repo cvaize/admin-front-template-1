@@ -23,6 +23,8 @@
 .admin-field__input[type="range"] {
     height: 3px;
     padding: 0;
+    margin-top: 12px;
+    margin-bottom: 16px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -83,11 +85,16 @@ input.admin-field__input:read-only:focus, input.admin-field__input:disabled:focu
     box-shadow: none;
 }
 
+.admin-field__label {
+    display: block;
+    margin-bottom: 4px;
+}
+
 .admin-field__text {
 
 }
 
-.admin-success.admin-field .admin-field__text {
+.admin-success.admin-field .admin-field__text, .admin-success.admin-field .admin-field__label {
     color: rgb(var(--admin-app-success-color));
 }
 
@@ -104,7 +111,7 @@ input.admin-field__input:read-only:focus, input.admin-field__input:disabled:focu
     background-color: rgb(var(--admin-app-success-color));
 }
 
-.admin-danger.admin-field .admin-field__text {
+.admin-danger.admin-field .admin-field__text, .admin-danger.admin-field .admin-field__label {
     color: rgb(var(--admin-app-danger-color));
 }
 
