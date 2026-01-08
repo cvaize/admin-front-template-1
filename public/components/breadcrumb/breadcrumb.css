@@ -2,13 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0 0 1rem 0;
+    margin: 0 0 16px 0;
     list-style: none;
 }
 
 .admin-breadcrumb__item .admin-breadcrumb__link {
     color: inherit;
-    border-radius: 0.3rem;
+    border-radius: 5px;
 }
 
 .admin-breadcrumb__item .admin-breadcrumb__link:hover {
@@ -16,14 +16,14 @@
 }
 
 .admin-breadcrumb__item + .admin-breadcrumb__item {
-    padding-left: .5rem;
+    padding-left: 8px;
 }
 
 /*noinspection CssUnresolvedCustomProperty*/
 .admin-breadcrumb__item + .admin-breadcrumb__item::before {
     content: var(--bs-breadcrumb-divider, "/");
     float: left;
-    padding-right: .5rem;
+    padding-right: 8px;
 }
 
 .admin-breadcrumb__item--active {

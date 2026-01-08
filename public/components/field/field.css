@@ -1,27 +1,27 @@
 .admin-field {
     display: block;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .admin-field__input {
     --field-input-select-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
     display: block;
     width: 100%;
-    padding: .3rem .7rem;
-    font-size: 1rem;
+    padding: 5px 11px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: rgb(var(--admin-app-color));
     appearance: none;
     background-color: rgb(var(--admin-app-background-color));
     background-clip: padding-box;
-    border: 0.0625rem solid rgba(var(--admin-app-color), 0.2);
-    border-radius: 0.3rem;
+    border: 1px solid rgba(var(--admin-app-color), 0.2);
+    border-radius: 5px;
     outline: none;
 }
 
 .admin-field__input[type="range"] {
-    height: 0.2rem;
+    height: 3px;
     padding: 0;
 }
 
@@ -52,9 +52,9 @@ select.admin-field__input {
     appearance: none;
     background-image: var(--field-input-select-icon);
     background-repeat: no-repeat;
-    background-position: right .35rem center;
-    background-size: 1rem .75rem;
-    padding-right: 1.5rem;
+    background-position: right 6px center;
+    background-size: 16px 12px;
+    padding-right: 24px;
 }
 
 .admin-field__input[type="range"]:disabled {

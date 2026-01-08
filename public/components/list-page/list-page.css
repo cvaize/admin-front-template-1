@@ -1,7 +1,7 @@
 .admin-list-page {
     display: grid;
     grid-template-columns: 1fr auto auto auto auto auto auto;
-    gap: 0.5rem 0.5rem;
+    gap: 8px 8px;
     grid-template-areas:
     "breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb breadcrumb"
     "header header buttons buttons buttons buttons buttons"
@@ -63,7 +63,7 @@
 
 .admin-list-page__sort__label {
     white-space: nowrap;
-    margin-right: 0.5rem;
+    margin-right: 8px;
 }
 
 .admin-list-page__top-paginate {
@@ -80,7 +80,7 @@
 
 .admin-list-page__page-number {
     white-space: nowrap;
-    margin-top: 0.5rem;
+    margin-top: 8px;
     grid-area: page-number;
 }
 
@@ -96,7 +96,7 @@
 
 .admin-list-page__per-page__label {
     white-space: nowrap;
-    margin-right: 0.5rem;
+    margin-right: 8px;
 }
 
 .admin-list-page__bottom-paginate {

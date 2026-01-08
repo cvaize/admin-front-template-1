@@ -21,14 +21,14 @@
 }
 
 .admin-accordion__body {
-    margin-bottom: .4rem;
+    margin-bottom: 6px;
     max-height: 0;
     overflow: hidden;
     transition: max-height .25s;
 }
 
 .admin-accordion__checkbox:checked ~ .admin-accordion__body {
-    max-height: var(--admin-accordion-max-height, 50rem);
+    max-height: var(--admin-accordion-max-height, 800px);
 }
 
 .admin-accordion__checkbox:checked ~ .admin-accordion__header::after {

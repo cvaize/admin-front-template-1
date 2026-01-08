@@ -29,7 +29,7 @@ mark {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0 0 1rem 0;
+    margin: 0 0 16px 0;
 }
 
 [type="button"], [type="reset"], [type="submit"], button {
@@ -47,7 +47,7 @@ button, select {
 .admin-body {
     color: rgb(var(--admin-app-color));
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     text-rendering: optimizeLegibility;
 }
 
@@ -63,12 +63,12 @@ button, select {
 .admin-content {
     width: 100%;
     min-height: 100vh;
-    padding: 1rem;
+    padding: 16px;
 }
 
 .admin-hr {
     opacity: 0.1;
-    margin: 0.5rem 0;
+    margin: 8px 0;
 }
 
 .admin-img {
@@ -125,31 +125,31 @@ button, select {
     max-width: 1460px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .admin-row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 .admin-col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .admin-col {
     flex: 1 0 0;
     width: auto;
     max-width: 100%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 @media (max-width: 1460px) {
