@@ -3,8 +3,9 @@
     position: relative;
     user-select: none;
     display: inline-block;
-    padding: 2px;
+    padding: 0 0 0 2px;
     border-radius: 5px;
+    line-height: 1.4;
 }
 
 .admin-checkbox__box {
